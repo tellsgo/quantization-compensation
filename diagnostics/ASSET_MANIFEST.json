@@ -1,0 +1,281 @@
+{
+  "packages": {
+    "torch": "2.14.1",
+    "numpy": "2.4.6",
+    "transformers": "5.18.0",
+    "pyarrow": "25.0.1",
+    "safetensors": "0.8.0",
+    "huggingface_hub": "1.33.0",
+    "psutil": "7.2.2"
+  },
+  "source_files": [
+    {
+      "name": "gutenberg_1342.txt",
+      "sha256": "3f6bb9d6f78e0293b56acd4714dd68cb7d6d1d293402031ce9d5a216bcaf9d75",
+      "bytes": 772386
+    },
+    {
+      "name": "wikitext2_train.parquet",
+      "sha256": "e83889baabc497075506f91975be5fac0d45c5290b6b20582c8cd1e853d0c9f7",
+      "bytes": 6357543
+    },
+    {
+      "name": "wikitext2_validation.parquet",
+      "sha256": "204929b7ff9d6184953f867dedb860e40aa69c078fc1e54b3baaa8fb28511c4c",
+      "bytes": 657209
+    }
+  ],
+  "settings": {
+    "alphas": [
+      0.5,
+      1.0
+    ],
+    "seeds": [
+      2026100400,
+      2026100401,
+      2026100402,
+      2026100403,
+      2026100404,
+      2026100405,
+      2026100406,
+      2026100407,
+      2026100408,
+      2026100409,
+      2026100410,
+      2026100411,
+      2026100412,
+      2026100413,
+      2026100414,
+      2026100415
+    ],
+    "cpu_threads": 4,
+    "inference_dtype": "float32",
+    "accounting_dtype": "float64",
+    "device": "cpu",
+    "attention": "eager",
+    "rcond": 1e-10
+  },
+  "models": {
+    "smol135": {
+      "repo": "HuggingFaceTB/SmolLM2-135M",
+      "rev": "93efa2f097d58c2a74874c7e644dbc9b0cee75a2",
+      "files": [
+        {
+          "name": "README.md",
+          "sha256": "d1ba68cae64a89b6b434b11526e6e2271ee5ffd2c914ec35ed515f9d84c6085c",
+          "bytes": 6340
+        },
+        {
+          "name": "config.json",
+          "sha256": "1d556eab73b69c7f11f64c557a2f9c6f440bd4c6b89bb2584a6b498c92603843",
+          "bytes": 704
+        },
+        {
+          "name": "generation_config.json",
+          "sha256": "2056c988e990b0d13670f63f2f3b87b3b6d07edaf7a3416998ba27dab2d8a059",
+          "bytes": 111
+        },
+        {
+          "name": "merges.txt",
+          "sha256": "0b54e8aa4e53d5383e2e4bc635a56b43f9647f7b13832d5d9ecd8f82dac4f510",
+          "bytes": 466391
+        },
+        {
+          "name": "model.safetensors",
+          "sha256": "80521b40281d6ce74e35c9282c22539e75aa0ac8578892b2a59955ef78d55da1",
+          "bytes": 269060552
+        },
+        {
+          "name": "special_tokens_map.json",
+          "sha256": "e786b595b9a23148bf1630df78d9037a048ea671e48bfd3549a1e3c233742bb3",
+          "bytes": 831
+        },
+        {
+          "name": "tokenizer.json",
+          "sha256": "9ca9acddb6525a194ec8ac7a87f24fbba7232a9a15ffa1af0c1224fcd888e47c",
+          "bytes": 2104556
+        },
+        {
+          "name": "tokenizer_config.json",
+          "sha256": "4bb9af56a342753d39374f4016a16574cab299fe088e896f425ce3c433f61424",
+          "bytes": 3658
+        },
+        {
+          "name": "vocab.json",
+          "sha256": "82b84012e3add4d01d12ba14442026e49b8cbbaead1f79ecf3d919784f82dc79",
+          "bytes": 800662
+        }
+      ]
+    },
+    "pythia160": {
+      "repo": "EleutherAI/pythia-160m",
+      "rev": "50f5173d932e8e61f858120bcb800b97af589f46",
+      "files": [
+        {
+          "name": "README.md",
+          "sha256": "af8232060773a3b2a5d36a31a1d5bf5a431bc8f20cf513682c2dca7225e7557b",
+          "bytes": 13593
+        },
+        {
+          "name": "config.json",
+          "sha256": "76eb275107220e450d31258f792a2efcbee109d8b62ae0088260057dec06362f",
+          "bytes": 569
+        },
+        {
+          "name": "model.safetensors",
+          "sha256": "29d2e457a664e41c12c735f20a36dc0956a665f614a54ce5db21a32e75965270",
+          "bytes": 374998696
+        },
+        {
+          "name": "special_tokens_map.json",
+          "sha256": "6f50ab5a5a509a1c309d6171f339b196a900dc9c99ad0408ff23bb615fdae7ad",
+          "bytes": 99
+        },
+        {
+          "name": "tokenizer.json",
+          "sha256": "c24618a1b3e6a38167beff1c72cffd126c3a66254347304b50547d12c5f25624",
+          "bytes": 2113710
+        },
+        {
+          "name": "tokenizer_config.json",
+          "sha256": "70e38394e494931c6f773ba41e19460dd4436526b852207367f04341b4066d3f",
+          "bytes": 396
+        }
+      ]
+    }
+  },
+  "tokens": {
+    "smol135_wikitext": {
+      "offsets": {
+        "cal": [
+          0,
+          4096
+        ],
+        "holdout": [
+          0,
+          2048
+        ],
+        "holdout_source": "validation"
+      },
+      "files": {
+        "cal": {
+          "path": "tokens/smol135_wikitext_cal.npy",
+          "shape": [
+            32,
+            128
+          ],
+          "sha256": "aa9810f46b9941e4c70101ad48566241a435a8276740f28bfaf8eb6baaee90b5",
+          "token_bytes_sha256": "c1bf56c7f0b214d50f7d0638bfc87463280800ac37bf73aefe9789b19caa9a13"
+        },
+        "holdout": {
+          "path": "tokens/smol135_wikitext_holdout.npy",
+          "shape": [
+            16,
+            128
+          ],
+          "sha256": "962a4b9462070116dbb5dac551b821901f045102e6dfb500275c707e739a0818",
+          "token_bytes_sha256": "8215cdbb00cbfb4af60b5e2d91aefc61465ddf992e0e31abe19a1d1d5f8bb294"
+        }
+      }
+    },
+    "smol135_gutenberg": {
+      "offsets": {
+        "cal": [
+          0,
+          4096
+        ],
+        "holdout": [
+          8192,
+          10240
+        ],
+        "holdout_source": "same_book_after_4096_token_gap"
+      },
+      "files": {
+        "cal": {
+          "path": "tokens/smol135_gutenberg_cal.npy",
+          "shape": [
+            32,
+            128
+          ],
+          "sha256": "7fddeb55cd925a03d0aa082897456bfc0cb17a9189f8d9b94e46e41e92b08858",
+          "token_bytes_sha256": "96c314b72a7a72b14dc2760784ce7ab04fe609d4550ccca57823697a54b3b2ab"
+        },
+        "holdout": {
+          "path": "tokens/smol135_gutenberg_holdout.npy",
+          "shape": [
+            16,
+            128
+          ],
+          "sha256": "3396185e0530e59bb6a2fb224148a5759208ded95757fb1dd6257aa62900b030",
+          "token_bytes_sha256": "f12251f5ccfca610c390577efa6db5a25b9e7021e75a206ca0b0bdf6a33cf787"
+        }
+      }
+    },
+    "pythia160_wikitext": {
+      "offsets": {
+        "cal": [
+          0,
+          4096
+        ],
+        "holdout": [
+          0,
+          2048
+        ],
+        "holdout_source": "validation"
+      },
+      "files": {
+        "cal": {
+          "path": "tokens/pythia160_wikitext_cal.npy",
+          "shape": [
+            32,
+            128
+          ],
+          "sha256": "5030ba9549a25e13e3fbc1372305c9d0adf1918aba87a980e2e1fc4e85387560",
+          "token_bytes_sha256": "3453f0761f1b1ba78da5ba6e02025251ea414fe769a56ec7f4bb6c103d1e7701"
+        },
+        "holdout": {
+          "path": "tokens/pythia160_wikitext_holdout.npy",
+          "shape": [
+            16,
+            128
+          ],
+          "sha256": "5d4c88ff64ade8ffccaa6fb61f3a9d29f285a8070ef7036e0dc440f7e625a4ca",
+          "token_bytes_sha256": "a9f8a07e831a8c74a974274664589abae13da48026b52a7a1a75461dce968049"
+        }
+      }
+    },
+    "pythia160_gutenberg": {
+      "offsets": {
+        "cal": [
+          0,
+          4096
+        ],
+        "holdout": [
+          8192,
+          10240
+        ],
+        "holdout_source": "same_book_after_4096_token_gap"
+      },
+      "files": {
+        "cal": {
+          "path": "tokens/pythia160_gutenberg_cal.npy",
+          "shape": [
+            32,
+            128
+          ],
+          "sha256": "0f191602c6eda7b41674db6829f7076770aea7788d2367e9fb8f42ed6c38cd26",
+          "token_bytes_sha256": "8b48741c5dd3b9fa71dc3153db7ec8f444275509f7537deb6cd4fe1d9d9aae39"
+        },
+        "holdout": {
+          "path": "tokens/pythia160_gutenberg_holdout.npy",
+          "shape": [
+            16,
+            128
+          ],
+          "sha256": "d68eb2cdaa99fb3bbb1cd1324de52c6b0674effd5b5dd54a2411fa57c61ebe63",
+          "token_bytes_sha256": "1ed5113e9e5b312071d10b00c4490c2a1eda10a270d36c098c5361c5b8574ae6"
+        }
+      }
+    }
+  }
+}

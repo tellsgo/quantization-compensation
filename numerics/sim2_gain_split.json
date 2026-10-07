@@ -1,0 +1,45 @@
+{
+ "protocol": "Numerical illustration 2: where the gain comes from (Proposition prop:gain), in a network with bottlenecks.\n\nProtocol, fixed before running:\n  Linear network 8 -> 6 -> 4 -> 2, N = 16, X_1 = [I_8 I_8]/sqrt(2).\n  Teacher: W_l = diag(s) Q_l, Q_l with orthonormal rows obtained by Gram-Schmidt from a fixed pseudo-random matrix\n  (seed 2026), singular values s equally spaced in [0.8, 1.2].\n  Entrywise subtractive dither with step 0.3 at every layer, so Psi_l(M) = v tr(M) I with v = 0.3^2/12.\n  Strengths (alpha_2, alpha_3) = (a, a) for a in {0.25, 0.5, 0.75, 1}; layer 1 needs no correction.\n  Batch A (10000 runs per a): estimate the sources S_2, S_3, B_2 of Proposition prop:gain along the corrected\n  trajectory, and predict the terminal gain\n        gain = tr(W_3 S_2 W_3^T) + tr(S_3)                      (error removed directly)\n             + 2 v [ a tr(W_2 C_2 W_2^T) + tr(B_2) ]            (less excitation of later rounding noise)\n  with C_2 = v tr(X_1 X_1^T) I known exactly.\n  Batch B (10000 runs, independent seeds): measure the terminal mean-square errors of the two schemes,\n  with the same dither draws for both (pairing reduces variance; the rounding errors differ).\nThe prediction uses batch A only and the measurement batch B only.\n",
+ "rows": [
+  {
+   "alpha": 0.25,
+   "direct": 0.0881830210413339,
+   "delayed": 0.001665444205429728,
+   "predicted": 0.08984846524676363,
+   "measured": 0.08974926279728136,
+   "se": 0.0010809338054461356,
+   "mse_base": 0.2990542785501235,
+   "mse_qep": 0.20930501575284116
+  },
+  {
+   "alpha": 0.5,
+   "direct": 0.13560576050366202,
+   "delayed": 0.002986203232795677,
+   "predicted": 0.13859196373645769,
+   "measured": 0.13924274563470224,
+   "se": 0.001209579061836883,
+   "mse_base": 0.2990542785501235,
+   "mse_qep": 0.15981153291542138
+  },
+  {
+   "alpha": 0.75,
+   "direct": 0.15793021235618815,
+   "delayed": 0.003962277082097852,
+   "predicted": 0.161892489438286,
+   "measured": 0.1621350401455768,
+   "se": 0.0012219040199975314,
+   "mse_base": 0.2990542785501235,
+   "mse_qep": 0.13691923840454703
+  },
+  {
+   "alpha": 1.0,
+   "direct": 0.16398802139201035,
+   "delayed": 0.004593665753336254,
+   "predicted": 0.1685816871453466,
+   "measured": 0.1686042321365228,
+   "se": 0.0012235385058926304,
+   "mse_base": 0.2990542785501235,
+   "mse_qep": 0.13045004641360017
+  }
+ ]
+}

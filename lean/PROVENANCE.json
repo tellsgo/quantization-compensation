@@ -1,0 +1,485 @@
+{
+  "derivation": "Only comments and inline #print axioms commands removed; mathematical declaration/proof tokens and module names preserved. Source hashes identify accepted frozen inputs; derived hashes identify these distributable copies. Central Audit replaces inline print commands.",
+  "sources": [
+    {
+      "module": "QepSharedE",
+      "source_sha256": "108d0af7cd0a189cd987000e03a8b6065955cbdd504489449cbc41644baa5a6f",
+      "derived_sha256": "f1f4547f1c6c040f7831e882c9c3348b33ae40c65eb7731e52ed1bb940cdcb83"
+    },
+    {
+      "module": "QepAlpha",
+      "source_sha256": "bd8dd33e2dc2800042efccfd3eec5d7f30ecc086399ba5d40ce63db8619c5420",
+      "derived_sha256": "e2d8441d87ae5755fde8b55aae30d14587f92722dee15094b4c5437ca55b47de"
+    },
+    {
+      "module": "QepCorrected",
+      "source_sha256": "c41c18296b27b60de3df6c0ed6888bb4d6d8fa50ae26e26b9a74552c59fc3ce2",
+      "derived_sha256": "15560166a5387406a5e56a436d245a4507c20433509296df6e9bfd039c32c887"
+    },
+    {
+      "module": "QepInterior",
+      "source_sha256": "c0de8fb3f7f822ee85dabe162ea659b7f443b8b780a982256038987c580d1321",
+      "derived_sha256": "10bac46525dd459c19d5fd5aaa197c5df4769951bb36292b8cbcc5a56c3404c8"
+    },
+    {
+      "module": "QepCorollary",
+      "source_sha256": "d002ec7ec9faad6d2fc7cec65ee4021f479e98dba76bf8b3c2a31906c189829c",
+      "derived_sha256": "dcd355a15a98da4f9e530e45c243c863983c903a221711c8e2d59be0814b6b8a"
+    },
+    {
+      "module": "QepProjectionExample",
+      "source_sha256": "be20b8ba0868e4101486fdb6c1fe98f44e341c327d306551bcd6b6efa5b809bc",
+      "derived_sha256": "cad85114fefec49c14721bf3dc8e6975c8c18206b3f795384530ef00beb635c3"
+    },
+    {
+      "module": "QepInteriorAlpha",
+      "source_sha256": "854b37c247efcb7750f721a414cc4122b1bae88dcdbcc88462a8c75a95d8ba16",
+      "derived_sha256": "03058ed24fd4ae316bd839cbb1e6cb41ff0f9be9e583ea3693e29b73993d4df1"
+    },
+    {
+      "module": "QepSharedEExtended",
+      "source_sha256": "e9e5156f056d8c370a21a04b57c905baa7aae79224b22f42dcd1fdc2eb2dad19",
+      "derived_sha256": "cb1cf2aecc2df96fc42039524165e46756bc42023f745911c55e3997c212fcdd"
+    },
+    {
+      "module": "QepDitherFinite",
+      "source_sha256": "3c55ee94a2040d7b82b3961e25555edb71d80a5b2e726e434c8192f0cabae9e3",
+      "derived_sha256": "ba15e2e92a108bb143b68f1554f9f4e7363c2ee46886262a427ca6040ed303e2"
+    },
+    {
+      "module": "QepGram",
+      "source_sha256": "cd362a5e1c693d4cbb50b60023c9fdcdfaba5e660699e7200ea9c1d09c345b49",
+      "derived_sha256": "a687a55987dc39fcb938ec8cacec5707abcbf704c6db53473c4fb943ea88f718"
+    },
+    {
+      "module": "QepMatrixFamily",
+      "source_sha256": "4cc4b502ee4a1b5e0e545246b8c6b94609f1139c1213e0df271d59264425ff30",
+      "derived_sha256": "248b42bc21394c811fd175d3daec9a94ae9189da72930baa973090f369470228"
+    },
+    {
+      "module": "QepDitherDepth",
+      "source_sha256": "b5f287559686e1be3bd8e616516cba34e0c12b6ea9e0b0ba24e6699616ddca99",
+      "derived_sha256": "037298b32214a0319c50a7706e95210cdd9e3a8d11d173983785167ab45111fc"
+    },
+    {
+      "module": "QepThreeLayerExamples",
+      "source_sha256": "62230275cd57daa378607d2b4a2f9e0d79f796601cecb8cc36c0e32407e6cc89",
+      "derived_sha256": "e4e0daee21080a644a5c8b6d09a1f0cb68fc2e466a9e30b1447a37aba4794503"
+    },
+    {
+      "module": "QepV1Checks",
+      "source_sha256": "03248e2938bc1de09cdb559ab306e8bf03ecfec425421e413080dfc303b1daf9",
+      "derived_sha256": "e84aadc9d30f52fd797c34dd033e53c6c8c1df964388ffd5eed4186b3b8eecc8"
+    },
+    {
+      "module": "QepV1DomainBound",
+      "source_sha256": "58a1a36f39fb54af179dba690d9f43f91aa5698ae2ea261baee1341da2384eb3",
+      "derived_sha256": "3ca2579db69b0359101587cc6058c9b194a13f3be0d439fb3eb75ab0bb0017f0"
+    },
+    {
+      "module": "QepV1Envelope",
+      "source_sha256": "da3cfcc99b8e30dff9bbad9b2627a187616ace652a106075acda0a58d627694a",
+      "derived_sha256": "fcc0404f613cf32ea197d6a9d2f0efb61078b6467f28c51ffa4168d197da7ff1"
+    },
+    {
+      "module": "QepV1Existence",
+      "source_sha256": "89667065e8e0a889e42ff71e9af0001e7032b2bf3bfed3411454f805f5d0ce40",
+      "derived_sha256": "4148c36388cf168acd4d816be434e00576202ae757877fae42f4e4e8eb28d78b"
+    },
+    {
+      "module": "QepV1Matrix",
+      "source_sha256": "a1123e44214bab7704c80efef81a8df033422d6c956262e150dda51308151ba5",
+      "derived_sha256": "f5b986419d9ce1e13fd3c20c87e7eda9fe09b1caa59a9033ba53c8630ab24695"
+    },
+    {
+      "module": "QepV1Remainder",
+      "source_sha256": "3092166132f88562e94be064435e6f3a76c388093b9e54b155e3bc97050408ac",
+      "derived_sha256": "0428033945a6b0971f67b99e79d1bb61d1970ba2d389214fc8253da9849d0df7"
+    },
+    {
+      "module": "QepV1Scalar",
+      "source_sha256": "09feff72333ce2d8d92fd328ea9a61603a08977d2be53fe715e29c5a1203d1c9",
+      "derived_sha256": "f439c35e898e431d07c55e4106538decdceca4ad8b8a24bda8e61f5dfa8e3c1a"
+    },
+    {
+      "module": "QepFiniteDitherLaw",
+      "source_sha256": "30c0c0de0faf4810d16bd3c9f33e6daa703b5ef85adb46e637ca53d784a4fe66",
+      "derived_sha256": "0e53ad4c18f3ae8314c7d00ecde246ab251fff6485ef8a4e7fd4fb3449d1b069"
+    },
+    {
+      "module": "QepFiniteDitherMatrix",
+      "source_sha256": "86592632dd8aa6fb0593f4a618ae46731e1092d6836da2e4ae4e99449bc0228c",
+      "derived_sha256": "51424d8b6a459d268bed548d35948cde3dda8ab8c9fd32db9fb1134a75acbc94"
+    },
+    {
+      "module": "QepFiniteOverloadExamples",
+      "source_sha256": "2ccfafc047aa334daf075917e220315c3f6d943b597c575352f414507164afea",
+      "derived_sha256": "88b202ee6934300af5bb975449885fe63cf0d578d644bd8c14d37f2795f86d2b"
+    },
+    {
+      "module": "QepOverloadGap",
+      "source_sha256": "6350f6126476c40f1fd33f2a0f9779d3300a21a2f32342efbc698af3130091df",
+      "derived_sha256": "593c560e8dc877f992581d05acd203956ff4129a57b785fdfef72c3e8839d43e"
+    },
+    {
+      "module": "QepFiniteDitherHistory",
+      "source_sha256": "795fb96c7ee28e4aaca8e36f08a7438cf24993c74f3db8fc7c1169ad550ffb65",
+      "derived_sha256": "b935ba5fecb6a7099cf83098904c3c35962fa2d37e2ca76c262893ea71cb8738"
+    },
+    {
+      "module": "QepFiniteDitherBridge",
+      "source_sha256": "5e489435b3d4638550c1db531510716ca99776cb72b094d42d15fc4a2b714d8c",
+      "derived_sha256": "5e489435b3d4638550c1db531510716ca99776cb72b094d42d15fc4a2b714d8c"
+    },
+    {
+      "module": "QepV3Checks",
+      "source_sha256": "5c5aa0bec1e8120967884d712104480d9940b4b3f51fefd67249c4db60b6bc30",
+      "derived_sha256": "1cd1c23565b87c1d591150bb6389790309e72784d5ca080c363963aac78dd04a"
+    },
+    {
+      "module": "QepV3Conditional",
+      "source_sha256": "cc5f7169fc5f3a22493d542b15bcb198e60f7b3511c9a982bdd98085ff7b2e2f",
+      "derived_sha256": "e1901abbe0c55710206703931f5cfff62e386b0ac84da9e5dae01793fcbb6435"
+    },
+    {
+      "module": "QepV3Expectation",
+      "source_sha256": "23e7c74700e83cb911933b46863c16d1eae7569d435b1fdcbaf34e8302a980a1",
+      "derived_sha256": "198c3b42e1fb1711d50e9ae4b338dee96310fc5ab38bfc9c38686cab52509de1"
+    },
+    {
+      "module": "QepV3Network",
+      "source_sha256": "7eaac9eb80a57764866ec668dd00a6d7e44d4b34b610f172494a642cd4dce4ff",
+      "derived_sha256": "c7b7c11b2790f4030c9d092539f3d8d353d126983dc00d5336279a0b2d9e7e50"
+    },
+    {
+      "module": "QepV3Order",
+      "source_sha256": "9713f65be7e4d61bd5276b7d6a50748e1293c0bff280d1fdc7e06db377a9bebf",
+      "derived_sha256": "cba4ce012a4a184ea2d4b0537181e0e33d0dcfbcb04d8866e1796590ee984d8c"
+    },
+    {
+      "module": "QepV3RowSpace",
+      "source_sha256": "fb961351b26f2b157aa74be3fa3f5f66b3972f3fa17e4e2e2c9294b794ae2261",
+      "derived_sha256": "d57f4861d2f737ce6ca1f18727638ff8ccd2a3d765c5148d341309ba98bc66b9"
+    },
+    {
+      "module": "QepActualFiniteMoments",
+      "source_sha256": "a91e96dda32f5983bec7a556f7139b2343f340f144dd28b91808e0be834a1a17",
+      "derived_sha256": "cb28605878f648ea4129a67203e5f36717ce1a9b0629b290e1347f551dc59526"
+    },
+    {
+      "module": "QepActualNonsingular",
+      "source_sha256": "49990bb7b99b1aaf2ca2dfcda9876472f11bf8c094780202366e4ec0e46e0ab8",
+      "derived_sha256": "2c6ad7766d9650b52e7ec95d13dba778a0cdd536c0a8d0fe8d7e0862496d5931"
+    },
+    {
+      "module": "QepActualOverloadEvent",
+      "source_sha256": "d8e95af7dcfbfcda8e744d10ec4a49ce6262aba33d53d216daeb28b624f1b831",
+      "derived_sha256": "65c94937073f1f65db13602471e3f9b8d6f60912a775e4eab034d3b4ff94d303"
+    },
+    {
+      "module": "QepContinuousCoordinates",
+      "source_sha256": "722f4588059ba398ba59b6683a2923072a3972b5acacc30df2758dcbefb6a31f",
+      "derived_sha256": "722f4588059ba398ba59b6683a2923072a3972b5acacc30df2758dcbefb6a31f"
+    },
+    {
+      "module": "QepFiniteMomentAssembly",
+      "source_sha256": "4ccd146b8817648b2b4dcb76fea73d49800a21320969f68d492b8232a16d4e87",
+      "derived_sha256": "4ccd146b8817648b2b4dcb76fea73d49800a21320969f68d492b8232a16d4e87"
+    },
+    {
+      "module": "QepGeneralMatrixDither",
+      "source_sha256": "96f3abe0b2db33d64803fdca19d833eb646a7ff43dd36f1b6a24e405c7353722",
+      "derived_sha256": "a92e0f9a1ec9006845bf8dd05e2eb36dfc71d82e78a25eb0ce451721876e6fe3"
+    },
+    {
+      "module": "QepGeneralMatrixHistory",
+      "source_sha256": "2dd6745cbe9839425baf82c3aad32e872c9d61b9473467cc185a327ff6822502",
+      "derived_sha256": "00b49bcc9ae77349e3d72c28d1b5cf4b24af20ac626dbaad9c3e5d83b777470c"
+    },
+    {
+      "module": "QepGeneralOverloadBridge",
+      "source_sha256": "fab52dbf82bdfe8564df8220617b63380ee0e84be9a841316d237df3a61bebdd",
+      "derived_sha256": "fab52dbf82bdfe8564df8220617b63380ee0e84be9a841316d237df3a61bebdd"
+    },
+    {
+      "module": "QepFeedbackAlgebra",
+      "source_sha256": "20bd42acc18dbd1f38eac88df6994d8ebc08cded4f192e3397fe6031e3a6d308",
+      "derived_sha256": "a1dadedc5481dd27459fbcf03c437044a907a30eb60dcf4e280ea64edda37c39"
+    },
+    {
+      "module": "QepFeedbackEnergy",
+      "source_sha256": "bcadfa55e75da20fb2c2a56eebfb0ec713a69b16463852ed2496cc9ab5bbbe8f",
+      "derived_sha256": "368e8f4313c05918851c2e2e76e409bb2077b8b105c288e100b5e7e8095b116c"
+    },
+    {
+      "module": "QepFeedbackFiniteL2",
+      "source_sha256": "d5053237a068264fcbb89c546c0445a677978204cc9212daf333bb60d4468076",
+      "derived_sha256": "b173de7648422f73b7ea451888c44c46e6649a394d51237e4e1db8aeebc5e876"
+    },
+    {
+      "module": "QepFeedbackInnovation",
+      "source_sha256": "4863e0b76088ac8062ee965810a742e29d6e981c222988e12f5a32e7210ed579",
+      "derived_sha256": "c48db3166d5b42e10ca767ba8592a6534e192f5858ae94a31b3742f53a3b264e"
+    },
+    {
+      "module": "QepFeedbackMoments",
+      "source_sha256": "01fcc769f510589a3124a2bf474ac01a6c508893c586d4878edf6ad4fe93f4e1",
+      "derived_sha256": "625cb829ce3a9123ed6141bcef6928fe4901ed7ca5901d042f439e71457ce9bc"
+    },
+    {
+      "module": "QepFeedbackProcess",
+      "source_sha256": "ccdf0e95bfef9d796a3f1b01d26ebb878d0a23ae02e52bbccd18324e76b346f1",
+      "derived_sha256": "ab258bc9ff55ef44cb9be9e9b47190f3d6abaf385e09d30c5b4c109d5b495863"
+    },
+    {
+      "module": "QepFeedbackAdaptive",
+      "source_sha256": "0f7e59b406f01aaa9cd71eac2d1adc169680eabcd78fbbca9778cf7349dd0884",
+      "derived_sha256": "a9ff79da6626d9f1ea03102f950e8e716b519de50dae3e1f906823548f0cff58"
+    },
+    {
+      "module": "QepFeedbackBias",
+      "source_sha256": "5b17166f4cd230fad61ceb7c18487e214b5a1a62c3a7753afbee31e0fcedaae2",
+      "derived_sha256": "34db06fc393a8a5f53d15e7985a50effaad6d30b548128652e9fbdeb32488dbf"
+    },
+    {
+      "module": "QepFeedbackConditionalMoments",
+      "source_sha256": "04beb2bc9eb7d68e50654457ce7de8ab748155a593e79fa91610a4bd72879404",
+      "derived_sha256": "2670a9354f751b8c885a9087634c0376df6b955f1b78babb10e603882fa9f64f"
+    },
+    {
+      "module": "QepFeedbackControls",
+      "source_sha256": "3c8cbbcd331bb6cd01175c3f1c8b18f67b6b1d230a6e214325647d883a74b13a",
+      "derived_sha256": "7973416c18b379f6c2d978e7299dd0667bd31607c49d7d9383a8739202a3c173"
+    },
+    {
+      "module": "QepFeedbackCovariance",
+      "source_sha256": "409cc59ac18077f62ca281d1227bf34ba0d0f05f73b5aa8408c9d27d61fdd6d9",
+      "derived_sha256": "b22385b888a67851ab30f0a8bce98a428de12dbbae8c14caaf02025a4649dc09"
+    },
+    {
+      "module": "QepFeedbackFiniteEnergy",
+      "source_sha256": "a018b686f3ca88221e097efaac1141a822e0b066cdfa7cffd2f13289c6c5d2b4",
+      "derived_sha256": "3db32e47bde89da7bc1c859beae15309ebf492de1e1b4aef0e2a7301e538dd1e"
+    },
+    {
+      "module": "QepFeedbackLDL",
+      "source_sha256": "2263a505c3566f7f94936efe914fb2863cf75b46f631dc95a9d5d239c36c7dfa",
+      "derived_sha256": "dc2aa420b027b2f3d0198b6fd220a1dc60775c1ea53f30a26942471cb9ce41ac"
+    },
+    {
+      "module": "QepFeedbackLoss",
+      "source_sha256": "4bacbbe1136e5b18ce4de1b22abde882905a88f649af1d5ef72773f7707b8f86",
+      "derived_sha256": "afdce52fcff9ef016974206ffb14260144be92c551bbcc7d8eccaa175435f914"
+    },
+    {
+      "module": "QepFeedbackMatrix",
+      "source_sha256": "a32065cd82eb6eeefbea820279c63b02f6980f638fa09ba2f7a1673864444cf8",
+      "derived_sha256": "58cc64344549a0889d2f6d95fe2ec6c40f3965b3d4b8f217bb347994dbe04a7c"
+    },
+    {
+      "module": "QepFeedbackTeacher",
+      "source_sha256": "08538c8ba90a842c522076bf85e02f88d72a7918af40b3441973e524e6117fc8",
+      "derived_sha256": "7444df5739d6a4396a17b8e31868817a17801fcd2ef0113f6dc0386c492b373a"
+    },
+    {
+      "module": "QepFeedbackTrace",
+      "source_sha256": "f7ad615df918ce573e3720b08b806cc35e6c85fa6d1f986f8cb58331e16881ef",
+      "derived_sha256": "1db8107b1c5b23028c1b54cb9afd3c71069cee8edead6e0a1d4a14ee600b8df2"
+    },
+    {
+      "module": "QepFeedbackUpstream",
+      "source_sha256": "853eb6559b15ccd3a4b9d2c09da41b4ff3ca3058c19678726be3f799d53da3ea",
+      "derived_sha256": "3af2ceabe36d2ef04f746a844ba507949a9eaed78e30b67dce5ef036ef10f736"
+    },
+    {
+      "module": "QepReluControls",
+      "source_sha256": "926e509d3eea97fbb33be802c2372f446d8aed31a4547f2e0623ebe66096c389",
+      "derived_sha256": "926e509d3eea97fbb33be802c2372f446d8aed31a4547f2e0623ebe66096c389"
+    },
+    {
+      "module": "QepReluExpectation",
+      "source_sha256": "61fe3659af4cffe6afaf998adc5f42e8ede4a8dea8e3eafa593d49e1c22b5311",
+      "derived_sha256": "61fe3659af4cffe6afaf998adc5f42e8ede4a8dea8e3eafa593d49e1c22b5311"
+    },
+    {
+      "module": "QepReluIntegrals",
+      "source_sha256": "e268ed3d3128df2b844b11683ca3b8f4bdcd13109a8d11f05f503493ade343ca",
+      "derived_sha256": "e268ed3d3128df2b844b11683ca3b8f4bdcd13109a8d11f05f503493ade343ca"
+    },
+    {
+      "module": "QepReluLegality",
+      "source_sha256": "61e9862270d72490a7834178c1ba30db4c5942fcfe5e4f62a51b8510f2daeb72",
+      "derived_sha256": "61e9862270d72490a7834178c1ba30db4c5942fcfe5e4f62a51b8510f2daeb72"
+    },
+    {
+      "module": "QepReluPaper",
+      "source_sha256": "4722b919efd1751d416e0d94b78d5573fa361465e1a19284ab90d1c034cc57e2",
+      "derived_sha256": "cbdf10e2c6a7ed7492ac442efb4c850902c49df7a1696825bec8dfdf07f4a2d9"
+    },
+    {
+      "module": "QepReluProbability",
+      "source_sha256": "f26b3acd61a1efbff1f5f1fc71cc7e01afc7767f12ba34e146522685a5cbb7c1",
+      "derived_sha256": "f26b3acd61a1efbff1f5f1fc71cc7e01afc7767f12ba34e146522685a5cbb7c1"
+    },
+    {
+      "module": "QepReluProcess",
+      "source_sha256": "c5bcb24cdfb560d3eaa90d45c4ba1eeb1565c84617b895803d2001d2ec994d89",
+      "derived_sha256": "41f5d5451b125d442e2659315372410d6e364831269723056f9341bd78e61df7"
+    },
+    {
+      "module": "QepLinearIdentities",
+      "source_sha256": "3877d32f2d34abc5740cc2c409bf1e48213b8b8649c460c8424537718193efa1",
+      "derived_sha256": "c79af5a43ed562e57a39a34e4ee11de89ed8fe1f7045f440409476528f4f152b"
+    },
+    {
+      "module": "QepX1Checks",
+      "source_sha256": "a28bacf362a8a432cad550c94a1a7b2fe1b892ace3b210b47c848adc0e9233e0",
+      "derived_sha256": "d6bc6301d065837ca0da0f120b901a5baae9442bd354b4e2db0db1ef151fbf34"
+    },
+    {
+      "module": "QepX1Conditional",
+      "source_sha256": "43dd857141332fd47daa4bcb211d2501b6b47369c5e07946637c1b6dcd880cb2",
+      "derived_sha256": "d71d91e52ae44da443a779445f030e15161de1483ec395083358f3c1d4ec8247"
+    },
+    {
+      "module": "QepX1EntryLaw",
+      "source_sha256": "138c0c4e2a05a5f39e0a052d2beffa0b5bdd7256658898ac5415406c5ee89472",
+      "derived_sha256": "310d9efad26440a04c6d34c05c99043dae0f896886e6de9cb4975349682c5ae5"
+    },
+    {
+      "module": "QepX1ExpectationBridge",
+      "source_sha256": "45577356a274c5d65e8a1d7be1da35ec3cc380ead070cb267b5672ff48b5bb8e",
+      "derived_sha256": "40a6b322327f88d9f5ff95641d234c66c61dcbd34fdb0b609e34738b6fa524c3"
+    },
+    {
+      "module": "QepX1FiniteIntegral",
+      "source_sha256": "50da01d2e737c61190b86b5a532b39c877afdd40738c2063686af407e67bac5e",
+      "derived_sha256": "13eb93d33ca126ff2cf325cf39f8017637716c97fb808a693efae0ce7e514fb7"
+    },
+    {
+      "module": "QepX1JointFinite",
+      "source_sha256": "d1edc8447813a9b1d42f66f0c533037edbbce289d74b3e449cdbcd23dfccd50b",
+      "derived_sha256": "c29cbaf29f037d9b5c695f6eb1a5507ae722feadbe31edd8ba70e6d394c0dc24"
+    },
+    {
+      "module": "QepX1NetworkMoments",
+      "source_sha256": "83ad87b0db3142255892f33016f0c889d441f3e345d754b73052648e16ba2f4d",
+      "derived_sha256": "8fcb33c12905bd44638bb42f8c00aa9641ea7cf263316bff01e77cd2965e2009"
+    },
+    {
+      "module": "QepX1OrderBridge",
+      "source_sha256": "8f75380c4d3ec47410eb8539bad9bda1b07e61ab5dd6fbe1fe87544ef128c85a",
+      "derived_sha256": "888e14864c93f3dba5a3f7d0e56f3242e5cb914750761167b0861688e30c4b2f"
+    },
+    {
+      "module": "QepX1ProjectionActual",
+      "source_sha256": "0bed6569a5ac2be44e8faedf6c5635c6adc9b2eeeef5e3594cf30cd33cea3e24",
+      "derived_sha256": "13825a08ce9bf357284dc2c68d455b064d66dbfba390da44e8c9c8b014621a76"
+    },
+    {
+      "module": "QepX1Theorem14",
+      "source_sha256": "52297d2be40ae35c270d178f888b9816a85db83981c0554751f07c085a7efd60",
+      "derived_sha256": "22bd6683364b4bdbbbfb5737559234b599f4d0477dfc540de72b4ec9b8782da3"
+    },
+    {
+      "module": "QepNoncommutative",
+      "source_sha256": "1355d9992961dcfce33df31fe17ae1888b25ed28be5e86a0c79ecf50ddba96ae",
+      "derived_sha256": "bab887c9b00094e4466309b27ef7936989a7a69e1d2ecc0d53e16c0c8387fb21"
+    },
+    {
+      "module": "QepNoncommutativeBridge",
+      "source_sha256": "fe108921021bf984dd572829c971176f391aa3fed13b8238589e09891ec9b489",
+      "derived_sha256": "74462fba6afd87ead2b900072df8314367410212e6eb9c36cf0db9cd2f9e32e2"
+    },
+    {
+      "module": "QepCellInduction",
+      "source_sha256": "4445358c60bc8b049fa378c52e9ed2de88ec685e19f351a14d1205a78c16be7f",
+      "derived_sha256": "0e7a34f3c239aa4a34efb0cf8a57ad89b9b0868e099cabe461c5adcdf7277b58"
+    },
+    {
+      "module": "QepCellProjection",
+      "source_sha256": "da32da13cf2a9cd06e65fe5af8062849e2ed4347d62101aac77e870942906391",
+      "derived_sha256": "fe4eeeffc8a4e93f24bcc19ddd17554417648601c4b3ef22b328ce87a15a6fd3"
+    },
+    {
+      "module": "QepLinearInduction",
+      "source_sha256": "cb872f33490e04e6143d13f1af512702bf629aa3deef3e485b8f865a160e032b",
+      "derived_sha256": "e6f0339b128c0bf34145df4d35287d0cf98b3d51a27e4564ef30bc8ce740a716"
+    },
+    {
+      "module": "QepLinearOrder",
+      "source_sha256": "825545209268e9c6cdb78c589c0091509969f37808ac0e7f0a27731cf76294c5",
+      "derived_sha256": "d227e27d1d5c3fbc4361f826bae89641ca34c51efe0936070311308e7ab947d5"
+    },
+    {
+      "module": "QepMarginCertificate",
+      "source_sha256": "9f63bbf1b3491f944b764be6c4de7efd3245138f986dbca3eda8e83eebf961aa",
+      "derived_sha256": "eb23d1cd07811d81c1ce7337d36fbcf8fde44a6c8ae04420048161966cbd6c24"
+    },
+    {
+      "module": "QepMaskedContraction",
+      "source_sha256": "4a1e347927e3271b238b34b406bc51d4f888db3df2f1cb02df2a283e483f13af",
+      "derived_sha256": "a13c19800d4835e2657926a055862b1a5dbfff92ddb15221491ac9a285066405"
+    },
+    {
+      "module": "QepReluAlgebra",
+      "source_sha256": "53dd018588617299b3fc9b685c50fd5eb4f8fabd101b2a976d491490b8baaae9",
+      "derived_sha256": "f84dc233148432203b64239b78543a9a00b643115f063a28455901dd6b509df5"
+    },
+    {
+      "module": "QepScheduleExample",
+      "source_sha256": "64ffd339102462c4436d8a965e3a7606701de874c239caa993d6390b0f082f76",
+      "derived_sha256": "c17c05f2a7248419a00ddd96139f63a02f4bf8d99ebc43b34517c67196f073de"
+    },
+    {
+      "module": "QepUSquaredExample",
+      "source_sha256": "bf0ce2c0b3a62e997c1e3aae922e58c44a94bae4ceba0775a9d90b38355cb897",
+      "derived_sha256": "d490690f95b3287cdee0815f371251a1b13b0da99ab13a2f2b9d9668013c8f46"
+    },
+    {
+      "module": "QepX1ZeroChecks",
+      "source_sha256": "1be03dd4a04feb4f6e719719daf76965d0f13190d1a4dc6bff3e91b14ae72f69",
+      "derived_sha256": "1be03dd4a04feb4f6e719719daf76965d0f13190d1a4dc6bff3e91b14ae72f69"
+    },
+    {
+      "module": "QepX1ZeroLayer",
+      "source_sha256": "c8bec2b98d1ed1e1118d3b9886e028a90983b8ddf8b117e110090c9f1f43b2aa",
+      "derived_sha256": "820842f5334313e66d903f036db4dfe0774fe98aebebd848d77b70f444d149d4"
+    },
+    {
+      "module": "QepX1ZeroNetwork",
+      "source_sha256": "59c398d94a343a2732a0312bbcb9a2af4558f2b4fb1bfc6f8d13f499ebb1f1fe",
+      "derived_sha256": "0599586d6f098582364b9e72f20450ffa51adcbe96e4b17f80a595c302911cf1"
+    },
+    {
+      "module": "QepX1ZeroNullAtoms",
+      "source_sha256": "6919ea48f67bacd72dad1e37dad4d1c5f0fd70c91df142be7bd32c52de27d3fb",
+      "derived_sha256": "6919ea48f67bacd72dad1e37dad4d1c5f0fd70c91df142be7bd32c52de27d3fb"
+    },
+    {
+      "module": "QepX1ZeroTwoSpaces",
+      "source_sha256": "11451efe95da4143565cd984b6c41be1b8fae2cdc98cb07fa0e840a3a741869a",
+      "derived_sha256": "11451efe95da4143565cd984b6c41be1b8fae2cdc98cb07fa0e840a3a741869a"
+    },
+    {
+      "module": "QepRandomOverloadCross",
+      "source_sha256": "094f7a6775c4a461913f2a81731bb343e5335dce9c8777304e6352dddb21e301",
+      "derived_sha256": "ebeb6e15f0946279ab72a1b1af266993de3984ba22162d29fe79fa68c61e2d96"
+    },
+    {
+      "module": "QepRandomOverloadGap",
+      "source_sha256": "2c23a9482c816b327737e587d944ece1a310828c0e4e974a5d9c489d7d717e79",
+      "derived_sha256": "2c5d8167e6854c66792263fcc569004b6f8200936dba7fc83c484e75e54e55d3"
+    },
+    {
+      "module": "QepCommutator",
+      "source_sha256": "cb992a849acdf97e824a2415b084b2f7e6fc4b9151d689b93f471d8ed06b8a28",
+      "derived_sha256": "31325705a524ec275e677bd9d3d6e99279574dba6615d2def57565b7b7226daa"
+    },
+    {
+      "module": "QepDefectKernel",
+      "source_sha256": "1e6e263b94406016bd5748788b8fd021aebd2fb8b319afe07f4818c62a5ff9b7",
+      "derived_sha256": "1d24f2e5568b7b1f525aee39252d411756633e994bb23fef79bc0b0d43c0084d"
+    }
+  ]
+}

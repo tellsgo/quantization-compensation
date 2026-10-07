@@ -1,0 +1,295 @@
+{
+  "schema_version": 5,
+  "status": "MANUSCRIPT_IDENTITY_AND_SCOPE_REBINDING",
+  "manuscript_version": "6.4",
+  "manuscript_sha256": "2365e301dc85f4b405c95a93a84aa232135a20fadf66ef516eeddbcad4bdd251",
+  "previous_manuscript_version": "6.3",
+  "previous_manuscript_sha256": "9465f428d034ae1b35c00715b44462adec65ce2da8aa59cbe09550f86cb53828",
+  "inherited_v9_build": {
+    "prior_public_archive_sha256": "ee81d6e78e3cd4a40b83ac3c1a84a0310d74bc3368a1f758b2c6b83d2cee9911",
+    "original_validation_sha256": "8ceaba4bc1373020432b9604bbf51c14ea6287a79849d2cf4bd75a96dbfd4142",
+    "source_hash_inventory_sha256": "f7f54b9deb9278643cbc51ce611edfeb8a0cd1ef8711d021a622c9d8398da631",
+    "source_build_record_interval_utc": {
+      "start": "2026-10-04T14:25:07.020717+00:00",
+      "end": "2026-10-04T14:45:27.537202+00:00"
+    },
+    "complete_entry_validation_utc": {
+      "start": "2026-10-04T14:45:48.792419+00:00",
+      "end": "2026-10-04T14:46:42.843015+00:00",
+      "exit": 0
+    },
+    "new_lean_invocations_for_this_update": 0,
+    "scope": "Prior actual source build, axiom audit and controls are inherited through unchanged bytes; not a new build or a new mathematical acceptance."
+  },
+  "current_metadata_integrity": {
+    "scientific_modules": 96,
+    "explicit_theorem_declarations": 969,
+    "positive_control_files": 2,
+    "negative_control_files": 10,
+    "all_lean_source_files_unchanged": 110,
+    "previous_numbered_manuscript_environments": 27,
+    "current_numbered_manuscript_environments": 27,
+    "numbered_claims_and_module_maps_unchanged": true,
+    "new_paper_only_numbers": [
+      9,
+      10,
+      11
+    ],
+    "new_paper_only_unnumbered": [
+      "weighted-projection-notes"
+    ],
+    "build_configuration_and_entry_scripts_unchanged": true,
+    "formalization_scope_increased": false,
+    "numerical_illustrations_formalized": false
+  },
+  "section_navigation": {
+    "numerical_illustrations": 8,
+    "experimental_relation": 9,
+    "formalization": 10,
+    "limitations": 11,
+    "source_split_table": 2,
+    "small_model_diagnostic_table": 3
+  },
+  "revision_review": {
+    "frozen_reviews": [
+      {
+        "manifest_sha256": "929ad6ef16cf0491fd96effc4aa3b147cf268ba8d9b53c1a855e9e522d23c626",
+        "leaf_sha256": "0f5159aae12730e33f86d1d988288facfb0bc092e67b2444f19438d1cae1b17e",
+        "role": "scope"
+      },
+      {
+        "manifest_sha256": "ee8cd0ae7625afe75f1d8c0b5fbcce59e3bbd49ecf9644ac829a17d9902cb8a2",
+        "leaf_sha256": "6b31ec30eba9f4175acdfa46c118454e0709a547a7a45baa990d2686ef239275",
+        "role": "statistics"
+      },
+      {
+        "manifest_sha256": "0c7fbd1a93b9d83bcfa62c2ac3a732dea9abb37a463aacb675dc6d5707e78bfd",
+        "leaf_sha256": "fe4c49a580e79ba9ed843a43ed1af3133cf707317959dedd54ace792a360b52f",
+        "role": "derivation"
+      }
+    ],
+    "previous_22_tracked_items": "CLOSED",
+    "v13_five_actions": "CLOSED",
+    "v15_actions": {
+      "V15-S01": "CLOSED",
+      "V15-M04": "CLOSED",
+      "V15-N01": "CLOSED",
+      "V15-N03": "CLOSED",
+      "V15-N02": "CLOSED"
+    },
+    "remaining_author_items": [
+      {
+        "id": "V16-NAME-01",
+        "status": "OPEN",
+        "severity": "minor",
+        "priority": "required",
+        "owner": "scope_review",
+        "title": "补充 S1 的方案上标 B/Q 未统一成 u/c",
+        "finding": "补充材料的方案名称已改成 corrected/uncorrected，损失下标也已改成 c/u，但权重 Q₂ 和输出 Y 仍使用旧 B/Q 上标。共 10 处（L56、57、70×2、89、91、101×2、105×2）。定义仍足以分辨两方案，数学未变；这不满足本轮“方案上标统一”的明确目标。",
+        "evidence": [
+          {
+            "path": "paper/main.tex",
+            "line": 657,
+            "end_line": 658,
+            "quote": "Q_2^{\\mathrm B}=W_2+E_2,\\qquad\nQ_2^{\\mathrm Q}=W_2+W_2(X_2-Z_2)Z_2^\\top(Z_2Z_2^\\top)^{-1}+E_2 ."
+          },
+          {
+            "path": "paper/main.tex",
+            "line": 671,
+            "end_line": 672,
+            "quote": "\\item[(a)] For $0<t\\le\\frac1{10}$ and every realization of $(H,G)$: all layer-1 pre-activations and all layer-2 pre-activations of both schemes have the strict signs of the teacher's; $Z_2=X_2+tK$; $\\sigma_{\\min}(Z_2)\\ge 1-\\sqrt8\\,t\\ge 1-3t>0$; and $Q_1$, $Q_2^{\\mathrm B}$, $Q_2^{\\mathrm Q}$ are invertible.\n\\item[(b)] For $0<t\\le\\frac1{10}$, $\\ \\mathbb E L_{\\mathrm{QEP}}-\\mathbb E L_{\\mathrm{BASE}}=t^2\\,\\mathbb E(c_t^2-b^2)$, with $\\mathbb E b^2=\\frac23$ and $\\mathbb E c_0^2=\\frac{20}{27}$."
+          },
+          {
+            "path": "paper/tsp/supplement.tex",
+            "line": 56,
+            "end_line": 57,
+            "quote": "Q_2^{\\mathrm B}=W_2+E_2,\\qquad\nQ_2^{\\mathrm Q}=W_2+W_2(X_2-Z_2)Z_2^\\top(Z_2Z_2^\\top)^{-1}+E_2 ."
+          },
+          {
+            "path": "paper/tsp/supplement.tex",
+            "line": 70,
+            "end_line": 71,
+            "quote": "\\item[(a)] For $0<t\\le\\frac1{10}$ and every realization of $(H,G)$: all layer-1 pre-activations and all layer-2 pre-activations of both schemes have the strict signs of the teacher's; $Z_2=X_2+tK$; $\\sigma_{\\min}(Z_2)\\ge 1-\\sqrt8\\,t\\ge 1-3t>0$; and $Q_1$, $Q_2^{\\mathrm B}$, $Q_2^{\\mathrm Q}$ are invertible.\n\\item[(b)] For $0<t\\le\\frac1{10}$, $\\ \\mathbb E L_{\\mathrm{c}}-\\mathbb E L_{\\mathrm{u}}=t^2\\,\\mathbb E(c_t^2-b^2)$, with $\\mathbb E b^2=\\frac23$ and $\\mathbb E c_0^2=\\frac{20}{27}$."
+          },
+          {
+            "path": "paper/tsp/supplement.tex",
+            "line": 105,
+            "end_line": 105,
+            "quote": "Y^{\\mathrm B}_{11}-1=t\\,(b+g_{11}a),\\qquad Y^{\\mathrm Q}_{11}-1=t\\,(c_t+g_{11}a)."
+          }
+        ],
+        "requested_change": "作者在派生规则中把此处局部方案上标 B→u、Q→c，并重新生成两份稿件；或明确保留局部别名并定义映射。不要改 QepSharedE 等真实模块标识，也不要改原方法名称 QEP。",
+        "acceptance": "同一 S1 中权重、输出、损失三种对象的方案标记一致；原代数表达式其余符号不变。",
+        "does_not_affect": "不推翻反例、证明或任何均方比较结论。",
+        "title_zh": "补充 S1 的方案上标 B/Q 未统一成 u/c",
+        "action_zh": "作者在派生规则中把此处局部方案上标 B→u、Q→c，并重新生成两份稿件；或明确保留局部别名并定义映射。不要改 QepSharedE 等真实模块标识，也不要改原方法名称 QEP。",
+        "review_role": "scope"
+      },
+      {
+        "id": "K3-D01",
+        "title": "小噪声证明搬移后仍指“上文的扰动界”",
+        "classification": "new_navigation_drift",
+        "priority": "minor",
+        "derived": {
+          "file": "tsp/supplement.tex",
+          "line": 184,
+          "source_line": "For both schemes $\\fro{\\delta_{l+1}}\\le(\\lVert W_l\\rVert_2+t\\lVert N_l\\rVert_2)\\fro{\\delta_l}+t\\lVert N_l\\rVert_2\\fro{X_l}$ on every realization, since the entrywise ReLU is $1$-Lipschitz in the Frobenius norm and $I-\\alpha P$ is a contraction; hence $\\fro{\\delta_l}=O(t)$ uniformly, and $\\lVert\\delta_l\\rVert_2\\le\\fro{\\delta_l}$. For small $t$ the margins of the teacher give (a), the quantized activations entering layers of positive strength have full row rank with singular values bounded below, and by the perturbation bound above $k_{l,c}\\le\\varepsilon_0+O(t)$. In \\eqref{eq:defV} the source is $O(\\varepsilon_0+t)$, so $V_{l,c}=O(\\varepsilon_0+t)$. In \\eqref{eq:defK} the source is $O((\\varepsilon_0+t)t^2)$ and $\\Psi_{l,c}(V_{l,c})=t^2\\,D_{l,c}\\Psi_l^0(V_{l,c})D_{l,c}=O((\\varepsilon_0+t)t^2)$. The depth is fixed, so $\\mathrm{tr}\\,K_{L+1,c}=O(\\varepsilon_0t^2+t^3)$."
+        },
+        "mother": {
+          "file": "main.tex",
+          "line": 423,
+          "quote": "and by the perturbation bound above",
+          "source_line": "For both schemes $\\fro{\\delta_{l+1}}\\le(\\lVert W_l\\rVert_2+t\\lVert N_l\\rVert_2)\\fro{\\delta_l}+t\\lVert N_l\\rVert_2\\fro{X_l}$ on every realization, since the entrywise ReLU is $1$-Lipschitz in the Frobenius norm and $I-\\alpha P$ is a contraction; hence $\\fro{\\delta_l}=O(t)$ uniformly, and $\\lVert\\delta_l\\rVert_2\\le\\fro{\\delta_l}$. For small $t$ the margins of the teacher give (a), the quantized activations entering layers of positive strength have full row rank with singular values bounded below, and by the perturbation bound above $k_{l,c}\\le\\varepsilon_0+O(t)$. In \\eqref{eq:defV} the source is $O(\\varepsilon_0+t)$, so $V_{l,c}=O(\\varepsilon_0+t)$. In \\eqref{eq:defK} the source is $O((\\varepsilon_0+t)t^2)$ and $\\Psi_{l,c}(V_{l,c})=t^2\\,D_{l,c}\\Psi_l^0(V_{l,c})D_{l,c}=O((\\varepsilon_0+t)t^2)$. The depth is fixed, so $\\mathrm{tr}\\,K_{L+1,c}=O(\\varepsilon_0t^2+t^3)$."
+        },
+        "explanation": "母稿的通用行空间投影扰动界紧邻推论16之前；拆分后该界留在正文第V节、PDF第9页，而证明在补充S4、PDF第3页。补充上文S1还有一个专用于固定反例的投影界，不能让“above”继续指代它。证明内容完整，错误在论证依赖的指路。",
+        "minimal_author_fix": "在派生时将 proof_hr 内该短语改为 “by the projection perturbation bound stated before Corollary~\\ref{cor:hr} in the paper”；或先在母稿为通用扰动界加独立标签，再让两版都用该标签。",
+        "fixed_by_reviewer": false,
+        "status": "OPEN",
+        "severity": "minor",
+        "title_zh": "小噪声证明搬移后仍指“上文的扰动界”",
+        "action_zh": "在派生时将 proof_hr 内该短语改为 “by the projection perturbation bound stated before Corollary~\\ref{cor:hr} in the paper”；或先在母稿为通用扰动界加独立标签，再让两版都用该标签。",
+        "review_role": "derivation",
+        "paths_relative_to": "paper"
+      },
+      {
+        "id": "K3-D02",
+        "title": "形式化表把已搬走的强度实例仍定位在正文VII",
+        "classification": "new_navigation_drift",
+        "priority": "minor",
+        "derived": {
+          "file": "tsp/supplement.tex",
+          "line": 227,
+          "source_line": "\\texttt{QepInteriorAlpha} & The $\\alpha_2$ instance of Section~\\ref{sec:actual}, with its switch at $\\tfrac58$ & 8 \\\\"
+        },
+        "mother": {
+          "file": "main.tex",
+          "line": 601,
+          "quote": "The $\\alpha_2$ instance of Section~\\ref{sec:actual}, with its switch at $\\tfrac58$",
+          "source_line": "\\texttt{QepInteriorAlpha} & The $\\alpha_2$ instance of Section~\\ref{sec:actual}, with its switch at $\\tfrac58$ & 8 \\\\"
+        },
+        "explanation": "母稿第7节确实含该实例；派生版把两段讨论一起移到补充S3。补充S6模块表中的 QepInteriorAlpha 行仍渲染为 Section VII。标签能解析，但解析到的章节已没有实例。",
+        "minimal_author_fix": "只在该模块表行的派生转换中将 Section~\\ref{sec:actual} 改为 Section~\\ref{app:actual}；不要全局改 sec:actual，因为定理22仍在正文VII。",
+        "fixed_by_reviewer": false,
+        "status": "OPEN",
+        "severity": "minor",
+        "title_zh": "形式化表把已搬走的强度实例仍定位在正文VII",
+        "action_zh": "只在该模块表行的派生转换中将 Section~\\ref{sec:actual} 改为 Section~\\ref{app:actual}；不要全局改 sec:actual，因为定理22仍在正文VII。",
+        "review_role": "derivation",
+        "paths_relative_to": "paper"
+      },
+      {
+        "id": "K3-D03",
+        "title": "补充的本地S1仍被称为Appendix",
+        "classification": "new_navigation_wording",
+        "priority": "editorial",
+        "derived": {
+          "file": "tsp/supplement.tex",
+          "line": 245,
+          "source_line": "Not formalized: Theorem~\\ref{thm:meansq} as an abstract conditional-expectation statement (the finite weighted version and the fixed-grid versions above are formalized); Theorem~\\ref{thm:linear} for general error laws, where the integrability argument near singular Gram matrices is a paper proof; Proposition~\\ref{prop:gain}, Corollary~\\ref{cor:sched} and Example~\\ref{ex:iso}, of which the first two were checked by exact enumeration on small networks and all three by the simulations of Section~\\ref{sec:numerics}; the distributional property of subtractive dither on an unbounded grid for a general lattice, which we cite, and Proposition~\\ref{prop:dither} for continuous dither; Theorem~\\ref{thm:relu} as a statement about the actual stochastic network, Corollary~\\ref{cor:hr}, the perturbation bound for projections and the weighted form of Proposition~\\ref{prop:commute}; the expectation in Example~\\ref{ex:noflip}, which is proved on paper in Appendix~\\ref{app:noflip}; the energy statements for rounding with feedback when the parameters depend on earlier randomness; Remark~\\ref{rem:piecewise}; the consequence drawn in Remark~\\ref{rem:local} for an exact discrete minimizer; and the matrix family of Example~\\ref{ex:proj} for general diagonal $D$. Verification consists of standard elaboration and kernel checking with printed axiom dependencies; no independent proof checker was run."
+        },
+        "mother": {
+          "file": "main.tex",
+          "line": 619,
+          "quote": "which is proved on paper in Appendix~\\ref{app:noflip}",
+          "source_line": "Not formalized: Theorem~\\ref{thm:meansq} as an abstract conditional-expectation statement (the finite weighted version and the fixed-grid versions above are formalized); Theorem~\\ref{thm:linear} for general error laws, where the integrability argument near singular Gram matrices is a paper proof; Proposition~\\ref{prop:gain}, Corollary~\\ref{cor:sched} and Example~\\ref{ex:iso}, of which the first two were checked by exact enumeration on small networks and all three by the simulations of Section~\\ref{sec:numerics}; the distributional property of subtractive dither on an unbounded grid for a general lattice, which we cite, and Proposition~\\ref{prop:dither} for continuous dither; Theorem~\\ref{thm:relu} as a statement about the actual stochastic network, Corollary~\\ref{cor:hr}, the perturbation bound for projections and the weighted form of Proposition~\\ref{prop:commute}; the expectation in Example~\\ref{ex:noflip}, which is proved on paper in Appendix~\\ref{app:noflip}; the energy statements for rounding with feedback when the parameters depend on earlier randomness; Remark~\\ref{rem:piecewise}; the consequence drawn in Remark~\\ref{rem:local} for an exact discrete minimizer; and the matrix family of Example~\\ref{ex:proj} for general diagonal $D$. Verification consists of standard elaboration and kernel checking with printed axiom dependencies; no independent proof checker was run."
+        },
+        "explanation": "母稿是Appendix A；派生补充使用普通section并编号S1。S6未形式化清单原样保留了“Appendix S1”，和本地标题体系不一致。目标链接本身可用。",
+        "minimal_author_fix": "在 formal_supp 的本地指引中改为 Section~\\ref{app:noflip}。",
+        "fixed_by_reviewer": false,
+        "status": "OPEN",
+        "severity": "editorial",
+        "title_zh": "补充的本地S1仍被称为Appendix",
+        "action_zh": "在 formal_supp 的本地指引中改为 Section~\\ref{app:noflip}。",
+        "review_role": "derivation",
+        "paths_relative_to": "paper"
+      },
+      {
+        "id": "K3-D04",
+        "title": "有限码本例子的节号是母稿遗留错误",
+        "classification": "inherited_navigation_error",
+        "priority": "minor",
+        "derived": {
+          "file": "tsp/supplement.tex",
+          "line": 238,
+          "source_line": "\\item For the actual continuous dither on a fixed finite grid: the distribution of the saturating quantizer, the two bounded-codebook examples of Section~\\ref{sec:meansq}, and per-layer energy and cross-term statements on a common input with an arbitrary history, under explicit integrability and rank assumptions."
+        },
+        "mother": {
+          "file": "main.tex",
+          "line": 612,
+          "quote": "the two bounded-codebook examples of Section~\\ref{sec:meansq}",
+          "source_line": "\\item For the actual continuous dither on a fixed finite grid: the distribution of the saturating quantizer, the two bounded-codebook examples of Section~\\ref{sec:meansq}, and per-layer energy and cross-term statements on a common input with an arbitrary history, under explicit integrability and rank assumptions."
+        },
+        "explanation": "母稿形式化范围指3.2，派生补充显示III-B；两个有限码本过载例子实际在母稿3.3／派生正文III-C的“Bounded codebooks”。这不是拆分丢失，也不是新的数学缺陷；它是K1/O01指定三处之外的同类遗留引用。",
+        "minimal_author_fix": "先改母稿这一处 sec:meansq 为 sec:dither，再从母稿重生派生文件。",
+        "fixed_by_reviewer": false,
+        "status": "OPEN",
+        "severity": "minor",
+        "title_zh": "有限码本例子的节号是母稿遗留错误",
+        "action_zh": "先改母稿这一处 sec:meansq 为 sec:dither，再从母稿重生派生文件。",
+        "review_role": "derivation",
+        "paths_relative_to": "paper"
+      }
+    ],
+    "statistics_recheck": {
+      "status": "V15-N02 closed by deterministic independent recomputation",
+      "gain_points": 28,
+      "random_teacher_normalized_estimates": 84,
+      "prior_independent_teacher_values_compared": 8400,
+      "new_Monte_Carlo_runs": 0,
+      "scope": "Paired teacher-cluster delta standard errors and rendered data agree. Actual NumPy estimates remain unchanged; B3 Python comparison fields refresh to already retained independent-t results. The unpaired diagnostic is not the same estimand as the old plotted normalized unpaired error bar."
+    },
+    "derivation_review": {
+      "scope": "Exact received mother/TSP/supplement sources; consistency review only",
+      "numbered_statements": 27,
+      "main_statements": 22,
+      "supplement_statements": 5,
+      "line_break_rules_applied": 17,
+      "regenerated_tex_files_byte_identical": 5,
+      "cross_file_PDF_links_with_existing_targets": 77,
+      "mother_main_supplement_pages": [
+        30,
+        14,
+        6
+      ],
+      "source_edits": false,
+      "new_scientific_experiments": false,
+      "submission_ready": false
+    },
+    "whole_manuscript_accepted": false,
+    "scope": "Mother-manuscript closure and TSP derivation review are distinct from Lean verification. Paired-uncertainty checks use existing records; no new experiment, manuscript edit or Lean compilation."
+  },
+  "metadata_predecessor": {
+    "manuscript_version": "6.3",
+    "archive_sha256": "60e5eee521f078eafafba9c7c0bec2e28e26feafabbcd9969358558871d542e1",
+    "rebinding_sha256": "99affb6e775fee1757caad726efc7858c74f5b10d225223681f3ee4cbb706412",
+    "independent_metadata_review_manifest_sha256": "a987b59be125b69022901af652541e5f3cf8174273a646ae00317412911d17ca",
+    "new_lean_build_performed_in_that_update": false
+  },
+  "changes": [
+    "README.md: current manuscript identity, review qualifications and companion distribution advice.",
+    "CLAIMS.json: manuscript version and hash only; exact mapping retained.",
+    "SCOPE.html: current manuscript identity and section/table navigation.",
+    "REBINDING.json: immutable review and version provenance.",
+    "SHA256SUMS: current file hashes."
+  ],
+  "derived_documents": {
+    "tsp_main": {
+      "source": "paper/tsp/main_tsp.tex",
+      "source_sha256": "172e6dc40e003efd57b10fc0c85def1695d25fc1412324fae29dfe357c672212",
+      "pdf": "paper/tsp/main_tsp.pdf",
+      "pdf_sha256": "9d90dfb2cc351546be9d651788c9823e200da48285783dd4d7376406aa33c467",
+      "pages": 14,
+      "formalization_binding": "Mother manuscript only; no separate derived claim-map assertion",
+      "submission_ready": false
+    },
+    "tsp_supplement": {
+      "source": "paper/tsp/supplement.tex",
+      "source_sha256": "c0265b15685ace1be79ab786bbeedb61123bddf95c5657a99136c6faeef8ee17",
+      "pdf": "paper/tsp/supplement.pdf",
+      "pdf_sha256": "39c4540f9b75a2a2f5523bbe34c1ad10b0c59b1ba45323ae1f58c23ccb56e395",
+      "pages": 6,
+      "formalization_binding": "Mother manuscript only; no separate derived claim-map assertion",
+      "submission_ready": false
+    }
+  }
+}

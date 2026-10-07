@@ -1,0 +1,2880 @@
+{
+  "manuscript_version": "6.4",
+  "manuscript_sha256": "2365e301dc85f4b405c95a93a84aa232135a20fadf66ef516eeddbcad4bdd251",
+  "module_count": 96,
+  "explicit_theorem_declarations": 969,
+  "count_note": "Includes auxiliary lemmas, not independent scientific results. Definitions, generated equations and control examples are excluded. Each explicit theorem is centrally axiom audited.",
+  "numbered_claims": [
+    {
+      "manuscript_number": 1,
+      "title": "Residual identity",
+      "modules": [
+        "QepCorrected",
+        "QepGram"
+      ],
+      "model": "finite-dimensional algebra with actual Gram bridge",
+      "limits": "Projection identities; the inverse bridge starts from full row independence.",
+      "manuscript_label": "prop:identity",
+      "manuscript_section": "3.1"
+    },
+    {
+      "manuscript_number": 2,
+      "title": "Fixed-error improvement and optimizer",
+      "modules": [
+        "QepCorollary",
+        "QepGram"
+      ],
+      "model": "finite-dimensional fixed-error algebra",
+      "limits": "Input and additive error held fixed when varying strength.",
+      "manuscript_label": "cor:iff",
+      "manuscript_section": "3.1"
+    },
+    {
+      "manuscript_number": 3,
+      "title": "Optimizer scope",
+      "modules": [],
+      "model": "explanatory remark",
+      "limits": "No separate formal optimizer-for-rerounding claim.",
+      "manuscript_label": "rem:alphastar",
+      "manuscript_section": "3.1"
+    },
+    {
+      "manuscript_number": 4,
+      "title": "Per-layer mean-square statement",
+      "modules": [
+        "QepCorrected",
+        "QepRandomOverloadGap",
+        "QepRandomOverloadCross"
+      ],
+      "model": "finite weighted abstraction; actual continuous finite-grid variants",
+      "limits": "General arbitrary-error conditional-expectation theorem is not formalized. Actual continuous fixed-grid random-history energy/gap/cross bounds have explicit integrability, L2 and rank premises.",
+      "manuscript_label": "thm:meansq",
+      "manuscript_section": "3.2"
+    },
+    {
+      "manuscript_number": 5,
+      "title": "Marginal zero mean is insufficient",
+      "modules": [],
+      "model": "paper statement",
+      "limits": "No dedicated current named theorem.",
+      "manuscript_label": null,
+      "manuscript_section": "3.2"
+    },
+    {
+      "manuscript_number": 6,
+      "title": "Noise energy may depend on strength",
+      "modules": [],
+      "model": "paper statement",
+      "limits": "No general variable-noise energy invariant claimed.",
+      "manuscript_label": "rem:energy",
+      "manuscript_section": "3.2"
+    },
+    {
+      "manuscript_number": 7,
+      "title": "Two-layer dither",
+      "modules": [
+        "QepDitherFinite",
+        "QepDitherDepth"
+      ],
+      "model": "finite-support laws",
+      "limits": "No general continuous-law depth theorem; primitive continuous single-layer quantizer laws are separate.",
+      "manuscript_label": "prop:dither",
+      "manuscript_section": "3.3"
+    },
+    {
+      "manuscript_number": 8,
+      "title": "Linear network comparison",
+      "modules": [
+        "QepLinearIdentities",
+        "QepLinearOrder",
+        "QepLinearInduction",
+        "QepX1Checks",
+        "QepX1Conditional",
+        "QepX1EntryLaw",
+        "QepX1ExpectationBridge",
+        "QepX1FiniteIntegral",
+        "QepX1JointFinite",
+        "QepX1NetworkMoments",
+        "QepX1OrderBridge",
+        "QepX1ProjectionActual",
+        "QepX1Theorem14",
+        "QepX1ZeroChecks",
+        "QepX1ZeroLayer",
+        "QepX1ZeroNetwork",
+        "QepX1ZeroNullAtoms",
+        "QepX1ZeroTwoSpaces"
+      ],
+      "model": "finite-support actual matrices and expectations",
+      "limits": "Gram invertibility is required only at positive-strength, positive-mass QEP atoms. Zero-strength layers skip correction and zero-mass atoms may be singular. Separate probability spaces are covered. General continuous-law L2/truncation remains paper-level.",
+      "manuscript_label": "thm:linear",
+      "manuscript_section": "4"
+    },
+    {
+      "manuscript_number": 9,
+      "title": "Exact gain",
+      "modules": [],
+      "model": "paper-level only; not formalized",
+      "limits": "Paper-level gain recurrences, lower bound and sufficient strictness condition; manuscript-domain qualifications are recorded in the revision review. No Lean theorem is claimed.",
+      "formalization_status": "NOT_FORMALIZED",
+      "manuscript_label": "prop:gain",
+      "manuscript_section": "4"
+    },
+    {
+      "manuscript_number": 10,
+      "title": "Schedules with a common row space",
+      "modules": [],
+      "model": "paper-level only; not formalized",
+      "limits": "Paper-level comparison inside the stated common-row-space and admissible-schedule class; full-strength optimality is subject to those hypotheses. No Lean theorem is claimed.",
+      "formalization_status": "NOT_FORMALIZED",
+      "manuscript_label": "cor:sched",
+      "manuscript_section": "4"
+    },
+    {
+      "manuscript_number": 11,
+      "title": "A closed form for the gain",
+      "modules": [],
+      "model": "paper-level only; not formalized",
+      "limits": "Paper-level isotropic model and closed forms; input rank, positive normalization, noise and conditional moment assumptions belong to the paper review. No Lean theorem is claimed.",
+      "formalization_status": "NOT_FORMALIZED",
+      "manuscript_label": "ex:iso",
+      "manuscript_section": "4"
+    },
+    {
+      "manuscript_number": 12,
+      "title": "ReLU continuous counterexample",
+      "modules": [
+        "QepReluControls",
+        "QepReluExpectation",
+        "QepReluIntegrals",
+        "QepReluLegality",
+        "QepReluPaper",
+        "QepReluProbability",
+        "QepReluProcess",
+        "QepReluAlgebra"
+      ],
+      "model": "actual scalar continuous uniform dither",
+      "limits": "Exact output integrals and positive-output probabilities; no general nonlinear comparison.",
+      "manuscript_label": "ex:relu",
+      "manuscript_section": "5"
+    },
+    {
+      "manuscript_number": 13,
+      "title": "Masked contraction",
+      "modules": [
+        "QepMaskedContraction"
+      ],
+      "model": "projection algebra",
+      "limits": "Uniform contraction characterization, not a stochastic network theorem.",
+      "manuscript_label": "prop:commute",
+      "manuscript_section": "5",
+      "additional_unformalized_material": "The weighted positive-semidefinite characterization and Frobenius commutator notes added after this proposition are paper-only; the listed module covers the original unweighted statement."
+    },
+    {
+      "manuscript_number": 14,
+      "title": "Stable-pattern noncommuting example",
+      "modules": [],
+      "model": "paper proof",
+      "limits": "Expectation and quantitative interval argument in Appendix A are not in Lean.",
+      "manuscript_label": "ex:noflip",
+      "manuscript_section": "5"
+    },
+    {
+      "manuscript_number": 15,
+      "title": "ReLU commutator-defect comparison",
+      "modules": [
+        "QepCellProjection",
+        "QepCellInduction",
+        "QepCommutator",
+        "QepDefectKernel"
+      ],
+      "model": "algebraic components only",
+      "limits": "Old commuting specialization; new BilBound-based inequalities and abstract positive-map defect induction. No bridge identifying BilBound with Mathlib operator norm, no derivation of assumed C/G recurrences from actual random network, no expectation theorem.",
+      "manuscript_label": "thm:relu",
+      "manuscript_section": "5"
+    },
+    {
+      "manuscript_number": 16,
+      "title": "Small-error corollary",
+      "modules": [],
+      "model": "paper-level only",
+      "limits": "No formal projection perturbation or asymptotic theorem.",
+      "manuscript_label": "cor:hr",
+      "manuscript_section": "5"
+    },
+    {
+      "manuscript_number": 17,
+      "title": "Shared-error counterexample",
+      "modules": [
+        "QepSharedE",
+        "QepSharedEExtended"
+      ],
+      "model": "actual prescribed-error scalar recursions",
+      "limits": "Fixed perturbations; not asserted to be generated by nearest rounding.",
+      "manuscript_label": "thm:counter",
+      "manuscript_section": "6"
+    },
+    {
+      "manuscript_number": 18,
+      "title": "Sign matters",
+      "modules": [
+        "QepSharedE"
+      ],
+      "model": "actual prescribed-error scalar recursions",
+      "limits": "Specific sign patterns.",
+      "manuscript_label": null,
+      "manuscript_section": "6"
+    },
+    {
+      "manuscript_number": 19,
+      "title": "Strength monotonicity counterexample",
+      "modules": [
+        "QepAlpha"
+      ],
+      "model": "actual prescribed-error scalar recursions",
+      "limits": "Actual error and its distinct triangle bound are separated.",
+      "manuscript_label": "thm:alpha",
+      "manuscript_section": "6"
+    },
+    {
+      "manuscript_number": 20,
+      "title": "Piecewise constant actual quantizer",
+      "modules": [],
+      "model": "paper-level only",
+      "limits": "The concrete strength-switch family below is formalized; general piecewise statement is not.",
+      "manuscript_label": "rem:piecewise",
+      "manuscript_section": "7"
+    },
+    {
+      "manuscript_number": 21,
+      "title": "Exact local minimization",
+      "modules": [
+        "QepGram"
+      ],
+      "model": "actual Gram least-squares decomposition",
+      "limits": "General exact-discrete-minimizer consequence not a separate formal optimization theorem; entrywise rounding is not exact correlated-metric minimization.",
+      "manuscript_label": "rem:local",
+      "manuscript_section": "7"
+    },
+    {
+      "manuscript_number": 22,
+      "title": "Actual finite-codebook family",
+      "modules": [
+        "QepInterior",
+        "QepInteriorAlpha"
+      ],
+      "model": "actual deterministic four-codeword minimizers",
+      "limits": "Includes strict open cell, output oracle, threshold/tie and both examples.",
+      "manuscript_label": "thm:actual",
+      "manuscript_section": "7"
+    },
+    {
+      "manuscript_number": 23,
+      "title": "Appendix A quantitative counterexample",
+      "modules": [],
+      "model": "paper-level only",
+      "limits": "Not promoted from an algebraic special case or finite sampling.",
+      "manuscript_label": "thm:relu-counterexample",
+      "manuscript_section": "Appendix A"
+    },
+    {
+      "manuscript_number": 24,
+      "title": "Appendix A qualification remark",
+      "modules": [],
+      "model": "paper-level only",
+      "limits": "No separate formal claim.",
+      "manuscript_label": null,
+      "manuscript_section": "Appendix A"
+    },
+    {
+      "manuscript_number": 25,
+      "title": "Matrix counterexample families",
+      "modules": [
+        "QepProjectionExample",
+        "QepMatrixFamily",
+        "QepNoncommutative",
+        "QepNoncommutativeBridge"
+      ],
+      "model": "actual prescribed-error matrix recursions",
+      "limits": "Uniform-parameter family, concrete 2x3 witness and noncommutative family with induced norm bridge; not arbitrary diagonal multi-parameter D.",
+      "manuscript_label": "ex:proj",
+      "manuscript_section": "Appendix B"
+    },
+    {
+      "manuscript_number": 26,
+      "title": "Trajectory substitution",
+      "modules": [
+        "QepThreeLayerExamples"
+      ],
+      "model": "actual deterministic scalar recursions",
+      "limits": "Own-trajectory and common-input residuals are distinct.",
+      "manuscript_label": "ex:traj",
+      "manuscript_section": "Appendix B"
+    },
+    {
+      "manuscript_number": 27,
+      "title": "Composite finite-perturbation failure",
+      "modules": [
+        "QepThreeLayerExamples"
+      ],
+      "model": "actual deterministic scalar recursions",
+      "limits": "Legal stated ray/domain only. Corrected paper bound is not unconditional finite domination.",
+      "manuscript_label": "ex:composite",
+      "manuscript_section": "Appendix B"
+    }
+  ],
+  "unnumbered_extensions": [
+    {
+      "id": "finite-grid-continuous",
+      "modules": [
+        "QepActualFiniteMoments",
+        "QepActualNonsingular",
+        "QepActualOverloadEvent",
+        "QepContinuousCoordinates",
+        "QepFiniteDitherBridge",
+        "QepFiniteDitherHistory",
+        "QepFiniteDitherLaw",
+        "QepFiniteDitherMatrix",
+        "QepFiniteMomentAssembly",
+        "QepFiniteOverloadExamples",
+        "QepGeneralMatrixDither",
+        "QepGeneralMatrixHistory",
+        "QepGeneralOverloadBridge",
+        "QepOverloadGap",
+        "QepRandomOverloadCross",
+        "QepRandomOverloadGap"
+      ],
+      "scope": "Actual nearest finite affine grid, continuous primitive uniform law, fixed grid/scales; arbitrary SFinite measurable history with explicit joint integrability/L2. Actual Gram-derived projected gaps and noise-cross to bias-cross/event bounds. Fixed-alpha a.e. inverse qualification for the two concrete matrices. No dynamic range refitting, no whole-network harmlessness. Gap and gap-bound strengths are fixed. Energy and cross identities may use measurable upstream-history strength, but cannot observe the current fresh dither."
+    },
+    {
+      "id": "sequential-feedback",
+      "modules": [
+        "QepFeedbackAdaptive",
+        "QepFeedbackAlgebra",
+        "QepFeedbackBias",
+        "QepFeedbackConditionalMoments",
+        "QepFeedbackControls",
+        "QepFeedbackCovariance",
+        "QepFeedbackEnergy",
+        "QepFeedbackFiniteEnergy",
+        "QepFeedbackFiniteL2",
+        "QepFeedbackInnovation",
+        "QepFeedbackLDL",
+        "QepFeedbackLoss",
+        "QepFeedbackMatrix",
+        "QepFeedbackMoments",
+        "QepFeedbackProcess",
+        "QepFeedbackTeacher",
+        "QepFeedbackTrace",
+        "QepFeedbackUpstream"
+      ],
+      "scope": "Actual continuous causal quantizer, fixed-coefficient triangular inverse, covariance and Frobenius energy, matched-Gram finite overload. Measurable random-upstream parameters preserve joint standardized innovation law; random physical-scale noise is not independent of upstream. No arbitrary random-parameter global energy/tower wrapper, no software GPTQ equivalence, no automatic LDL construction, no general block lattice. The teacher-loss identity is a single-row result with an explicit projection inner-product premise; it is not a fully assembled general multirow/random-history QEP loss theorem."
+    },
+    {
+      "id": "scalar-local-strength",
+      "modules": [
+        "QepV1Checks",
+        "QepV1DomainBound",
+        "QepV1Envelope",
+        "QepV1Existence",
+        "QepV1Matrix",
+        "QepV1Remainder",
+        "QepV1Scalar"
+      ],
+      "scope": "Deterministic pathwise scalar/matrix composite bounds, envelopes and legal neighborhoods for continuous perturbation paths of fixed finite depth. The existence radius may depend on the fixed strength and path; second-order constants are uniform only under a shared envelope. These are supporting extensions, not finite-probability moment theorems or newly numbered manuscript claims."
+    },
+    {
+      "id": "row-space-predecessor",
+      "modules": [
+        "QepV3Checks",
+        "QepV3Conditional",
+        "QepV3Expectation",
+        "QepV3Network",
+        "QepV3Order",
+        "QepV3RowSpace"
+      ],
+      "scope": "Earlier finite-support row-space/conditional-moment variants, actual row-space or equal-width inverse conditions retained. The stronger current linear result is mapped to its separate X1 modules."
+    },
+    {
+      "id": "linear-boundaries",
+      "modules": [
+        "QepScheduleExample",
+        "QepUSquaredExample"
+      ],
+      "scope": "Specific finite sign-law schedule comparison and U-squared counterexample. Not a continuous uniform-dither counterexample for U. Previously supplied continuous-dither counterexamples to mean-square ordering of the two schemes’ own-trajectory U bounds remain paper-only and are not Lean claims in this package."
+    },
+    {
+      "id": "margin-certificate",
+      "modules": [
+        "QepMarginCertificate"
+      ],
+      "scope": "Deterministic stability/margin algebra with explicit error bounds. Not a probabilistic certificate for trained networks."
+    },
+    {
+      "id": "weighted-projection-notes",
+      "modules": [],
+      "scope": "New notes after Proposition 13 in Section 5: weighted positive-semidefinite contraction characterization and Frobenius commutator identities. Paper-level only; not formalized.",
+      "formalization_status": "NOT_FORMALIZED"
+    }
+  ],
+  "modules": [
+    {
+      "module": "QepSharedE",
+      "source_sha256": "108d0af7cd0a189cd987000e03a8b6065955cbdd504489449cbc41644baa5a6f",
+      "derived_sha256": "f1f4547f1c6c040f7831e882c9c3348b33ae40c65eb7731e52ed1bb940cdcb83",
+      "imports": [
+        "Mathlib.Basic.Real.Basic",
+        "Mathlib.Tactic.Linarith",
+        "Mathlib.Tactic.NormNum",
+        "Mathlib.Tactic.FieldSimp",
+        "Mathlib.Tactic.Positivity",
+        "Mathlib.Tactic.Ring"
+      ],
+      "theorem_declarations": 15,
+      "declarations": [
+        "QepSharedE.identity_lipschitz",
+        "QepSharedE.recover_shared_errors",
+        "QepSharedE.corrected_unit",
+        "QepSharedE.base_closed",
+        "QepSharedE.qep_closed",
+        "QepSharedE.exact_residuals",
+        "QepSharedE.exact_errors",
+        "QepSharedE.legal",
+        "QepSharedE.core",
+        "QepSharedE.first_order",
+        "QepSharedE.arbitrarily_small",
+        "QepSharedE.same_input_cancellation",
+        "QepSharedE.control_closed",
+        "QepSharedE.control_exact",
+        "QepSharedE.control_reverse"
+      ],
+      "manuscript_numbers": [
+        17,
+        18
+      ],
+      "extensions": []
+    },
+    {
+      "module": "QepAlpha",
+      "source_sha256": "bd8dd33e2dc2800042efccfd3eec5d7f30ecc086399ba5d40ce63db8619c5420",
+      "derived_sha256": "e2d8441d87ae5755fde8b55aae30d14587f92722dee15094b4c5437ca55b47de",
+      "imports": [
+        "QepSharedE"
+      ],
+      "theorem_declarations": 8,
+      "declarations": [
+        "QepAlpha.output_closed",
+        "QepAlpha.positive_input_gram",
+        "QepAlpha.error_closed",
+        "QepAlpha.terminal_strict_increase",
+        "QepAlpha.squared_terminal_strict_increase",
+        "QepAlpha.not_terminal_antitone",
+        "QepAlpha.bound_decreases",
+        "QepAlpha.bound_still_valid"
+      ],
+      "manuscript_numbers": [
+        19
+      ],
+      "extensions": []
+    },
+    {
+      "module": "QepCorrected",
+      "source_sha256": "c41c18296b27b60de3df6c0ed6888bb4d6d8fa50ae26e26b9a74552c59fc3ce2",
+      "derived_sha256": "15560166a5387406a5e56a436d245a4507c20433509296df6e9bfd039c32c887",
+      "imports": [
+        "Mathlib"
+      ],
+      "theorem_declarations": 10,
+      "declarations": [
+        "QepCorrected.inner_self",
+        "QepCorrected.fSq_nonneg",
+        "QepCorrected.inner_right_mul",
+        "QepCorrected.projection_inner",
+        "QepCorrected.general_gap",
+        "QepCorrected.projected_gap",
+        "QepCorrected.improvement_iff",
+        "QepCorrected.pair_gap",
+        "QepCorrected.finite_mean_gap",
+        "QepCorrected.finite_mean_square_repair"
+      ],
+      "manuscript_numbers": [
+        1,
+        4
+      ],
+      "extensions": []
+    },
+    {
+      "module": "QepInterior",
+      "source_sha256": "c0de8fb3f7f822ee85dabe162ea659b7f443b8b780a982256038987c580d1321",
+      "derived_sha256": "10bac46525dd459c19d5fd5aaa197c5df4769951bb36292b8cbcc5a56c3404c8",
+      "imports": [
+        "Mathlib.Analysis.Real.Sqrt",
+        "Mathlib.Tactic.Linarith",
+        "Mathlib.Tactic.NormNum",
+        "Mathlib.Tactic.FinCases",
+        "Mathlib.Tactic.FieldSimp",
+        "Mathlib.Tactic.Positivity"
+      ],
+      "theorem_declarations": 43,
+      "declarations": [
+        "QepInterior.pick_min",
+        "QepInterior.pick_tie",
+        "QepInterior.pick_of_strict",
+        "QepInterior.nearest_one",
+        "QepInterior.nearest_two",
+        "QepInterior.nearest_three",
+        "QepInterior.loss_identity",
+        "QepInterior.correction_order",
+        "QepInterior.qep_nearest",
+        "QepInterior.step_input",
+        "QepInterior.step_pos",
+        "QepInterior.base_strict",
+        "QepInterior.corrected_strict",
+        "QepInterior.cell_choices",
+        "QepInterior.cell_messages",
+        "QepInterior.cell_teacher",
+        "QepInterior.cell_outputs",
+        "QepInterior.cell_inputs",
+        "QepInterior.cell_targets",
+        "QepInterior.cell_unique_actual",
+        "QepInterior.decode_natural",
+        "QepInterior.nearest_nat_two",
+        "QepInterior.nearest_nat_three",
+        "QepInterior.cell_errors",
+        "QepInterior.cell_global_base",
+        "QepInterior.cell_global_qep",
+        "QepInterior.box_products",
+        "QepInterior.box_cell",
+        "QepInterior.box_worse",
+        "QepInterior.box_oracle",
+        "QepInterior.cell_legal",
+        "QepInterior.core",
+        "QepInterior.witness",
+        "QepInterior.witness_errors",
+        "QepInterior.witness_errors_not_shared",
+        "QepInterior.boundary_cell",
+        "QepInterior.cell_sharp",
+        "QepInterior.boundary_sharp",
+        "QepInterior.boundary_oracles",
+        "QepInterior.benefit_condition",
+        "QepInterior.benefit_prediction",
+        "QepInterior.control_equal",
+        "QepInterior.cell_base_fp_unique"
+      ],
+      "manuscript_numbers": [
+        22
+      ],
+      "extensions": []
+    },
+    {
+      "module": "QepCorollary",
+      "source_sha256": "d002ec7ec9faad6d2fc7cec65ee4021f479e98dba76bf8b3c2a31906c189829c",
+      "derived_sha256": "dcd355a15a98da4f9e530e45c243c863983c903a221711c8e2d59be0814b6b8a",
+      "imports": [
+        "QepCorrected"
+      ],
+      "theorem_declarations": 12,
+      "declarations": [
+        "QepCorollary.zero_direction_of_zero_energy",
+        "QepCorollary.cross_zero_of_energy_zero",
+        "QepCorollary.nonincreasing_iff_cross_nonpos",
+        "QepCorollary.nonincreasing_iff",
+        "QepCorollary.all_strengths_improve_iff",
+        "QepCorollary.clipped_mem",
+        "QepCorollary.scalar_clipped_gap_nonpos",
+        "QepCorollary.optimal_strength_minimizes",
+        "QepCorollary.frobenius_order_iff",
+        "QepCorollary.frobenius_nonincreasing_iff",
+        "QepCorollary.frobenius_all_strengths_improve_iff",
+        "QepCorollary.frobenius_optimal_strength_minimizes"
+      ],
+      "manuscript_numbers": [
+        2
+      ],
+      "extensions": []
+    },
+    {
+      "module": "QepProjectionExample",
+      "source_sha256": "be20b8ba0868e4101486fdb6c1fe98f44e341c327d306551bcd6b6efa5b809bc",
+      "derived_sha256": "cad85114fefec49c14721bf3dc8e6975c8c18206b3f795384530ef00beb635c3",
+      "imports": [
+        "QepCorrected"
+      ],
+      "theorem_declarations": 7,
+      "declarations": [
+        "QepProjectionExample.gram_is_one",
+        "QepProjectionExample.projector_explicit",
+        "QepProjectionExample.projector_not_identity",
+        "QepProjectionExample.actual_target",
+        "QepProjectionExample.actual_residuals",
+        "QepProjectionExample.squared_residuals",
+        "QepProjectionExample.core"
+      ],
+      "manuscript_numbers": [
+        25
+      ],
+      "extensions": []
+    },
+    {
+      "module": "QepInteriorAlpha",
+      "source_sha256": "854b37c247efcb7750f721a414cc4122b1bae88dcdbcc88462a8c75a95d8ba16",
+      "derived_sha256": "03058ed24fd4ae316bd839cbb1e6cb41ff0f9be9e583ea3693e29b73993d4df1",
+      "imports": [
+        "QepInterior",
+        "Mathlib.Tactic.SplitIfs"
+      ],
+      "theorem_declarations": 8,
+      "declarations": [
+        "QepInterior.alpha_half_message",
+        "QepInterior.alpha_three_quarters_message",
+        "QepInterior.alpha_numeric_errors",
+        "QepInterior.alpha_second_target",
+        "QepInterior.alpha_switch_order",
+        "QepInterior.alpha_second_pick",
+        "QepInterior.alpha_messages_piecewise",
+        "QepInterior.alpha_switch_tie"
+      ],
+      "manuscript_numbers": [
+        22
+      ],
+      "extensions": []
+    },
+    {
+      "module": "QepSharedEExtended",
+      "source_sha256": "e9e5156f056d8c370a21a04b57c905baa7aae79224b22f42dcd1fdc2eb2dad19",
+      "derived_sha256": "cb1cf2aecc2df96fc42039524165e46756bc42023f745911c55e3997c212fcdd",
+      "imports": [
+        "QepSharedE"
+      ],
+      "theorem_declarations": 6,
+      "declarations": [
+        "QepSharedEExtended.nonzero_qep_weight_iff",
+        "QepSharedEExtended.invertible_legal",
+        "QepSharedEExtended.no_upper_bound_core",
+        "QepSharedEExtended.epsilon_one_not_legal",
+        "QepSharedEExtended.singular_qep_not_legal",
+        "QepSharedEExtended.exact_legal_domain"
+      ],
+      "manuscript_numbers": [
+        17
+      ],
+      "extensions": []
+    },
+    {
+      "module": "QepDitherFinite",
+      "source_sha256": "3c55ee94a2040d7b82b3961e25555edb71d80a5b2e726e434c8192f0cabae9e3",
+      "derived_sha256": "ba15e2e92a108bb143b68f1554f9f4e7363c2ee46886262a427ca6040ed303e2",
+      "imports": [
+        "QepSharedE",
+        "Mathlib"
+      ],
+      "theorem_declarations": 6,
+      "declarations": [
+        "QepDitherFinite.trace_displacement",
+        "QepDitherFinite.sum_affine_square",
+        "QepDitherFinite.product_mean_square",
+        "QepDitherFinite.actual_network_mean_square",
+        "QepDitherFinite.actual_terminal_mean_square",
+        "QepDitherFinite.mean_square_nonincreasing"
+      ],
+      "manuscript_numbers": [
+        7
+      ],
+      "extensions": []
+    },
+    {
+      "module": "QepGram",
+      "source_sha256": "cd362a5e1c693d4cbb50b60023c9fdcdfaba5e660699e7200ea9c1d09c345b49",
+      "derived_sha256": "a687a55987dc39fcb938ec8cacec5707abcbf704c6db53473c4fb943ea88f718",
+      "imports": [
+        "QepCorrected"
+      ],
+      "theorem_declarations": 13,
+      "declarations": [
+        "QepGram.gram_isUnit_det_of_full_row_rank",
+        "QepGram.gramProjection_symmetric",
+        "QepGram.input_times_projection",
+        "QepGram.gramProjection_idempotent",
+        "QepGram.error_in_projection",
+        "QepGram.correction_times_input",
+        "QepGram.actual_residual_eq",
+        "QepGram.qep_improvement_iff",
+        "QepGram.fSq_sub",
+        "QepGram.orthogonal_split",
+        "QepGram.orthogonal_decomposition",
+        "QepGram.qep_improvement_iff_of_full_row_rank",
+        "QepGram.orthogonal_decomposition_of_full_row_rank"
+      ],
+      "manuscript_numbers": [
+        1,
+        2,
+        21
+      ],
+      "extensions": []
+    },
+    {
+      "module": "QepMatrixFamily",
+      "source_sha256": "4cc4b502ee4a1b5e0e545246b8c6b94609f1139c1213e0df271d59264425ff30",
+      "derived_sha256": "248b42bc21394c811fd175d3daec9a94ae9189da72930baa973090f369470228",
+      "imports": [
+        "Mathlib"
+      ],
+      "theorem_declarations": 25,
+      "declarations": [
+        "QepMatrixFamily.fSq_nonneg",
+        "QepMatrixFamily.fSq_smul",
+        "QepMatrixFamily.fro_smul",
+        "QepMatrixFamily.gram_z",
+        "QepMatrixFamily.gram_z_inverse",
+        "QepMatrixFamily.gram_z_unit",
+        "QepMatrixFamily.target2_closed",
+        "QepMatrixFamily.residuals_closed",
+        "QepMatrixFamily.exact_bounds",
+        "QepMatrixFamily.exact_gap",
+        "QepMatrixFamily.strict_order",
+        "QepMatrixFamily.first_order_gap",
+        "QepMatrixFamily.X23_gram_inverse_certificate",
+        "QepMatrixFamily.X23_gram_unit",
+        "QepMatrixFamily.X23_projector",
+        "QepMatrixFamily.X23_projector_nonidentity",
+        "QepMatrixFamily.X23_norm",
+        "QepMatrixFamily.X23_core",
+        "QepMatrixFamily.first_target_is_teacher",
+        "QepMatrixFamily.identity_lipschitz",
+        "QepMatrixFamily.scalar_identity_unit",
+        "QepMatrixFamily.legal_weights",
+        "QepMatrixFamily.projector_z",
+        "QepMatrixFamily.first_layer_output",
+        "QepMatrixFamily.X23_legal_counterexample"
+      ],
+      "manuscript_numbers": [
+        25
+      ],
+      "extensions": []
+    },
+    {
+      "module": "QepDitherDepth",
+      "source_sha256": "b5f287559686e1be3bd8e616516cba34e0c12b6ea9e0b0ba24e6699616ddca99",
+      "derived_sha256": "037298b32214a0319c50a7706e95210cdd9e3a8d11d173983785167ab45111fc",
+      "imports": [
+        "QepDitherFinite",
+        "Mathlib"
+      ],
+      "theorem_declarations": 21,
+      "declarations": [
+        "QepDitherDepth.scalar_step",
+        "QepDitherDepth.past_student",
+        "QepDitherDepth.past_error",
+        "QepDitherDepth.past_mul",
+        "QepDitherDepth.past_sq",
+        "QepDitherDepth.expect_support_congr",
+        "QepDitherDepth.expect_add",
+        "QepDitherDepth.expect_cmul",
+        "QepDitherDepth.expect_const",
+        "QepDitherDepth.actual_error_step",
+        "QepDitherDepth.actual_mean_zero",
+        "QepDitherDepth.actual_mse_step",
+        "QepDitherDepth.actual_mse_eq_moment",
+        "QepDitherDepth.moment_nonnegative",
+        "QepDitherDepth.moment_antitone",
+        "QepDitherDepth.actual_mse_antitone",
+        "QepDitherDepth.student_two_eq_existing",
+        "QepDitherDepth.two_layer_equal_variance",
+        "QepDitherDepth.moment_sum_product",
+        "QepDitherDepth.finite_law_actual_closed_form",
+        "QepDitherDepth.finite_law_actual_mse_comparison"
+      ],
+      "manuscript_numbers": [
+        7
+      ],
+      "extensions": []
+    },
+    {
+      "module": "QepThreeLayerExamples",
+      "source_sha256": "62230275cd57daa378607d2b4a2f9e0d79f796601cecb8cc36c0e32407e6cc89",
+      "derived_sha256": "e4e0daee21080a644a5c8b6d09a1f0cb68fc2e466a9e30b1447a37aba4794503",
+      "imports": [
+        "QepSharedE",
+        "Mathlib"
+      ],
+      "theorem_declarations": 23,
+      "declarations": [
+        "QepThreeLayerExamples.actual_corrected_step",
+        "QepThreeLayerExamples.qep_closed",
+        "QepThreeLayerExamples.qep_residuals",
+        "QepThreeLayerExamples.positive_qep",
+        "QepThreeLayerExamples.positive_grams",
+        "QepThreeLayerExamples.trajectory_input_bounds",
+        "QepThreeLayerExamples.trajectory_legal",
+        "QepThreeLayerExamples.trajectory_residuals",
+        "QepThreeLayerExamples.trajectory_common_input_comparison",
+        "QepThreeLayerExamples.trajectory_actual_gap",
+        "QepThreeLayerExamples.trajectory_first_order",
+        "QepThreeLayerExamples.trajectory_numeric",
+        "QepThreeLayerExamples.composite_input_bounds",
+        "QepThreeLayerExamples.composite_legal",
+        "QepThreeLayerExamples.composite_residuals",
+        "QepThreeLayerExamples.actual_terminal_residual",
+        "QepThreeLayerExamples.composite_exact_errors",
+        "QepThreeLayerExamples.composite_actual_gap",
+        "QepThreeLayerExamples.composite_violation_iff",
+        "QepThreeLayerExamples.composite_first_order",
+        "QepThreeLayerExamples.composite_numeric",
+        "QepThreeLayerExamples.composite_outside_domain",
+        "QepThreeLayerExamples.shared_errors_recovered"
+      ],
+      "manuscript_numbers": [
+        26,
+        27
+      ],
+      "extensions": []
+    },
+    {
+      "module": "QepV1Checks",
+      "source_sha256": "03248e2938bc1de09cdb559ab306e8bf03ecfec425421e413080dfc303b1daf9",
+      "derived_sha256": "e84aadc9d30f52fd797c34dd033e53c6c8c1df964388ffd5eed4186b3b8eecc8",
+      "imports": [
+        "QepV1DomainBound"
+      ],
+      "theorem_declarations": 4,
+      "declarations": [
+        "QepV1.check_shared_error_required",
+        "QepV1.check_gram_legality_required",
+        "QepV1.check_error_transport_required",
+        "QepV1.check_coefficient_interval_required"
+      ],
+      "manuscript_numbers": [],
+      "extensions": [
+        "scalar-local-strength"
+      ]
+    },
+    {
+      "module": "QepV1DomainBound",
+      "source_sha256": "58a1a36f39fb54af179dba690d9f43f91aa5698ae2ea261baee1341da2384eb3",
+      "derived_sha256": "3ca2579db69b0359101587cc6058c9b194a13f3be0d439fb3eb75ab0bb0017f0",
+      "imports": [
+        "QepV1Envelope",
+        "QepV1Existence"
+      ],
+      "theorem_declarations": 1,
+      "declarations": [
+        "QepV1.actual_network_exists_first_order_radius"
+      ],
+      "manuscript_numbers": [],
+      "extensions": [
+        "scalar-local-strength"
+      ]
+    },
+    {
+      "module": "QepV1Envelope",
+      "source_sha256": "da3cfcc99b8e30dff9bbad9b2627a187616ace652a106075acda0a58d627694a",
+      "derived_sha256": "fcc0404f613cf32ea197d6a9d2f0efb61078b6467f28c51ffa4168d197da7ff1",
+      "imports": [
+        "QepV1Remainder"
+      ],
+      "theorem_declarations": 4,
+      "declarations": [
+        "QepV1.base_residual_envelope",
+        "QepV1.base_actual_linear_envelope",
+        "QepV1.base_actual_residual_envelope",
+        "QepV1.matrix_actual_first_order_bound"
+      ],
+      "manuscript_numbers": [],
+      "extensions": [
+        "scalar-local-strength"
+      ]
+    },
+    {
+      "module": "QepV1Existence",
+      "source_sha256": "89667065e8e0a889e42ff71e9af0001e7032b2bf3bfed3411454f805f5d0ce40",
+      "derived_sha256": "4148c36388cf168acd4d816be434e00576202ae757877fae42f4e4e8eb28d78b",
+      "imports": [
+        "QepV1Matrix"
+      ],
+      "theorem_declarations": 7,
+      "declarations": [
+        "QepV1.continuousAt_rect_mul",
+        "QepV1.frob_lipschitz_continuous",
+        "QepV1.qepRun_zero",
+        "QepV1.qepRun_continuousAt_zero",
+        "QepV1.qepRun_eventually_legal",
+        "QepV1.qepRun_exists_legal_radius",
+        "QepV1.qepRun_linear_exists_legal_radius"
+      ],
+      "manuscript_numbers": [],
+      "extensions": [
+        "scalar-local-strength"
+      ]
+    },
+    {
+      "module": "QepV1Matrix",
+      "source_sha256": "a1123e44214bab7704c80efef81a8df033422d6c956262e150dda51308151ba5",
+      "derived_sha256": "f5b986419d9ce1e13fd3c20c87e7eda9fe09b1caa59a9033ba53c8630ab24695",
+      "imports": [
+        "QepGram",
+        "QepV1Scalar",
+        "Mathlib.Analysis.CStarAlgebra.Matrix"
+      ],
+      "theorem_declarations": 16,
+      "declarations": [
+        "QepV1.spectralNorm_nonneg",
+        "QepV1.spectral_column_bound",
+        "QepV1.frobNorm_nonneg",
+        "QepV1.frobNorm_add_le",
+        "QepV1.frobNorm_smul",
+        "QepV1.frobNorm_sq",
+        "QepV1.fSq_columns",
+        "QepV1.spectral_frobenius_mul",
+        "QepV1.frob_projection_contract",
+        "QepV1.frob_complement_contract",
+        "QepV1.matrix_preactivation_difference",
+        "QepV1.matrix_layer_distance",
+        "QepV1.matrix_layer_distance_of_full_row_rank",
+        "QepV1.matrix_trajectory_recurrence",
+        "QepV1.matrix_actual_composite",
+        "QepV1.matrix_actual_composite_tight"
+      ],
+      "manuscript_numbers": [],
+      "extensions": [
+        "scalar-local-strength"
+      ]
+    },
+    {
+      "module": "QepV1Remainder",
+      "source_sha256": "3092166132f88562e94be064435e6f3a76c388093b9e54b155e3bc97050408ac",
+      "derived_sha256": "0428033945a6b0971f67b99e79d1bb61d1970ba2d389214fc8253da9849d0df7",
+      "imports": [
+        "QepV1Matrix"
+      ],
+      "theorem_declarations": 3,
+      "declarations": [
+        "QepV1.weightedBound_mono",
+        "QepV1.weightedBound_smul",
+        "QepV1.weightedBound_diff_quadratic"
+      ],
+      "manuscript_numbers": [],
+      "extensions": [
+        "scalar-local-strength"
+      ]
+    },
+    {
+      "module": "QepV1Scalar",
+      "source_sha256": "09feff72333ce2d8d92fd328ea9a61603a08977d2be53fe715e29c5a1203d1c9",
+      "derived_sha256": "f439c35e898e431d07c55e4106538decdceca4ad8b8a24bda8e61f5dfa8e3c1a",
+      "imports": [
+        "Mathlib"
+      ],
+      "theorem_declarations": 10,
+      "declarations": [
+        "QepV1.weightedBound_closed",
+        "QepV1.recurrence_bound",
+        "QepV1.weightedBound_nonneg",
+        "QepV1.scalar_target_times_input",
+        "QepV1.scalar_preactivation_difference",
+        "QepV1.scalar_layer_distance",
+        "QepV1.scalar_trajectory_recurrence",
+        "QepV1.cross_terminal_loose",
+        "QepV1.cross_terminal_tight",
+        "QepV1.scalar_actual_composite"
+      ],
+      "manuscript_numbers": [],
+      "extensions": [
+        "scalar-local-strength"
+      ]
+    },
+    {
+      "module": "QepFiniteDitherLaw",
+      "source_sha256": "30c0c0de0faf4810d16bd3c9f33e6daa703b5ef85adb46e637ca53d784a4fe66",
+      "derived_sha256": "0e53ad4c18f3ae8314c7d00ecde246ab251fff6485ef8a4e7fd4fb3449d1b069",
+      "imports": [
+        "Mathlib"
+      ],
+      "theorem_declarations": 27,
+      "declarations": [
+        "QepFiniteDitherLaw.grid_error_wrap",
+        "QepFiniteDitherLaw.wrap_measurable",
+        "QepFiniteDitherLaw.grid_measurable",
+        "QepFiniteDitherLaw.reconstruction_measurable",
+        "QepFiniteDitherLaw.wrap_shift_measurePreserving",
+        "QepFiniteDitherLaw.infinite_dither_law",
+        "QepFiniteDitherLaw.noise_neg",
+        "QepFiniteDitherLaw.grid_bounds_inside",
+        "QepFiniteDitherLaw.quant_inside",
+        "QepFiniteDitherLaw.quant_below",
+        "QepFiniteDitherLaw.quant_above",
+        "QepFiniteDitherLaw.finite_centered_dither_law",
+        "QepFiniteDitherLaw.quant_is_codepoint",
+        "QepFiniteDitherLaw.quant_is_nearest",
+        "QepFiniteDitherLaw.centered_integral",
+        "QepFiniteDitherLaw.noise_integrable_power",
+        "QepFiniteDitherLaw.centered_integrable_power",
+        "QepFiniteDitherLaw.noise_mean",
+        "QepFiniteDitherLaw.noise_second_moment",
+        "QepFiniteDitherLaw.centered_mean",
+        "QepFiniteDitherLaw.centered_second_moment",
+        "QepFiniteDitherLaw.affine_centered_square",
+        "QepFiniteDitherLaw.actual_scalar_mean",
+        "QepFiniteDitherLaw.actual_scalar_mse",
+        "QepFiniteDitherLaw.scaled_reconstruction_identity",
+        "QepFiniteDitherLaw.scaled_continuous_dither_law",
+        "QepFiniteDitherLaw.scaled_clip_is_interval_clip"
+      ],
+      "manuscript_numbers": [],
+      "extensions": [
+        "finite-grid-continuous"
+      ]
+    },
+    {
+      "module": "QepFiniteDitherMatrix",
+      "source_sha256": "86592632dd8aa6fb0593f4a618ae46731e1092d6836da2e4ae4e99449bc0228c",
+      "derived_sha256": "51424d8b6a459d268bed548d35948cde3dda8ab8c9fd32db9fb1134a75acbc94",
+      "imports": [
+        "QepFiniteDitherLaw"
+      ],
+      "theorem_declarations": 11,
+      "declarations": [
+        "QepFiniteDitherMatrix.centered_integrable",
+        "QepFiniteDitherMatrix.expanded_integrable",
+        "QepFiniteDitherMatrix.centered_pair_square_integrable",
+        "QepFiniteDitherMatrix.centered_pair_square",
+        "QepFiniteDitherMatrix.coordLoss_centered",
+        "QepFiniteDitherMatrix.coordLoss_integrable",
+        "QepFiniteDitherMatrix.coordLoss_expectation",
+        "QepFiniteDitherMatrix.rowLoss_integrable",
+        "QepFiniteDitherMatrix.actualLoss_rows",
+        "QepFiniteDitherMatrix.actualLoss_integrable",
+        "QepFiniteDitherMatrix.expectedLoss_formula"
+      ],
+      "manuscript_numbers": [],
+      "extensions": [
+        "finite-grid-continuous"
+      ]
+    },
+    {
+      "module": "QepFiniteOverloadExamples",
+      "source_sha256": "2ccfafc047aa334daf075917e220315c3f6d943b597c575352f414507164afea",
+      "derived_sha256": "88b202ee6934300af5bb975449885fe63cf0d578d644bd8c14d37f2795f86d2b",
+      "imports": [
+        "QepFiniteDitherMatrix"
+      ],
+      "theorem_declarations": 25,
+      "declarations": [
+        "QepFiniteOverloadExamples.example1_invertible_inputs",
+        "QepFiniteOverloadExamples.example2_invertible_inputs",
+        "QepFiniteOverloadExamples.example1_teacher",
+        "QepFiniteOverloadExamples.example2_teacher",
+        "QepFiniteOverloadExamples.example1_inverse_weight",
+        "QepFiniteOverloadExamples.example2_inverse_weight",
+        "QepFiniteOverloadExamples.example1_constructed_input",
+        "QepFiniteOverloadExamples.example2_constructed_input",
+        "QepFiniteOverloadExamples.example1_gram_inverse",
+        "QepFiniteOverloadExamples.example2_gram_inverse",
+        "QepFiniteOverloadExamples.example1_projection",
+        "QepFiniteOverloadExamples.example2_projection",
+        "QepFiniteOverloadExamples.example1_correction",
+        "QepFiniteOverloadExamples.example2_correction",
+        "QepFiniteOverloadExamples.example1_target",
+        "QepFiniteOverloadExamples.example2_target",
+        "QepFiniteOverloadExamples.clip_two_sub",
+        "QepFiniteOverloadExamples.example1_actual_expected_loss",
+        "QepFiniteOverloadExamples.example1_endpoints",
+        "QepFiniteOverloadExamples.example1_minimum",
+        "QepFiniteOverloadExamples.clip_two_add",
+        "QepFiniteOverloadExamples.example2_actual_expected_loss",
+        "QepFiniteOverloadExamples.example2_endpoints",
+        "QepFiniteOverloadExamples.example2_base_no_overload",
+        "QepFiniteOverloadExamples.example2_propagated_overload"
+      ],
+      "manuscript_numbers": [],
+      "extensions": [
+        "finite-grid-continuous"
+      ]
+    },
+    {
+      "module": "QepOverloadGap",
+      "source_sha256": "6350f6126476c40f1fd33f2a0f9779d3300a21a2f32342efbc698af3130091df",
+      "derived_sha256": "593c560e8dc877f992581d05acd203956ff4129a57b785fdfef72c3e8839d43e",
+      "imports": [
+        "QepFiniteDitherMatrix"
+      ],
+      "theorem_declarations": 13,
+      "declarations": [
+        "QepOverloadGap.energy_norm",
+        "QepOverloadGap.energy_nonneg",
+        "QepOverloadGap.cross_symm",
+        "QepOverloadGap.general_gap",
+        "QepOverloadGap.projected_gap",
+        "QepOverloadGap.cross_sqrt_bound",
+        "QepOverloadGap.four_term_bound",
+        "QepOverloadGap.general_gap_bound",
+        "QepOverloadGap.projected_gap_bound",
+        "QepOverloadGap.sufficient_improvement",
+        "QepOverloadGap.l2_cross_sqrt_bound",
+        "QepOverloadGap.memLp_cross_sqrt_bound",
+        "QepOverloadGap.overload_event_cross_bound"
+      ],
+      "manuscript_numbers": [],
+      "extensions": [
+        "finite-grid-continuous"
+      ]
+    },
+    {
+      "module": "QepFiniteDitherHistory",
+      "source_sha256": "795fb96c7ee28e4aaca8e36f08a7438cf24993c74f3db8fc7c1169ad550ffb65",
+      "derived_sha256": "b935ba5fecb6a7099cf83098904c3c35962fa2d37e2ca76c262893ea71cb8738",
+      "imports": [
+        "QepFiniteDitherLaw"
+      ],
+      "theorem_declarations": 4,
+      "declarations": [
+        "QepFiniteDitherHistory.history_joint_law",
+        "QepFiniteDitherHistory.history_test_integral",
+        "QepFiniteDitherHistory.finite_family_joint_law",
+        "QepFiniteDitherHistory.history_finite_family_joint_law"
+      ],
+      "manuscript_numbers": [],
+      "extensions": [
+        "finite-grid-continuous"
+      ]
+    },
+    {
+      "module": "QepFiniteDitherBridge",
+      "source_sha256": "5e489435b3d4638550c1db531510716ca99776cb72b094d42d15fc4a2b714d8c",
+      "derived_sha256": "5e489435b3d4638550c1db531510716ca99776cb72b094d42d15fc4a2b714d8c",
+      "imports": [
+        "QepOverloadGap"
+      ],
+      "theorem_declarations": 11,
+      "declarations": [
+        "QepFiniteDitherBridge.vectorize_energy",
+        "QepFiniteDitherBridge.vectorize_inner",
+        "QepFiniteDitherBridge.vectorize_sub",
+        "QepFiniteDitherBridge.vectorize_smul",
+        "QepFiniteDitherBridge.actual_bias_residual",
+        "QepFiniteDitherBridge.actual_loss_residual",
+        "QepFiniteDitherBridge.matrix_general_gap",
+        "QepFiniteDitherBridge.actual_expected_gap",
+        "QepFiniteDitherBridge.actual_projected_expected_gap",
+        "QepFiniteDitherBridge.actual_expected_gap_bound",
+        "QepFiniteDitherBridge.no_overload_zero_bias"
+      ],
+      "manuscript_numbers": [],
+      "extensions": [
+        "finite-grid-continuous"
+      ]
+    },
+    {
+      "module": "QepV3Checks",
+      "source_sha256": "5c5aa0bec1e8120967884d712104480d9940b4b3f51fefd67249c4db60b6bc30",
+      "derived_sha256": "1cd1c23565b87c1d591150bb6389790309e72784d5ca080c363963aac78dd04a",
+      "imports": [
+        "QepV3Order"
+      ],
+      "theorem_declarations": 6,
+      "declarations": [
+        "QepV3.witness_gram_legal",
+        "QepV3.witness_missing_row",
+        "QepV3.witness_actual_residual",
+        "QepV3.witness_marginal_zero",
+        "QepV3.witness_past_cross_nonzero",
+        "QepV3.witness_different_operator"
+      ],
+      "manuscript_numbers": [],
+      "extensions": [
+        "row-space-predecessor"
+      ]
+    },
+    {
+      "module": "QepV3Conditional",
+      "source_sha256": "cc5f7169fc5f3a22493d542b15bcb198e60f7b3511c9a982bdd98085ff7b2e2f",
+      "derived_sha256": "e1901abbe0c55710206703931f5cfff62e386b0ac84da9e5dae01793fcbb6435",
+      "imports": [
+        "QepV3Expectation"
+      ],
+      "theorem_declarations": 4,
+      "declarations": [
+        "QepV3.gram_smul_add",
+        "QepV3.actual_layer_mean",
+        "QepV3.conditional_operator_positive",
+        "QepV3.actual_layer_second_moment"
+      ],
+      "manuscript_numbers": [],
+      "extensions": [
+        "row-space-predecessor"
+      ]
+    },
+    {
+      "module": "QepV3Expectation",
+      "source_sha256": "23e7c74700e83cb911933b46863c16d1eae7569d435b1fdcbaf34e8302a980a1",
+      "derived_sha256": "198c3b42e1fb1711d50e9ae4b338dee96310fc5ab38bfc9c38686cab52509de1",
+      "imports": [
+        "QepV3RowSpace"
+      ],
+      "theorem_declarations": 18,
+      "declarations": [
+        "QepV3.past_map",
+        "QepV3.past_pair",
+        "QepV3.mean_apply",
+        "QepV3.mean_add",
+        "QepV3.mean_sub",
+        "QepV3.mean_smul",
+        "QepV3.mean_const",
+        "QepV3.mean_zero",
+        "QepV3.mean_mul_const",
+        "QepV3.mean_const_mul",
+        "QepV3.mean_transpose",
+        "QepV3.mean_support_congr",
+        "QepV3.mean_linear_map",
+        "QepV3.mean_posSemidef",
+        "QepV3.mean_gram_posSemidef",
+        "QepV3.mean_shifted_gram",
+        "QepV3.mean_noise_mul_zero",
+        "QepV3.mean_past_mul_noise_transpose_zero"
+      ],
+      "manuscript_numbers": [],
+      "extensions": [
+        "row-space-predecessor"
+      ]
+    },
+    {
+      "module": "QepV3Network",
+      "source_sha256": "7eaac9eb80a57764866ec668dd00a6d7e44d4b34b610f172494a642cd4dce4ff",
+      "derived_sha256": "c7b7c11b2790f4030c9d092539f3d8d353d126983dc00d5336279a0b2d9e7e50",
+      "imports": [
+        "QepV3Conditional"
+      ],
+      "theorem_declarations": 7,
+      "declarations": [
+        "QepV3.past_student",
+        "QepV3.past_error",
+        "QepV3.actual_mean_zero",
+        "QepV3.actual_covariance_step",
+        "QepV3.actual_covariance_posSemidef",
+        "QepV3.actual_noise_operator_positive",
+        "QepV3.actual_equal_width_sufficient"
+      ],
+      "manuscript_numbers": [],
+      "extensions": [
+        "row-space-predecessor"
+      ]
+    },
+    {
+      "module": "QepV3Order",
+      "source_sha256": "9713f65be7e4d61bd5276b7d6a50748e1293c0bff280d1fdc7e06db377a9bebf",
+      "derived_sha256": "cba4ce012a4a184ea2d4b0537181e0e33d0dcfbcb04d8866e1796590ee984d8c",
+      "imports": [
+        "QepV3Network"
+      ],
+      "theorem_declarations": 10,
+      "declarations": [
+        "QepV3.psdLe_refl",
+        "QepV3.psdLe_trans",
+        "QepV3.covariance_step_mono",
+        "QepV3.actual_covariance_antitone",
+        "QepV3.trace_gram_eq_fSq",
+        "QepV3.trace_mean",
+        "QepV3.trace_mean_gram",
+        "QepV3.psdLe_trace",
+        "QepV3.actual_frobenius_mse_antitone",
+        "QepV3.equal_width_actual_comparison"
+      ],
+      "manuscript_numbers": [],
+      "extensions": [
+        "row-space-predecessor"
+      ]
+    },
+    {
+      "module": "QepV3RowSpace",
+      "source_sha256": "fb961351b26f2b157aa74be3fa3f5f66b3972f3fa17e4e2e2c9294b794ae2261",
+      "derived_sha256": "d57f4861d2f737ce6ca1f18727638ff8ccd2a3d765c5148d341309ba98bc66b9",
+      "imports": [
+        "QepGram"
+      ],
+      "theorem_declarations": 6,
+      "declarations": [
+        "QepV3.row_factor_projection",
+        "QepV3.gram_left_invertible",
+        "QepV3.row_factor_next",
+        "QepV3.equal_width_row_condition",
+        "QepV3.actual_error_step_unreduced",
+        "QepV3.actual_error_step"
+      ],
+      "manuscript_numbers": [],
+      "extensions": [
+        "row-space-predecessor"
+      ]
+    },
+    {
+      "module": "QepActualFiniteMoments",
+      "source_sha256": "a91e96dda32f5983bec7a556f7139b2343f340f144dd28b91808e0be834a1a17",
+      "derived_sha256": "cb28605878f648ea4129a67203e5f36717ce1a9b0629b290e1347f551dc59526",
+      "imports": [
+        "QepFiniteMomentAssembly"
+      ],
+      "theorem_declarations": 13,
+      "declarations": [
+        "QepActualFiniteMoments.centered_joint_measurable",
+        "QepActualFiniteMoments.centered_joint_law",
+        "QepActualFiniteMoments.transfer_integral",
+        "QepActualFiniteMoments.transfer_integrable",
+        "QepActualFiniteMoments.centered_integrable",
+        "QepActualFiniteMoments.centered_pair_integrable",
+        "QepActualFiniteMoments.centered_mean",
+        "QepActualFiniteMoments.centered_covariance",
+        "QepActualFiniteMoments.affine_center_identity",
+        "QepActualFiniteMoments.affine_integrable",
+        "QepActualFiniteMoments.affine_pair_integrable",
+        "QepActualFiniteMoments.affine_mean",
+        "QepActualFiniteMoments.affine_covariance"
+      ],
+      "manuscript_numbers": [],
+      "extensions": [
+        "finite-grid-continuous"
+      ]
+    },
+    {
+      "module": "QepActualNonsingular",
+      "source_sha256": "49990bb7b99b1aaf2ca2dfcda9876472f11bf8c094780202366e4ec0e46e0ab8",
+      "derived_sha256": "2c6ad7766d9650b52e7ec95d13dba778a0cdd536c0a8d0fe8d7e0862496d5931",
+      "imports": [
+        "QepFiniteOverloadExamples"
+      ],
+      "theorem_declarations": 6,
+      "declarations": [
+        "QepActualNonsingular.reconstruction_ae_ne",
+        "QepActualNonsingular.detExpr_measurable",
+        "QepActualNonsingular.reconstructed_ae_det_ne_zero",
+        "QepActualNonsingular.reconstructed_ae_isUnit_det",
+        "QepActualNonsingular.example1_fixed_alpha_ae_legal",
+        "QepActualNonsingular.example2_fixed_alpha_ae_legal"
+      ],
+      "manuscript_numbers": [],
+      "extensions": [
+        "finite-grid-continuous"
+      ]
+    },
+    {
+      "module": "QepActualOverloadEvent",
+      "source_sha256": "d8e95af7dcfbfcda8e744d10ec4a49ce6262aba33d53d216daeb28b624f1b831",
+      "derived_sha256": "65c94937073f1f65db13602471e3f9b8d6f60912a775e4eab034d3b4ff94d303",
+      "imports": [
+        "QepGeneralOverloadBridge"
+      ],
+      "theorem_declarations": 4,
+      "declarations": [
+        "QepActualOverloadEvent.overload_measurable",
+        "QepActualOverloadEvent.actual_bias_supported",
+        "QepActualOverloadEvent.vectorize_norm_sq",
+        "QepActualOverloadEvent.actual_overload_event_cross_bound"
+      ],
+      "manuscript_numbers": [],
+      "extensions": [
+        "finite-grid-continuous"
+      ]
+    },
+    {
+      "module": "QepContinuousCoordinates",
+      "source_sha256": "722f4588059ba398ba59b6683a2923072a3972b5acacc30df2758dcbefb6a31f",
+      "derived_sha256": "722f4588059ba398ba59b6683a2923072a3972b5acacc30df2758dcbefb6a31f",
+      "imports": [
+        "QepFiniteDitherHistory"
+      ],
+      "theorem_declarations": 9,
+      "declarations": [
+        "QepContinuousCoordinates.eval_law",
+        "QepContinuousCoordinates.eval_power_integrable",
+        "QepContinuousCoordinates.eval_integrable",
+        "QepContinuousCoordinates.eval_integral",
+        "QepContinuousCoordinates.eval_mean",
+        "QepContinuousCoordinates.eval_second",
+        "QepContinuousCoordinates.coordinates_independent",
+        "QepContinuousCoordinates.pair_integrable",
+        "QepContinuousCoordinates.pair_expectation"
+      ],
+      "manuscript_numbers": [],
+      "extensions": [
+        "finite-grid-continuous"
+      ]
+    },
+    {
+      "module": "QepFiniteMomentAssembly",
+      "source_sha256": "4ccd146b8817648b2b4dcb76fea73d49800a21320969f68d492b8232a16d4e87",
+      "derived_sha256": "4ccd146b8817648b2b4dcb76fea73d49800a21320969f68d492b8232a16d4e87",
+      "imports": [
+        "QepContinuousCoordinates"
+      ],
+      "theorem_declarations": 7,
+      "declarations": [
+        "QepFiniteMomentAssembly.linear_integrable",
+        "QepFiniteMomentAssembly.linear_mean",
+        "QepFiniteMomentAssembly.linear_square_expand",
+        "QepFiniteMomentAssembly.linear_square_integrable",
+        "QepFiniteMomentAssembly.linear_second",
+        "QepFiniteMomentAssembly.affine_square_integrable",
+        "QepFiniteMomentAssembly.affine_square_expectation"
+      ],
+      "manuscript_numbers": [],
+      "extensions": [
+        "finite-grid-continuous"
+      ]
+    },
+    {
+      "module": "QepGeneralMatrixDither",
+      "source_sha256": "96f3abe0b2db33d64803fdca19d833eb646a7ff43dd36f1b6a24e405c7353722",
+      "derived_sha256": "a92e0f9a1ec9006845bf8dd05e2eb36dfc71d82e78a25eb0ce451721876e6fe3",
+      "imports": [
+        "QepActualFiniteMoments"
+      ],
+      "theorem_declarations": 6,
+      "declarations": [
+        "QepGeneralMatrixDither.row_moments",
+        "QepGeneralMatrixDither.actual_coordinate_identity",
+        "QepGeneralMatrixDither.actual_coordinate_integrable",
+        "QepGeneralMatrixDither.actual_coordinate_expectation",
+        "QepGeneralMatrixDither.actual_loss_integrable",
+        "QepGeneralMatrixDither.actual_matrix_expected_loss"
+      ],
+      "manuscript_numbers": [],
+      "extensions": [
+        "finite-grid-continuous"
+      ]
+    },
+    {
+      "module": "QepGeneralMatrixHistory",
+      "source_sha256": "2dd6745cbe9839425baf82c3aad32e872c9d61b9473467cc185a327ff6822502",
+      "derived_sha256": "00b49bcc9ae77349e3d72c28d1b5cf4b24af20ac626dbaad9c3e5d83b777470c",
+      "imports": [
+        "QepGeneralMatrixDither"
+      ],
+      "theorem_declarations": 3,
+      "declarations": [
+        "QepGeneralMatrixHistory.actual_standardized_history_law",
+        "QepGeneralMatrixHistory.actual_history_inner_energy",
+        "QepGeneralMatrixHistory.actual_product_expected_energy"
+      ],
+      "manuscript_numbers": [],
+      "extensions": [
+        "finite-grid-continuous"
+      ]
+    },
+    {
+      "module": "QepGeneralOverloadBridge",
+      "source_sha256": "fab52dbf82bdfe8564df8220617b63380ee0e84be9a841316d237df3a61bebdd",
+      "derived_sha256": "fab52dbf82bdfe8564df8220617b63380ee0e84be9a841316d237df3a61bebdd",
+      "imports": [
+        "QepGeneralMatrixDither",
+        "QepOverloadGap",
+        "QepGram"
+      ],
+      "theorem_declarations": 12,
+      "declarations": [
+        "QepGeneralOverloadBridge.vectorize_energy",
+        "QepGeneralOverloadBridge.vectorize_inner",
+        "QepGeneralOverloadBridge.vectorize_sub",
+        "QepGeneralOverloadBridge.vectorize_smul",
+        "QepGeneralOverloadBridge.actual_bias_residual",
+        "QepGeneralOverloadBridge.actual_loss_residual",
+        "QepGeneralOverloadBridge.matrix_general_gap",
+        "QepGeneralOverloadBridge.actual_expected_gap",
+        "QepGeneralOverloadBridge.gram_actual_projection_identity",
+        "QepGeneralOverloadBridge.actual_projected_gap",
+        "QepGeneralOverloadBridge.actual_expected_gap_bound",
+        "QepGeneralOverloadBridge.no_overload_zero_bias"
+      ],
+      "manuscript_numbers": [],
+      "extensions": [
+        "finite-grid-continuous"
+      ]
+    },
+    {
+      "module": "QepFeedbackAlgebra",
+      "source_sha256": "20bd42acc18dbd1f38eac88df6994d8ebc08cded4f192e3397fe6031e3a6d308",
+      "derived_sha256": "a1dadedc5481dd27459fbcf03c437044a907a30eb60dcf4e280ea64edda37c39",
+      "imports": [
+        "QepFeedbackProcess"
+      ],
+      "theorem_declarations": 5,
+      "declarations": [
+        "QepFeedbackAlgebra.driving_split",
+        "QepFeedbackAlgebra.actual_triangular_identity",
+        "QepFeedbackAlgebra.actual_error_mul_triangle",
+        "QepFeedbackAlgebra.triangle_det",
+        "QepFeedbackAlgebra.actual_error_inverse_filter"
+      ],
+      "manuscript_numbers": [],
+      "extensions": [
+        "sequential-feedback"
+      ]
+    },
+    {
+      "module": "QepFeedbackEnergy",
+      "source_sha256": "bcadfa55e75da20fb2c2a56eebfb0ec713a69b16463852ed2496cc9ab5bbbe8f",
+      "derived_sha256": "368e8f4313c05918851c2e2e76e409bb2077b8b105c288e100b5e7e8095b116c",
+      "imports": [
+        "QepFeedbackAlgebra",
+        "QepFeedbackMoments"
+      ],
+      "theorem_declarations": 6,
+      "declarations": [
+        "QepFeedbackEnergy.noiseVector_coordinates",
+        "QepFeedbackEnergy.unbounded_overloadVector_zero",
+        "QepFeedbackEnergy.actual_output_as_linear",
+        "QepFeedbackEnergy.actual_output_mean",
+        "QepFeedbackEnergy.actual_output_second",
+        "QepFeedbackEnergy.current_target_energy_independent"
+      ],
+      "manuscript_numbers": [],
+      "extensions": [
+        "sequential-feedback"
+      ]
+    },
+    {
+      "module": "QepFeedbackFiniteL2",
+      "source_sha256": "d5053237a068264fcbb89c546c0445a677978204cc9212daf333bb60d4468076",
+      "derived_sha256": "b173de7648422f73b7ea451888c44c46e6649a394d51237e4e1db8aeebc5e876",
+      "imports": [
+        "QepFeedbackProcess",
+        "QepFeedbackMoments"
+      ],
+      "theorem_declarations": 5,
+      "declarations": [
+        "QepFeedbackFiniteL2.quant_mem_interval",
+        "QepFeedbackFiniteL2.finite_reconstruction_memLp",
+        "QepFeedbackFiniteL2.finite_errors_memLp",
+        "QepFeedbackFiniteL2.finite_target_memLp",
+        "QepFeedbackFiniteL2.finite_overload_memLp"
+      ],
+      "manuscript_numbers": [],
+      "extensions": [
+        "sequential-feedback"
+      ]
+    },
+    {
+      "module": "QepFeedbackInnovation",
+      "source_sha256": "4863e0b76088ac8062ee965810a742e29d6e981c222988e12f5a32e7210ed579",
+      "derived_sha256": "c48db3166d5b42e10ca767ba8592a6534e192f5858ae94a31b3742f53a3b264e",
+      "imports": [
+        "QepFiniteDitherHistory"
+      ],
+      "theorem_declarations": 10,
+      "declarations": [
+        "QepFeedbackInnovation.innovation_measurable",
+        "QepFeedbackInnovation.innovation_law",
+        "QepFeedbackInnovation.complete_history_law",
+        "QepFeedbackInnovation.innovation_fixed_measurable",
+        "QepFeedbackInnovation.innovation_integral",
+        "QepFeedbackInnovation.innovation_integrable_power",
+        "QepFeedbackInnovation.innovation_mean",
+        "QepFeedbackInnovation.innovation_second",
+        "QepFeedbackInnovation.causal_innovations_measurePreserving",
+        "QepFeedbackInnovation.causal_innovations_joint_law"
+      ],
+      "manuscript_numbers": [],
+      "extensions": [
+        "sequential-feedback"
+      ]
+    },
+    {
+      "module": "QepFeedbackMoments",
+      "source_sha256": "01fcc769f510589a3124a2bf474ac01a6c508893c586d4878edf6ad4fe93f4e1",
+      "derived_sha256": "625cb829ce3a9123ed6141bcef6928fe4901ed7ca5901d042f439e71457ce9bc",
+      "imports": [
+        "QepFeedbackInnovation"
+      ],
+      "theorem_declarations": 13,
+      "declarations": [
+        "QepFeedbackMoments.linear_measurable",
+        "QepFeedbackMoments.id_integrable",
+        "QepFeedbackMoments.add_fresh_integrable",
+        "QepFeedbackMoments.add_fresh_square_integrable",
+        "QepFeedbackMoments.add_fresh_mean",
+        "QepFeedbackMoments.add_fresh_second",
+        "QepFeedbackMoments.linear_integrable",
+        "QepFeedbackMoments.linear_square_integrable",
+        "QepFeedbackMoments.linear_mean",
+        "QepFeedbackMoments.linear_second",
+        "QepFeedbackMoments.actual_linear_mean",
+        "QepFeedbackMoments.actual_linear_second",
+        "QepFeedbackMoments.linear_sum"
+      ],
+      "manuscript_numbers": [],
+      "extensions": [
+        "sequential-feedback"
+      ]
+    },
+    {
+      "module": "QepFeedbackProcess",
+      "source_sha256": "ccdf0e95bfef9d796a3f1b01d26ebb878d0a23ae02e52bbccd18324e76b346f1",
+      "derived_sha256": "ab258bc9ff55ef44cb9be9e9b47190f3d6abaf385e09d30c5b4c109d5b495863",
+      "imports": [
+        "QepFeedbackInnovation"
+      ],
+      "theorem_declarations": 9,
+      "declarations": [
+        "QepFeedbackProcess.reconstruct_measurable",
+        "QepFeedbackProcess.errors_measurable",
+        "QepFeedbackProcess.target_measurable",
+        "QepFeedbackProcess.normalizedTarget_measurable",
+        "QepFeedbackProcess.actual_complete_history_law",
+        "QepFeedbackProcess.actual_innovations_joint_law",
+        "QepFeedbackProcess.last_error",
+        "QepFeedbackProcess.actual_column_identity",
+        "QepFeedbackProcess.unbounded_overload_zero"
+      ],
+      "manuscript_numbers": [],
+      "extensions": [
+        "sequential-feedback"
+      ]
+    },
+    {
+      "module": "QepFeedbackAdaptive",
+      "source_sha256": "0f7e59b406f01aaa9cd71eac2d1adc169680eabcd78fbbca9778cf7349dd0884",
+      "derived_sha256": "a9ff79da6626d9f1ea03102f950e8e716b519de50dae3e1f906823548f0cff58",
+      "imports": [
+        "QepFeedbackConditionalMoments"
+      ],
+      "theorem_declarations": 5,
+      "declarations": [
+        "QepFeedbackAdaptive.first_innovation_measurable",
+        "QepFeedbackAdaptive.second_target_measurable",
+        "QepFeedbackAdaptive.actual_adaptive_joint_law",
+        "QepFeedbackAdaptive.actual_adaptive_error_identity",
+        "QepFeedbackAdaptive.actual_adaptive_second_error_mean"
+      ],
+      "manuscript_numbers": [],
+      "extensions": [
+        "sequential-feedback"
+      ]
+    },
+    {
+      "module": "QepFeedbackBias",
+      "source_sha256": "5b17166f4cd230fad61ceb7c18487e214b5a1a62c3a7753afbee31e0fcedaae2",
+      "derived_sha256": "34db06fc393a8a5f53d15e7985a50effaad6d30b548128652e9fbdeb32488dbf",
+      "imports": [
+        "QepFeedbackFiniteEnergy",
+        "QepFeedbackCovariance"
+      ],
+      "theorem_declarations": 7,
+      "declarations": [
+        "QepFeedbackBias.noise_output_linear",
+        "QepFeedbackBias.noise_output_mean",
+        "QepFeedbackBias.noise_output_integrable",
+        "QepFeedbackBias.finite_overloadVector_memLp",
+        "QepFeedbackBias.finite_overload_output_integrable",
+        "QepFeedbackBias.actual_output_split",
+        "QepFeedbackBias.actual_finite_output_mean"
+      ],
+      "manuscript_numbers": [],
+      "extensions": [
+        "sequential-feedback"
+      ]
+    },
+    {
+      "module": "QepFeedbackConditionalMoments",
+      "source_sha256": "04beb2bc9eb7d68e50654457ce7de8ab748155a593e79fa91610a4bd72879404",
+      "derived_sha256": "2670a9354f751b8c885a9087634c0376df6b955f1b78babb10e603882fa9f64f",
+      "imports": [
+        "QepFeedbackFiniteL2"
+      ],
+      "theorem_declarations": 4,
+      "declarations": [
+        "QepFeedbackConditionalMoments.integral_of_preserving",
+        "QepFeedbackConditionalMoments.predictable_square_integrable",
+        "QepFeedbackConditionalMoments.predictable_square_expectation",
+        "QepFeedbackConditionalMoments.predictable_cross_zero"
+      ],
+      "manuscript_numbers": [],
+      "extensions": [
+        "sequential-feedback"
+      ]
+    },
+    {
+      "module": "QepFeedbackControls",
+      "source_sha256": "3c8cbbcd331bb6cd01175c3f1c8b18f67b6b1d230a6e214325647d883a74b13a",
+      "derived_sha256": "7973416c18b379f6c2d978e7299dd0667bd31607c49d7d9383a8739202a3c173",
+      "imports": [
+        "QepFeedbackAdaptive",
+        "QepFeedbackMatrix"
+      ],
+      "theorem_declarations": 3,
+      "declarations": [
+        "QepFeedbackControls.adaptive_actual_mean_nonzero",
+        "QepFeedbackControls.gram_factor_order_matters",
+        "QepFeedbackControls.zero_step_actual_first_error"
+      ],
+      "manuscript_numbers": [],
+      "extensions": [
+        "sequential-feedback"
+      ]
+    },
+    {
+      "module": "QepFeedbackCovariance",
+      "source_sha256": "409cc59ac18077f62ca281d1227bf34ba0d0f05f73b5aa8408c9d27d61fdd6d9",
+      "derived_sha256": "b22385b888a67851ab30f0a8bce98a428de12dbbae8c14caaf02025a4649dc09",
+      "imports": [
+        "QepFeedbackEnergy",
+        "QepFeedbackConditionalMoments",
+        "QepFeedbackLDL"
+      ],
+      "theorem_declarations": 6,
+      "declarations": [
+        "QepFeedbackCovariance.linear_add",
+        "QepFeedbackCovariance.linear_cross_integrable",
+        "QepFeedbackCovariance.linear_cross",
+        "QepFeedbackCovariance.actual_output_square_integrable",
+        "QepFeedbackCovariance.actual_output_cross",
+        "QepFeedbackCovariance.actual_output_energy"
+      ],
+      "manuscript_numbers": [],
+      "extensions": [
+        "sequential-feedback"
+      ]
+    },
+    {
+      "module": "QepFeedbackFiniteEnergy",
+      "source_sha256": "a018b686f3ca88221e097efaac1141a822e0b066cdfa7cffd2f13289c6c5d2b4",
+      "derived_sha256": "3db32e47bde89da7bc1c859beae15309ebf492de1e1b4aef0e2a7301e538dd1e",
+      "imports": [
+        "QepFeedbackConditionalMoments",
+        "QepFeedbackLDL"
+      ],
+      "theorem_declarations": 6,
+      "declarations": [
+        "QepFeedbackFiniteEnergy.actual_fresh_square_integrable",
+        "QepFeedbackFiniteEnergy.actual_fresh_square_expectation",
+        "QepFeedbackFiniteEnergy.weightedDrive_integrable",
+        "QepFeedbackFiniteEnergy.weightedOverload_integrable",
+        "QepFeedbackFiniteEnergy.finite_weighted_energy",
+        "QepFeedbackFiniteEnergy.actual_finite_matched_output_energy"
+      ],
+      "manuscript_numbers": [],
+      "extensions": [
+        "sequential-feedback"
+      ]
+    },
+    {
+      "module": "QepFeedbackLDL",
+      "source_sha256": "2263a505c3566f7f94936efe914fb2863cf75b46f631dc95a9d5d239c36c7dfa",
+      "derived_sha256": "dc2aa420b027b2f3d0198b6fd220a1dc60775c1ea53f30a26942471cb9ce41ac",
+      "imports": [
+        "QepFeedbackAlgebra"
+      ],
+      "theorem_declarations": 5,
+      "declarations": [
+        "QepFeedbackLDL.row_gram_entry",
+        "QepFeedbackLDL.row_energy_of_factor",
+        "QepFeedbackLDL.actual_matched_energy",
+        "QepFeedbackLDL.weightedDrive_succ",
+        "QepFeedbackLDL.weightedOverload_succ"
+      ],
+      "manuscript_numbers": [],
+      "extensions": [
+        "sequential-feedback"
+      ]
+    },
+    {
+      "module": "QepFeedbackLoss",
+      "source_sha256": "4bacbbe1136e5b18ce4de1b22abde882905a88f649af1d5ef72773f7707b8f86",
+      "derived_sha256": "afdce52fcff9ef016974206ffb14260144be92c551bbcc7d8eccaa175435f914",
+      "imports": [
+        "QepFeedbackBias"
+      ],
+      "theorem_declarations": 4,
+      "declarations": [
+        "QepFeedbackLoss.rowSq_sub",
+        "QepFeedbackLoss.finite_output_memLp",
+        "QepFeedbackLoss.actual_loss_formula",
+        "QepFeedbackLoss.actual_loss_difference"
+      ],
+      "manuscript_numbers": [],
+      "extensions": [
+        "sequential-feedback"
+      ]
+    },
+    {
+      "module": "QepFeedbackMatrix",
+      "source_sha256": "a32065cd82eb6eeefbea820279c63b02f6980f638fa09ba2f7a1673864444cf8",
+      "derived_sha256": "58cc64344549a0889d2f6d95fe2ec6c40f3965b3d4b8f217bb347994dbe04a7c",
+      "imports": [
+        "QepFeedbackCovariance",
+        "QepFeedbackFiniteEnergy",
+        "Mathlib.MeasureTheory.Integral.Pi"
+      ],
+      "theorem_declarations": 4,
+      "declarations": [
+        "QepFeedbackMatrix.actualMatrix_row",
+        "QepFeedbackMatrix.actual_matrix_innovations_joint_law",
+        "QepFeedbackMatrix.actual_matrix_unbounded_energy",
+        "QepFeedbackMatrix.actual_matrix_finite_energy"
+      ],
+      "manuscript_numbers": [],
+      "extensions": [
+        "sequential-feedback"
+      ]
+    },
+    {
+      "module": "QepFeedbackTeacher",
+      "source_sha256": "08538c8ba90a842c522076bf85e02f88d72a7918af40b3441973e524e6117fc8",
+      "derived_sha256": "7444df5739d6a4396a17b8e31868817a17801fcd2ef0113f6dc0386c492b373a",
+      "imports": [
+        "QepFeedbackLoss"
+      ],
+      "theorem_declarations": 3,
+      "declarations": [
+        "QepFeedbackTeacher.actual_teacher_loss_bridge",
+        "QepFeedbackTeacher.affine_target_residual",
+        "QepFeedbackTeacher.actual_teacher_loss_difference"
+      ],
+      "manuscript_numbers": [],
+      "extensions": [
+        "sequential-feedback"
+      ]
+    },
+    {
+      "module": "QepFeedbackTrace",
+      "source_sha256": "f7ad615df918ce573e3720b08b806cc35e6c85fa6d1f986f8cb58331e16881ef",
+      "derived_sha256": "1db8107b1c5b23028c1b54cb9afd3c71069cee8edead6e0a1d4a14ee600b8df2",
+      "imports": [
+        "QepFeedbackMatrix"
+      ],
+      "theorem_declarations": 5,
+      "declarations": [
+        "QepFeedbackTrace.actual_error_covariance",
+        "QepFeedbackTrace.trace_sum",
+        "QepFeedbackTrace.actual_matrix_trace_energy",
+        "QepFeedbackTrace.filtered_matched_gram",
+        "QepFeedbackTrace.actual_matrix_matched_unbounded_energy"
+      ],
+      "manuscript_numbers": [],
+      "extensions": [
+        "sequential-feedback"
+      ]
+    },
+    {
+      "module": "QepFeedbackUpstream",
+      "source_sha256": "853eb6559b15ccd3a4b9d2c09da41b4ff3ca3058c19678726be3f799d53da3ea",
+      "derived_sha256": "3af2ceabe36d2ef04f746a844ba507949a9eaed78e30b67dce5ef036ef10f736",
+      "imports": [
+        "QepFeedbackProcess"
+      ],
+      "theorem_declarations": 11,
+      "declarations": [
+        "QepFeedbackUpstream.causal_innovations_joint_measurable",
+        "QepFeedbackUpstream.parameterized_causal_measurePreserving",
+        "QepFeedbackUpstream.parameterized_causal_joint_law",
+        "QepFeedbackUpstream.actual_errors_joint_measurable",
+        "QepFeedbackUpstream.actual_target_joint_measurable",
+        "QepFeedbackUpstream.actual_normalizedTarget_joint_measurable",
+        "QepFeedbackUpstream.actual_upstream_measurePreserving_of_target",
+        "QepFeedbackUpstream.actual_upstream_measurePreserving",
+        "QepFeedbackUpstream.actual_upstream_joint_law",
+        "QepFeedbackUpstream.fresh_dependent_target_zero",
+        "QepFeedbackUpstream.fresh_dependent_target_second"
+      ],
+      "manuscript_numbers": [],
+      "extensions": [
+        "sequential-feedback"
+      ]
+    },
+    {
+      "module": "QepReluControls",
+      "source_sha256": "926e509d3eea97fbb33be802c2372f446d8aed31a4547f2e0623ebe66096c389",
+      "derived_sha256": "926e509d3eea97fbb33be802c2372f446d8aed31a4547f2e0623ebe66096c389",
+      "imports": [
+        "QepReluProbability"
+      ],
+      "theorem_declarations": 8,
+      "declarations": [
+        "QepReluControls.loss_order_reversal_false",
+        "QepReluControls.positivity_order_reversal_false",
+        "QepReluControls.base_weight_zero_at_origin",
+        "QepReluControls.pointwise_weight_invertibility_false",
+        "QepReluControls.physical_seed_error_mismatch",
+        "QepReluControls.base_second_moment_integrable",
+        "QepReluControls.qep_second_moment_integrable",
+        "QepReluControls.actual_continuous_relu_counterexample"
+      ],
+      "manuscript_numbers": [
+        12
+      ],
+      "extensions": []
+    },
+    {
+      "module": "QepReluExpectation",
+      "source_sha256": "61fe3659af4cffe6afaf998adc5f42e8ede4a8dea8e3eafa593d49e1c22b5311",
+      "derived_sha256": "61fe3659af4cffe6afaf998adc5f42e8ede4a8dea8e3eafa593d49e1c22b5311",
+      "imports": [
+        "QepReluProcess"
+      ],
+      "theorem_declarations": 10,
+      "declarations": [
+        "QepReluExpectation.noise_integral",
+        "QepReluExpectation.pair_integrable",
+        "QepReluExpectation.relu_mul_nonneg",
+        "QepReluExpectation.base_inner_scaled",
+        "QepReluExpectation.base_innovation_expectation",
+        "QepReluExpectation.qep_innovation_expectation",
+        "QepReluExpectation.integral_of_preserving",
+        "QepReluExpectation.actual_base_loss",
+        "QepReluExpectation.actual_qep_loss",
+        "QepReluExpectation.actual_strict_gap"
+      ],
+      "manuscript_numbers": [
+        12
+      ],
+      "extensions": []
+    },
+    {
+      "module": "QepReluIntegrals",
+      "source_sha256": "e268ed3d3128df2b844b11683ca3b8f4bdcd13109a8d11f05f503493ade343ca",
+      "derived_sha256": "e268ed3d3128df2b844b11683ca3b8f4bdcd13109a8d11f05f503493ade343ca",
+      "imports": [
+        "Mathlib.Analysis.SpecialFunctions.Integrals.Basic",
+        "Mathlib.Tactic"
+      ],
+      "theorem_declarations": 8,
+      "declarations": [
+        "QepReluIntegrals.integral_relu_square",
+        "QepReluIntegrals.base_inner",
+        "QepReluIntegrals.qep_inner",
+        "QepReluIntegrals.log_three_lt",
+        "QepReluIntegrals.base_outer",
+        "QepReluIntegrals.qep_outer",
+        "QepReluIntegrals.log_three_gt",
+        "QepReluIntegrals.strict_gap"
+      ],
+      "manuscript_numbers": [
+        12
+      ],
+      "extensions": []
+    },
+    {
+      "module": "QepReluLegality",
+      "source_sha256": "61e9862270d72490a7834178c1ba30db4c5942fcfe5e4f62a51b8510f2daeb72",
+      "derived_sha256": "61e9862270d72490a7834178c1ba30db4c5942fcfe5e4f62a51b8510f2daeb72",
+      "imports": [
+        "QepReluExpectation"
+      ],
+      "theorem_declarations": 8,
+      "declarations": [
+        "QepReluLegality.teacher_zero",
+        "QepReluLegality.quantize_measurable",
+        "QepReluLegality.quantize_nonzero_ae",
+        "QepReluLegality.random_target_nonzero_ae",
+        "QepReluLegality.actual_second_weights_nonzero_ae",
+        "QepReluLegality.actual_legal_ae",
+        "QepReluLegality.actual_teacher_loss_gap",
+        "QepReluLegality.one_layer_target_equal"
+      ],
+      "manuscript_numbers": [
+        12
+      ],
+      "extensions": []
+    },
+    {
+      "module": "QepReluPaper",
+      "source_sha256": "4722b919efd1751d416e0d94b78d5573fa361465e1a19284ab90d1c034cc57e2",
+      "derived_sha256": "cbdf10e2c6a7ed7492ac442efb4c850902c49df7a1696825bec8dfdf07f4a2d9",
+      "imports": [
+        "QepReluControls"
+      ],
+      "theorem_declarations": 4,
+      "declarations": [
+        "QepReluPaper.paper_noise_eq",
+        "QepReluPaper.paper_base_expectation",
+        "QepReluPaper.paper_qep_expectation",
+        "QepReluPaper.paper_probability_direction"
+      ],
+      "manuscript_numbers": [
+        12
+      ],
+      "extensions": []
+    },
+    {
+      "module": "QepReluProbability",
+      "source_sha256": "f26b3acd61a1efbff1f5f1fc71cc7e01afc7767f12ba34e146522685a5cbb7c1",
+      "derived_sha256": "f26b3acd61a1efbff1f5f1fc71cc7e01afc7767f12ba34e146522685a5cbb7c1",
+      "imports": [
+        "QepReluLegality"
+      ],
+      "theorem_declarations": 11,
+      "declarations": [
+        "QepReluProbability.positive_integrable",
+        "QepReluProbability.positive_integral_measure",
+        "QepReluProbability.uniform_tail",
+        "QepReluProbability.qep_positive_inner",
+        "QepReluProbability.base_positive_inner",
+        "QepReluProbability.qep_positive_outer",
+        "QepReluProbability.base_positive_probability",
+        "QepReluProbability.qep_positive_probability",
+        "QepReluProbability.actual_positive_probability_base",
+        "QepReluProbability.actual_positive_probability_qep",
+        "QepReluProbability.actual_less_often_positive"
+      ],
+      "manuscript_numbers": [
+        12
+      ],
+      "extensions": []
+    },
+    {
+      "module": "QepReluProcess",
+      "source_sha256": "c5bcb24cdfb560d3eaa90d45c4ba1eeb1565c84617b895803d2001d2ec994d89",
+      "derived_sha256": "41f5d5451b125d442e2659315372410d6e364831269723056f9341bd78e61df7",
+      "imports": [
+        "QepFiniteDitherLaw",
+        "QepReluIntegrals"
+      ],
+      "theorem_declarations": 10,
+      "declarations": [
+        "QepReluProcess.first_bounds",
+        "QepReluProcess.first_eq",
+        "QepReluProcess.first_positive",
+        "QepReluProcess.input_gram_positive",
+        "QepReluProcess.target_eq",
+        "QepReluProcess.first_error_measurable",
+        "QepReluProcess.target_measurable",
+        "QepReluProcess.actual_innovation_law",
+        "QepReluProcess.actual_base_identity",
+        "QepReluProcess.actual_qep_identity"
+      ],
+      "manuscript_numbers": [
+        12
+      ],
+      "extensions": []
+    },
+    {
+      "module": "QepLinearIdentities",
+      "source_sha256": "3877d32f2d34abc5740cc2c409bf1e48213b8b8649c460c8424537718193efa1",
+      "derived_sha256": "c79af5a43ed562e57a39a34e4ee11de89ed8fe1f7045f440409476528f4f152b",
+      "imports": [
+        "QepCorrected"
+      ],
+      "theorem_declarations": 13,
+      "declarations": [
+        "QepLinear.T1_residual_factor",
+        "QepLinear.one_sub_smul_proj_sq",
+        "QepLinear.T2_first_identity",
+        "QepLinear.T3_second_identity",
+        "QepLinear.sandwich_eq_gram",
+        "QepLinear.gram_posSemidef",
+        "QepLinear.T4_first_rhs_posSemidef",
+        "QepLinear.T4_second_rhs_posSemidef",
+        "QepLinear.T4_first_loewner",
+        "QepLinear.T4_second_loewner",
+        "QepLinear.trace_mul_transpose_eq_fSq",
+        "QepLinear.T5_trace",
+        "QepLinear.T5_frobenius"
+      ],
+      "manuscript_numbers": [
+        8
+      ],
+      "extensions": []
+    },
+    {
+      "module": "QepX1Checks",
+      "source_sha256": "a28bacf362a8a432cad550c94a1a7b2fe1b892ace3b210b47c848adc0e9233e0",
+      "derived_sha256": "d6bc6301d065837ca0da0f120b901a5baae9442bd354b4e2db0db1ef151fbf34",
+      "imports": [
+        "QepX1JointFinite"
+      ],
+      "theorem_declarations": 11,
+      "declarations": [
+        "QepX1.check_first_layer_actual",
+        "QepX1.check_gram_inverse_false",
+        "QepX1.check_gram_inverse_true",
+        "QepX1.check_input_legal",
+        "QepX1.check_missing_teacher_row",
+        "QepX1.check_actual_outputs",
+        "QepX1.check_qep_mean",
+        "QepX1.check_qep_not_unbiased",
+        "QepX1.check_actual_mse",
+        "QepX1.check_sample_covariances",
+        "QepX1.check_sample_order_false"
+      ],
+      "manuscript_numbers": [
+        8
+      ],
+      "extensions": []
+    },
+    {
+      "module": "QepX1Conditional",
+      "source_sha256": "43dd857141332fd47daa4bcb211d2501b6b47369c5e07946637c1b6dcd880cb2",
+      "derived_sha256": "d71d91e52ae44da443a779445f030e15161de1483ec395083358f3c1d4ec8247",
+      "imports": [
+        "QepV3Network"
+      ],
+      "theorem_declarations": 9,
+      "declarations": [
+        "QepX1.actual_output_identity",
+        "QepX1.secondPSD_operator_positive",
+        "QepX1.mean_congruence",
+        "QepX1.affine_actual_second_moment",
+        "QepX1.actual_qep_output_moment",
+        "QepX1.actual_qep_error_moment",
+        "QepX1.actual_base_mean",
+        "QepX1.actual_base_output_moment",
+        "QepX1.actual_base_error_moment"
+      ],
+      "manuscript_numbers": [
+        8
+      ],
+      "extensions": []
+    },
+    {
+      "module": "QepX1EntryLaw",
+      "source_sha256": "138c0c4e2a05a5f39e0a052d2beffa0b5bdd7256658898ac5415406c5ee89472",
+      "derived_sha256": "310d9efad26440a04c6d34c05c99043dae0f896886e6de9cb4975349682c5ae5",
+      "imports": [
+        "QepX1Conditional"
+      ],
+      "theorem_declarations": 2,
+      "declarations": [
+        "QepX1.entry_covariance_to_secondPSD",
+        "QepX1.entryOperator_positive_from_law"
+      ],
+      "manuscript_numbers": [
+        8
+      ],
+      "extensions": []
+    },
+    {
+      "module": "QepX1ExpectationBridge",
+      "source_sha256": "45577356a274c5d65e8a1d7be1da35ec3cc380ead070cb267b5672ff48b5bb8e",
+      "derived_sha256": "40a6b322327f88d9f5ff95641d234c66c61dcbd34fdb0b609e34738b6fa524c3",
+      "imports": [
+        "QepX1JointFinite",
+        "QepX1FiniteIntegral"
+      ],
+      "theorem_declarations": 2,
+      "declarations": [
+        "QepX1.actual_mse_le_of_covariance_order",
+        "QepX1.actual_integral_le_of_covariance_order"
+      ],
+      "manuscript_numbers": [
+        8
+      ],
+      "extensions": []
+    },
+    {
+      "module": "QepX1FiniteIntegral",
+      "source_sha256": "50da01d2e737c61190b86b5a532b39c877afdd40738c2063686af407e67bac5e",
+      "derived_sha256": "13eb93d33ca126ff2cf325cf39f8017637716c97fb808a693efae0ce7e514fb7",
+      "imports": [
+        "QepX1NetworkMoments"
+      ],
+      "theorem_declarations": 5,
+      "declarations": [
+        "QepX1.probability_atoms_form_law",
+        "QepX1.finite_mean_entry_integral",
+        "QepX1.finite_fSq_integral",
+        "QepX1.finite_actual_output_square_integrable",
+        "QepX1.finite_actual_error_square_integrable"
+      ],
+      "manuscript_numbers": [
+        8
+      ],
+      "extensions": []
+    },
+    {
+      "module": "QepX1JointFinite",
+      "source_sha256": "d1edc8447813a9b1d42f66f0c533037edbbce289d74b3e449cdbcd23dfccd50b",
+      "derived_sha256": "c29cbaf29f037d9b5c695f6eb1a5507ae722feadbe31edd8ba70e6d394c0dc24",
+      "imports": [
+        "QepX1OrderBridge"
+      ],
+      "theorem_declarations": 2,
+      "declarations": [
+        "QepX1.convex_psdLe_upper",
+        "QepX1.actual_joint_order_of_projection_bounds"
+      ],
+      "manuscript_numbers": [
+        8
+      ],
+      "extensions": []
+    },
+    {
+      "module": "QepX1NetworkMoments",
+      "source_sha256": "83ad87b0db3142255892f33016f0c889d441f3e345d754b73052648e16ba2f4d",
+      "derived_sha256": "8fcb33c12905bd44638bb42f8c00aa9641ea7cf263316bff01e77cd2965e2009",
+      "imports": [
+        "QepX1Conditional"
+      ],
+      "theorem_declarations": 8,
+      "declarations": [
+        "QepX1.actual_output_moment_step",
+        "QepX1.actual_error_moment_step",
+        "QepX1.base_student_step",
+        "QepX1.base_unbiased",
+        "QepX1.base_centered",
+        "QepX1.base_output_equals_teacher_plus_covariance",
+        "QepX1.base_output_moment_step",
+        "QepX1.base_error_moment_step"
+      ],
+      "manuscript_numbers": [
+        8
+      ],
+      "extensions": []
+    },
+    {
+      "module": "QepX1OrderBridge",
+      "source_sha256": "8f75380c4d3ec47410eb8539bad9bda1b07e61ab5dd6fbe1fe87544ef128c85a",
+      "derived_sha256": "888e14864c93f3dba5a3f7d0e56f3242e5cb914750761167b0861688e30c4b2f",
+      "imports": [
+        "QepX1NetworkMoments",
+        "QepV3Order"
+      ],
+      "theorem_declarations": 6,
+      "declarations": [
+        "QepX1.mean_psdLe_support",
+        "QepX1.psdLe_congruence",
+        "QepX1.psdLe_add",
+        "QepX1.psdLe_linear_map",
+        "QepX1.actual_qep_error_le_of_pointwise",
+        "QepX1.actual_qep_output_le_of_pointwise"
+      ],
+      "manuscript_numbers": [
+        8
+      ],
+      "extensions": []
+    },
+    {
+      "module": "QepX1ProjectionActual",
+      "source_sha256": "0bed6569a5ac2be44e8faedf6c5635c6adc9b2eeeef5e3594cf30cd33cea3e24",
+      "derived_sha256": "13825a08ce9bf357284dc2c68d455b064d66dbfba390da44e8c9c8b014621a76",
+      "imports": [
+        "QepX1OrderBridge",
+        "QepLinearIdentities"
+      ],
+      "theorem_declarations": 4,
+      "declarations": [
+        "QepX1.actual_gram_error_identity",
+        "QepX1.actual_gram_output_identity",
+        "QepX1.actual_gram_error_bound",
+        "QepX1.actual_gram_output_bound"
+      ],
+      "manuscript_numbers": [
+        8
+      ],
+      "extensions": []
+    },
+    {
+      "module": "QepX1Theorem14",
+      "source_sha256": "52297d2be40ae35c270d178f888b9816a85db83981c0554751f07c085a7efd60",
+      "derived_sha256": "22bd6683364b4bdbbbfb5737559234b599f4d0477dfc540de72b4ec9b8782da3",
+      "imports": [
+        "QepX1ProjectionActual",
+        "QepX1ExpectationBridge"
+      ],
+      "theorem_declarations": 4,
+      "declarations": [
+        "QepX1.actual_joint_psd_comparison",
+        "QepX1.actual_mse_comparison",
+        "QepX1.actual_comparison_of_full_row_rank",
+        "QepX1.actual_integral_comparison"
+      ],
+      "manuscript_numbers": [
+        8
+      ],
+      "extensions": []
+    },
+    {
+      "module": "QepNoncommutative",
+      "source_sha256": "1355d9992961dcfce33df31fe17ae1888b25ed28be5e86a0c79ecf50ddba96ae",
+      "derived_sha256": "bab887c9b00094e4466309b27ef7936989a7a69e1d2ecc0d53e16c0c8387fb21",
+      "imports": [
+        "Mathlib"
+      ],
+      "theorem_declarations": 26,
+      "declarations": [
+        "QepNoncommutative.D_eq_diagonal",
+        "QepNoncommutative.N_sq",
+        "QepNoncommutative.commutator",
+        "QepNoncommutative.noncommuting",
+        "QepNoncommutative.X2_eq",
+        "QepNoncommutative.X3_eq",
+        "QepNoncommutative.qQ1_eq",
+        "QepNoncommutative.bQ1_eq",
+        "QepNoncommutative.second_input",
+        "QepNoncommutative.second_input_inverse",
+        "QepNoncommutative.Z2_explicit",
+        "QepNoncommutative.gram2_inverse_certificate",
+        "QepNoncommutative.gram2_unit",
+        "QepNoncommutative.pinv_eq",
+        "QepNoncommutative.second_weights",
+        "QepNoncommutative.outputs",
+        "QepNoncommutative.fSq_smul_N",
+        "QepNoncommutative.fSq_neg",
+        "QepNoncommutative.output_errors",
+        "QepNoncommutative.qep_strictly_worse",
+        "QepNoncommutative.residuals",
+        "QepNoncommutative.fro_smul_N",
+        "QepNoncommutative.residual_norms",
+        "QepNoncommutative.bounds",
+        "QepNoncommutative.D_opnorm_certificate",
+        "QepNoncommutative.core"
+      ],
+      "manuscript_numbers": [
+        25
+      ],
+      "extensions": []
+    },
+    {
+      "module": "QepNoncommutativeBridge",
+      "source_sha256": "fe108921021bf984dd572829c971176f391aa3fed13b8238589e09891ec9b489",
+      "derived_sha256": "74462fba6afd87ead2b900072df8314367410212e6eb9c36cf0db9cd2f9e32e2",
+      "imports": [
+        "QepNoncommutative"
+      ],
+      "theorem_declarations": 15,
+      "declarations": [
+        "QepNoncommutativeBridge.teacher_spectral_norm",
+        "QepNoncommutativeBridge.actual_bounds_bridge",
+        "QepNoncommutativeBridge.actual_bound_gap",
+        "QepNoncommutativeBridge.second_weights_det",
+        "QepNoncommutativeBridge.first_weights_unit",
+        "QepNoncommutativeBridge.second_weights_unit",
+        "QepNoncommutativeBridge.both_input_grams_unit",
+        "QepNoncommutativeBridge.teacher_weights_unit",
+        "QepNoncommutativeBridge.teacher_input_grams_unit",
+        "QepNoncommutativeBridge.N_nonzero",
+        "QepNoncommutativeBridge.no_common_similarity_diagonalization",
+        "QepNoncommutativeBridge.N_not_similarity_diagonalizable",
+        "QepNoncommutativeBridge.equal_diagonal_qep_exact",
+        "QepNoncommutativeBridge.actual_output_norms",
+        "QepNoncommutativeBridge.noncommuting_but_improves"
+      ],
+      "manuscript_numbers": [
+        25
+      ],
+      "extensions": []
+    },
+    {
+      "module": "QepCellInduction",
+      "source_sha256": "4445358c60bc8b049fa378c52e9ed2de88ec685e19f351a14d1205a78c16be7f",
+      "derived_sha256": "0e7a34f3c239aa4a34efb0cf8a57ad89b9b0868e099cabe461c5adcdf7277b58",
+      "imports": [
+        "QepLinearInduction",
+        "QepCellProjection"
+      ],
+      "theorem_declarations": 5,
+      "declarations": [
+        "QepLinear.T11_error_congr_cell",
+        "QepLinear.T11_gram_congr_cell",
+        "QepLinear.T11_error_congr_cell_mask",
+        "QepLinear.T11_monotone_congr",
+        "QepLinear.T12_fSq_sum_cells"
+      ],
+      "manuscript_numbers": [
+        15
+      ],
+      "extensions": []
+    },
+    {
+      "module": "QepCellProjection",
+      "source_sha256": "da32da13cf2a9cd06e65fe5af8062849e2ed4347d62101aac77e870942906391",
+      "derived_sha256": "fe4eeeffc8a4e93f24bcc19ddd17554417648601c4b3ef22b328ce87a15a6fd3",
+      "imports": [
+        "QepLinearIdentities"
+      ],
+      "theorem_declarations": 9,
+      "declarations": [
+        "QepLinear.diagonal_zero_one_proj",
+        "QepLinear.T7_cell_symm",
+        "QepLinear.T7_cell_idem",
+        "QepLinear.T7_cell_fix",
+        "QepLinear.T7_cell_target",
+        "QepLinear.T7_Tmix_cell",
+        "QepLinear.T7_T1_cell",
+        "QepLinear.T7_T2_cell",
+        "QepLinear.T7_T3_cell"
+      ],
+      "manuscript_numbers": [
+        15
+      ],
+      "extensions": []
+    },
+    {
+      "module": "QepLinearInduction",
+      "source_sha256": "cb872f33490e04e6143d13f1af512702bf629aa3deef3e485b8f865a160e032b",
+      "derived_sha256": "e6f0339b128c0bf34145df4d35287d0cf98b3d51a27e4564ef30bc8ce740a716",
+      "imports": [
+        "QepLinearIdentities",
+        "QepLinearOrder"
+      ],
+      "theorem_declarations": 6,
+      "declarations": [
+        "QepLinear.T8_error_congr",
+        "QepLinear.T8_gram_congr",
+        "QepLinear.T9_multilayer",
+        "QepLinear.T9_multilayer_dep",
+        "QepLinear.T10_trace_le",
+        "QepLinear.T10_multilayer_trace"
+      ],
+      "manuscript_numbers": [
+        8
+      ],
+      "extensions": []
+    },
+    {
+      "module": "QepLinearOrder",
+      "source_sha256": "825545209268e9c6cdb78c589c0091509969f37808ac0e7f0a27731cf76294c5",
+      "derived_sha256": "d227e27d1d5c3fbc4361f826bae89641ca34c51efe0936070311308e7ab947d5",
+      "imports": [
+        "QepCorrected"
+      ],
+      "theorem_declarations": 6,
+      "declarations": [
+        "QepLinear.Loewner.trans",
+        "QepLinear.Loewner.of_eq",
+        "QepLinear.Loewner.add",
+        "QepLinear.Loewner.congr",
+        "QepLinear.Loewner.convex",
+        "QepLinear.T6_order_propagation"
+      ],
+      "manuscript_numbers": [
+        8
+      ],
+      "extensions": []
+    },
+    {
+      "module": "QepMarginCertificate",
+      "source_sha256": "9f63bbf1b3491f944b764be6c4de7efd3245138f986dbca3eda8e83eebf961aa",
+      "derived_sha256": "eb23d1cd07811d81c1ce7337d36fbcf8fde44a6c8ae04420048161966cbd6c24",
+      "imports": [
+        "QepCorrected"
+      ],
+      "theorem_declarations": 12,
+      "declarations": [
+        "QepMargin.radius_nonneg",
+        "QepMargin.margin_certificate_upto",
+        "QepMargin.margin_certificate",
+        "QepMargin.frob_sq",
+        "QepMargin.fSq_sub_smul",
+        "QepMargin.contraction_sq",
+        "QepMargin.contraction_norm_sq",
+        "QepMargin.contraction_norm",
+        "QepMargin.qep_pre_diff",
+        "QepMargin.one_step_qep",
+        "QepMargin.one_step_base",
+        "QepMargin.base_pre_diff"
+      ],
+      "manuscript_numbers": [],
+      "extensions": [
+        "margin-certificate"
+      ]
+    },
+    {
+      "module": "QepMaskedContraction",
+      "source_sha256": "4a1e347927e3271b238b34b406bc51d4f888db3df2f1cb02df2a283e483f13af",
+      "derived_sha256": "a13c19800d4835e2657926a055862b1a5dbfff92ddb15221491ac9a285066405",
+      "imports": [
+        "Mathlib"
+      ],
+      "theorem_declarations": 7,
+      "declarations": [
+        "QepMaskedContraction.nsq_eq_sum",
+        "QepMaskedContraction.nsq_nonneg",
+        "QepMaskedContraction.nsq_eq_zero",
+        "QepMaskedContraction.nsq_vecMul",
+        "QepMaskedContraction.nsq_one_sub_smul_proj",
+        "QepMaskedContraction.masked_contraction_iff",
+        "QepMaskedContraction.masked_contraction_iff_diagonal"
+      ],
+      "manuscript_numbers": [
+        13
+      ],
+      "extensions": []
+    },
+    {
+      "module": "QepReluAlgebra",
+      "source_sha256": "53dd018588617299b3fc9b685c50fd5eb4f8fabd101b2a976d491490b8baaae9",
+      "derived_sha256": "f84dc233148432203b64239b78543a9a00b643115f063a28455901dd6b509df5",
+      "imports": [
+        "Mathlib"
+      ],
+      "theorem_declarations": 7,
+      "declarations": [
+        "QepReluAlgebra.teacher",
+        "QepReluAlgebra.first_weight",
+        "QepReluAlgebra.second_input",
+        "QepReluAlgebra.qep_target",
+        "QepReluAlgebra.base_output",
+        "QepReluAlgebra.qep_output",
+        "QepReluAlgebra.core"
+      ],
+      "manuscript_numbers": [
+        12
+      ],
+      "extensions": []
+    },
+    {
+      "module": "QepScheduleExample",
+      "source_sha256": "64ffd339102462c4436d8a965e3a7606701de874c239caa993d6390b0f082f76",
+      "derived_sha256": "c17c05f2a7248419a00ddd96139f63a02f4bf8d99ebc43b34517c67196f073de",
+      "imports": [
+        "Mathlib"
+      ],
+      "theorem_declarations": 16,
+      "declarations": [
+        "QepScheduleExample.teacher",
+        "QepScheduleExample.Q1_eq",
+        "QepScheduleExample.gram2_eq",
+        "QepScheduleExample.gram2_inverse_certificate",
+        "QepScheduleExample.gram2_unit",
+        "QepScheduleExample.Q2_eq",
+        "QepScheduleExample.Z3_eq",
+        "QepScheduleExample.gram3_eq",
+        "QepScheduleExample.gram3_inverse_certificate",
+        "QepScheduleExample.Q3_eq",
+        "QepScheduleExample.Z4_eq",
+        "QepScheduleExample.L_closed",
+        "QepScheduleExample.Lbase_closed",
+        "QepScheduleExample.L_values",
+        "QepScheduleExample.sgn_sq",
+        "QepScheduleExample.averages"
+      ],
+      "manuscript_numbers": [],
+      "extensions": [
+        "linear-boundaries"
+      ]
+    },
+    {
+      "module": "QepUSquaredExample",
+      "source_sha256": "bf0ce2c0b3a62e997c1e3aae922e58c44a94bae4ceba0775a9d90b38355cb897",
+      "derived_sha256": "d490690f95b3287cdee0815f371251a1b13b0da99ab13a2f2b9d9668013c8f46",
+      "imports": [
+        "QepSharedE",
+        "Mathlib.Data.Fintype.BigOperators"
+      ],
+      "theorem_declarations": 81,
+      "declarations": [
+        "QepUSquared.step_recursion",
+        "QepUSquared.trace_recursion",
+        "QepUSquared.dev_one",
+        "QepUSquared.residual_eq",
+        "QepUSquared.residual_z",
+        "QepUSquared.q_ne_zero",
+        "QepUSquared.absP",
+        "QepUSquared.absN",
+        "QepUSquared.z2_pos",
+        "QepUSquared.base_closed",
+        "QepUSquared.qep_closed",
+        "QepUSquared.base_z_ppp",
+        "QepUSquared.base_dev_ppp",
+        "QepUSquared.base_ne_ppp",
+        "QepUSquared.base_U_ppp",
+        "QepUSquared.base_z_ppm",
+        "QepUSquared.base_dev_ppm",
+        "QepUSquared.base_ne_ppm",
+        "QepUSquared.base_U_ppm",
+        "QepUSquared.base_z_pmp",
+        "QepUSquared.base_dev_pmp",
+        "QepUSquared.base_ne_pmp",
+        "QepUSquared.base_U_pmp",
+        "QepUSquared.base_z_pmm",
+        "QepUSquared.base_dev_pmm",
+        "QepUSquared.base_ne_pmm",
+        "QepUSquared.base_U_pmm",
+        "QepUSquared.base_z_mpp",
+        "QepUSquared.base_dev_mpp",
+        "QepUSquared.base_ne_mpp",
+        "QepUSquared.base_U_mpp",
+        "QepUSquared.base_z_mpm",
+        "QepUSquared.base_dev_mpm",
+        "QepUSquared.base_ne_mpm",
+        "QepUSquared.base_U_mpm",
+        "QepUSquared.base_z_mmp",
+        "QepUSquared.base_dev_mmp",
+        "QepUSquared.base_ne_mmp",
+        "QepUSquared.base_U_mmp",
+        "QepUSquared.base_z_mmm",
+        "QepUSquared.base_dev_mmm",
+        "QepUSquared.base_ne_mmm",
+        "QepUSquared.base_U_mmm",
+        "QepUSquared.base_nonvanishing",
+        "QepUSquared.qep_z_ppp",
+        "QepUSquared.qep_dev_ppp",
+        "QepUSquared.qep_ne_ppp",
+        "QepUSquared.qep_U_ppp",
+        "QepUSquared.qep_z_ppm",
+        "QepUSquared.qep_dev_ppm",
+        "QepUSquared.qep_ne_ppm",
+        "QepUSquared.qep_U_ppm",
+        "QepUSquared.qep_z_pmp",
+        "QepUSquared.qep_dev_pmp",
+        "QepUSquared.qep_ne_pmp",
+        "QepUSquared.qep_U_pmp",
+        "QepUSquared.qep_z_pmm",
+        "QepUSquared.qep_dev_pmm",
+        "QepUSquared.qep_ne_pmm",
+        "QepUSquared.qep_U_pmm",
+        "QepUSquared.qep_z_mpp",
+        "QepUSquared.qep_dev_mpp",
+        "QepUSquared.qep_ne_mpp",
+        "QepUSquared.qep_U_mpp",
+        "QepUSquared.qep_z_mpm",
+        "QepUSquared.qep_dev_mpm",
+        "QepUSquared.qep_ne_mpm",
+        "QepUSquared.qep_U_mpm",
+        "QepUSquared.qep_z_mmp",
+        "QepUSquared.qep_dev_mmp",
+        "QepUSquared.qep_ne_mmp",
+        "QepUSquared.qep_U_mmp",
+        "QepUSquared.qep_z_mmm",
+        "QepUSquared.qep_dev_mmm",
+        "QepUSquared.qep_ne_mmm",
+        "QepUSquared.qep_U_mmm",
+        "QepUSquared.qep_nonvanishing",
+        "QepUSquared.mean_base_sq",
+        "QepUSquared.mean_qep_sq",
+        "QepUSquared.mean_sq_gap",
+        "QepUSquared.recursion_holds"
+      ],
+      "manuscript_numbers": [],
+      "extensions": [
+        "linear-boundaries"
+      ]
+    },
+    {
+      "module": "QepX1ZeroChecks",
+      "source_sha256": "1be03dd4a04feb4f6e719719daf76965d0f13190d1a4dc6bff3e91b14ae72f69",
+      "derived_sha256": "1be03dd4a04feb4f6e719719daf76965d0f13190d1a4dc6bff3e91b14ae72f69",
+      "imports": [
+        "QepX1ZeroNetwork",
+        "QepX1EntryLaw",
+        "QepX1Checks"
+      ],
+      "theorem_declarations": 15,
+      "declarations": [
+        "QepX1Zero.mix_law",
+        "QepX1Zero.mix_first_moments",
+        "QepX1Zero.mix_entry_covariances",
+        "QepX1Zero.mix_noise_moments",
+        "QepX1Zero.mix_first_student",
+        "QepX1Zero.mix_initial_singular",
+        "QepX1Zero.mix_positive_legal",
+        "QepX1Zero.mix_not_old_legal",
+        "QepX1Zero.mix_main_instantiated",
+        "QepX1Zero.mix_actual_outputs",
+        "QepX1Zero.mix_exact_covariances",
+        "QepX1Zero.mix_exact_output_moments",
+        "QepX1Zero.mix_strictly_different",
+        "QepX1Zero.mix_positive_first_illegal",
+        "QepX1Zero.singular_projection_not_fixing"
+      ],
+      "manuscript_numbers": [
+        8
+      ],
+      "extensions": []
+    },
+    {
+      "module": "QepX1ZeroLayer",
+      "source_sha256": "c8bec2b98d1ed1e1118d3b9886e028a90983b8ddf8b117e110090c9f1f43b2aa",
+      "derived_sha256": "820842f5334313e66d903f036db4dfe0774fe98aebebd848d77b70f444d149d4",
+      "imports": [
+        "QepX1Theorem14"
+      ],
+      "theorem_declarations": 10,
+      "declarations": [
+        "QepX1Zero.correctedWeight_zero",
+        "QepX1Zero.correctedInput_zero",
+        "QepX1Zero.actual_output_identity",
+        "QepX1Zero.actual_gram_error_bound",
+        "QepX1Zero.actual_gram_output_bound",
+        "QepX1Zero.actual_qep_first_moment",
+        "QepX1Zero.actual_qep_output_moment",
+        "QepX1Zero.actual_qep_error_moment",
+        "QepX1Zero.actual_qep_error_le_of_pointwise",
+        "QepX1Zero.actual_qep_output_le_of_pointwise"
+      ],
+      "manuscript_numbers": [
+        8
+      ],
+      "extensions": []
+    },
+    {
+      "module": "QepX1ZeroNetwork",
+      "source_sha256": "59c398d94a343a2732a0312bbcb9a2af4558f2b4fb1bfc6f8d13f499ebb1f1fe",
+      "derived_sha256": "0599586d6f098582364b9e72f20450ffa51adcbe96e4b17f80a595c302911cf1",
+      "imports": [
+        "QepX1ZeroLayer"
+      ],
+      "theorem_declarations": 10,
+      "declarations": [
+        "QepX1Zero.positiveLegal_cases",
+        "QepX1Zero.old_legal_implies_positiveLegal",
+        "QepX1Zero.zero_schedule_positiveLegal",
+        "QepX1Zero.mixed_zero_student_step",
+        "QepX1Zero.actual_joint_order_of_projection_bounds",
+        "QepX1Zero.actual_joint_psd_comparison",
+        "QepX1Zero.actual_mse_comparison",
+        "QepX1Zero.actual_comparison_of_full_row_rank",
+        "QepX1Zero.actual_integral_comparison",
+        "QepX1Zero.actual_prefix_comparison"
+      ],
+      "manuscript_numbers": [
+        8
+      ],
+      "extensions": []
+    },
+    {
+      "module": "QepX1ZeroNullAtoms",
+      "source_sha256": "6919ea48f67bacd72dad1e37dad4d1c5f0fd70c91df142be7bd32c52de27d3fb",
+      "derived_sha256": "6919ea48f67bacd72dad1e37dad4d1c5f0fd70c91df142be7bd32c52de27d3fb",
+      "imports": [
+        "QepX1ZeroChecks"
+      ],
+      "theorem_declarations": 9,
+      "declarations": [
+        "QepX1Zero.null_law",
+        "QepX1Zero.null_noise_moments",
+        "QepX1Zero.null_first_student",
+        "QepX1Zero.null_positive_legal",
+        "QepX1Zero.null_supported_singular_witness",
+        "QepX1Zero.null_all_atoms_legal_false",
+        "QepX1Zero.null_main_instantiated",
+        "QepX1Zero.null_actual_outputs",
+        "QepX1Zero.null_exact_moments"
+      ],
+      "manuscript_numbers": [
+        8
+      ],
+      "extensions": []
+    },
+    {
+      "module": "QepX1ZeroTwoSpaces",
+      "source_sha256": "11451efe95da4143565cd984b6c41be1b8fae2cdc98cb07fa0e840a3a741869a",
+      "derived_sha256": "11451efe95da4143565cd984b6c41be1b8fae2cdc98cb07fa0e840a3a741869a",
+      "imports": [
+        "QepX1ZeroChecks"
+      ],
+      "theorem_declarations": 7,
+      "declarations": [
+        "QepX1Zero.wide_law",
+        "QepX1Zero.wide_first_moments",
+        "QepX1Zero.wide_noise_moments",
+        "QepX1Zero.wide_student_eq",
+        "QepX1Zero.zero_two_spaces_main",
+        "QepX1Zero.zero_two_spaces_equal",
+        "QepX1Zero.zero_two_spaces_cardinality"
+      ],
+      "manuscript_numbers": [
+        8
+      ],
+      "extensions": []
+    },
+    {
+      "module": "QepRandomOverloadCross",
+      "source_sha256": "094f7a6775c4a461913f2a81731bb343e5335dce9c8777304e6352dddb21e301",
+      "derived_sha256": "ebeb6e15f0946279ab72a1b1af266993de3984ba22162d29fe79fa68c61e2d96",
+      "imports": [
+        "QepActualOverloadEvent",
+        "QepGeneralMatrixHistory"
+      ],
+      "theorem_declarations": 7,
+      "declarations": [
+        "QepRandomOverloadCross.error_coordinate_decomposition",
+        "QepRandomOverloadCross.actual_error_coordinate_integrable",
+        "QepRandomOverloadCross.actual_error_coordinate_mean",
+        "QepRandomOverloadCross.actual_cross_integrable",
+        "QepRandomOverloadCross.actual_cross_mean",
+        "QepRandomOverloadCross.all_random_noise_cross_eq_bias_cross",
+        "QepRandomOverloadCross.all_random_actual_overload_cross_bound"
+      ],
+      "manuscript_numbers": [
+        4
+      ],
+      "extensions": [
+        "finite-grid-continuous"
+      ]
+    },
+    {
+      "module": "QepRandomOverloadGap",
+      "source_sha256": "2c23a9482c816b327737e587d944ece1a310828c0e4e974a5d9c489d7d717e79",
+      "derived_sha256": "2c5d8167e6854c66792263fcc569004b6f8200936dba7fc83c484e75e54e55d3",
+      "imports": [
+        "QepGeneralMatrixHistory",
+        "QepGeneralOverloadBridge"
+      ],
+      "theorem_declarations": 4,
+      "declarations": [
+        "QepRandomOverloadGap.all_random_energy",
+        "QepRandomOverloadGap.all_random_gram_gap",
+        "QepRandomOverloadGap.matrix_cross_integral_bound",
+        "QepRandomOverloadGap.all_random_gram_gap_bound"
+      ],
+      "manuscript_numbers": [
+        4
+      ],
+      "extensions": [
+        "finite-grid-continuous"
+      ]
+    },
+    {
+      "module": "QepCommutator",
+      "source_sha256": "cb992a849acdf97e824a2415b084b2f7e6fc4b9151d689b93f471d8ed06b8a28",
+      "derived_sha256": "31325705a524ec275e677bd9d3d6e99279574dba6615d2def57565b7b7226daa",
+      "imports": [
+        "QepLinearOrder"
+      ],
+      "theorem_declarations": 32,
+      "declarations": [
+        "QepComm.dp_self_nonneg",
+        "QepComm.BilBound.nonneg_of_ne",
+        "QepComm.bil_factor",
+        "QepComm.proj_self",
+        "QepComm.compl_symm",
+        "QepComm.compl_idem",
+        "QepComm.pyth",
+        "QepComm.comm_compress_eq",
+        "QepComm.BilBound.compress",
+        "QepComm.BilBound.of_commutator",
+        "QepComm.cross_posSemidef",
+        "QepComm.B_fix",
+        "QepComm.B_transpose",
+        "QepComm.proj_posSemidef",
+        "QepComm.sandwich_posSemidef",
+        "QepComm.T1_decomp",
+        "QepComm.T2_decomp",
+        "QepComm.T1_core",
+        "QepComm.T2_core",
+        "QepComm.T1_proj",
+        "QepComm.T2_proj",
+        "QepComm.T1_commutator",
+        "QepComm.T2_commutator",
+        "QepComm.T3_residual",
+        "QepComm.sandwich_sub",
+        "QepComm.U_symm",
+        "QepComm.T3_error",
+        "QepComm.T4_identity",
+        "QepComm.T4_split",
+        "QepComm.T4_gram",
+        "QepComm.T3_error_commutator",
+        "QepComm.T4_gram_commutator"
+      ],
+      "manuscript_numbers": [
+        15
+      ],
+      "extensions": []
+    },
+    {
+      "module": "QepDefectKernel",
+      "source_sha256": "1e6e263b94406016bd5748788b8fd021aebd2fb8b319afe07f4818c62a5ff9b7",
+      "derived_sha256": "1d24f2e5568b7b1f525aee39252d411756633e994bb23fef79bc0b0d43c0084d",
+      "imports": [
+        "QepLinearOrder"
+      ],
+      "theorem_declarations": 5,
+      "declarations": [
+        "QepComm.convex_defect",
+        "QepComm.T5_step_C",
+        "QepComm.T5_step_G",
+        "QepComm.T5_multilayer",
+        "QepComm.T5_multilayer_dep"
+      ],
+      "manuscript_numbers": [
+        15
+      ],
+      "extensions": []
+    }
+  ]
+}

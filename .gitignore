@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.lake/
+.venv/
+reproduced_figures/
+*REPLAY_RESULT.json
+RECEIPT_CHECK_RESULT.json
+*.aux
+*.log
+*.out

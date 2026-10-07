@@ -1,0 +1,13 @@
+name = "qep_artifact"
+version = "4.1.0"
+defaultTargets = ["QepArtifact"]
+moreLeanArgs = ["-j", "1", "-M", "8192"]
+
+[[require]]
+name = "mathlib"
+git = "https://github.com/leanprover-community/mathlib4.git"
+rev = "d13f23b723b8a846827a245b89c10fc7d3f11612"
+
+[[lean_lib]]
+name = "QepArtifact"
+roots = ["QepSharedE", "QepAlpha", "QepCorrected", "QepInterior", "QepCorollary", "QepProjectionExample", "QepInteriorAlpha", "QepSharedEExtended", "QepDitherFinite", "QepGram", "QepMatrixFamily", "QepDitherDepth", "QepThreeLayerExamples", "QepV1Checks", "QepV1DomainBound", "QepV1Envelope", "QepV1Existence", "QepV1Matrix", "QepV1Remainder", "QepV1Scalar", "QepFiniteDitherLaw", "QepFiniteDitherMatrix", "QepFiniteOverloadExamples", "QepOverloadGap", "QepFiniteDitherHistory", "QepFiniteDitherBridge", "QepV3Checks", "QepV3Conditional", "QepV3Expectation", "QepV3Network", "QepV3Order", "QepV3RowSpace", "QepActualFiniteMoments", "QepActualNonsingular", "QepActualOverloadEvent", "QepContinuousCoordinates", "QepFiniteMomentAssembly", "QepGeneralMatrixDither", "QepGeneralMatrixHistory", "QepGeneralOverloadBridge", "QepFeedbackAlgebra", "QepFeedbackEnergy", "QepFeedbackFiniteL2", "QepFeedbackInnovation", "QepFeedbackMoments", "QepFeedbackProcess", "QepFeedbackAdaptive", "QepFeedbackBias", "QepFeedbackConditionalMoments", "QepFeedbackControls", "QepFeedbackCovariance", "QepFeedbackFiniteEnergy", "QepFeedbackLDL", "QepFeedbackLoss", "QepFeedbackMatrix", "QepFeedbackTeacher", "QepFeedbackTrace", "QepFeedbackUpstream", "QepReluControls", "QepReluExpectation", "QepReluIntegrals", "QepReluLegality", "QepReluPaper", "QepReluProbability", "QepReluProcess", "QepLinearIdentities", "QepX1Checks", "QepX1Conditional", "QepX1EntryLaw", "QepX1ExpectationBridge", "QepX1FiniteIntegral", "QepX1JointFinite", "QepX1NetworkMoments", "QepX1OrderBridge", "QepX1ProjectionActual", "QepX1Theorem14", "QepNoncommutative", "QepNoncommutativeBridge", "QepCellInduction", "QepCellProjection", "QepLinearInduction", "QepLinearOrder", "QepMarginCertificate", "QepMaskedContraction", "QepReluAlgebra", "QepScheduleExample", "QepUSquaredExample", "QepX1ZeroChecks", "QepX1ZeroLayer", "QepX1ZeroNetwork", "QepX1ZeroNullAtoms", "QepX1ZeroTwoSpaces", "QepRandomOverloadCross", "QepRandomOverloadGap", "QepCommutator", "QepDefectKernel", "QepArtifact", "Audit", "ArtifactCurrentControls"]

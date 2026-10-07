@@ -1,0 +1,14 @@
+\begin{table}[t]
+\centering\small
+\begin{tabular}{@{}cccccc@{}}
+\toprule
+$\alpha$ & removed directly & through later noise & predicted gain & measured gain & error of QEP\\
+\midrule
+$0.25$ & $0.0882$ & $0.0017$ & $0.0898$ & $0.0897\pm0.0022$ & $0.2093$\\
+$0.5$ & $0.1356$ & $0.0030$ & $0.1386$ & $0.1392\pm0.0024$ & $0.1598$\\
+$0.75$ & $0.1579$ & $0.0040$ & $0.1619$ & $0.1621\pm0.0024$ & $0.1369$\\
+$1$ & $0.1640$ & $0.0046$ & $0.1686$ & $0.1686\pm0.0024$ & $0.1305$\\
+\bottomrule
+\end{tabular}
+\caption{The two parts of the gain in Proposition~\ref{prop:gain}, in a linear network $8\to6\to4\to2$ with dither of step $0.3$ and strengths $\alpha_2=\alpha_3=\alpha$. The prediction is computed from the recursions \eqref{eq:gainD}--\eqref{eq:gainL} with sources estimated on $10^4$ runs; the measured gain comes from $10^4$ independent runs and is given with two standard errors. The mean-square error without compensation is $0.2991$.}\label{tab:split}
+\end{table}

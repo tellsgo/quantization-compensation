@@ -1,0 +1,19 @@
+{
+  "positive": [
+    "tests/PositiveControls.lean",
+    "ArtifactCurrentControls.lean"
+  ],
+  "negative": [
+    "tests/negative/FalseAlphaMessage.lean",
+    "tests/negative/FalseInvertibility.lean",
+    "tests/negative/FalseMatrixGap.lean",
+    "tests/negative/FalseMonotonicity.lean",
+    "tests/negative/FalseNoiseEnergy.lean",
+    "tests/negative/FalseProjectionDominance.lean",
+    "tests/negative/FalseSharedBound.lean",
+    "tests/negative/NegativeAlphaOutside.lean",
+    "tests/negative/NegativeNoDefect.lean",
+    "tests/negative/NegativeNonmonotoneMap.lean"
+  ],
+  "purpose": "Wrong bound order, monotonicity, projection, code selection, invertibility, energy, zero-defect inequality, invalid strength and positivity assumptions must be rejected. Controls are not counted as scientific declarations."
+}

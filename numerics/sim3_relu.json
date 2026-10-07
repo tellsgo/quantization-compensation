@@ -1,0 +1,199 @@
+{
+ "protocol": "Numerical illustration 3: ReLU networks.\n\nPart (a): Example ex:noflip.  Two ReLU layers, X = [[1,-1,1],[-1,1,1]], W_1 = I, W_2 = [[1,-2],[-1,-1]],\n  independent errors uniform on [-t, t] on every weight (the law of subtractive dither with step 2t), alpha_2 = 1.\n  Protocol: t in {5e-4, 1e-3, 1/600, 5e-3, 1e-2, 2e-2, 5e-2, 1e-1}; 400000 runs per t, independent across t\n  (a first run used common random numbers across t; it was replaced so that the plotted points are independent);\n  the same error draws for both schemes; record (D_QEP - D_BASE)/t^2 with its standard error and the number of activation\n  changes relative to the teacher, in either scheme, at either layer.\n\nPart (b): the bottleneck family after Corollary cor:hr, sign-valued errors +-t on every weight, exact enumeration\n  of the 1024 realizations.  eta in {0.03, 0.1}; t in {1e-4, 3e-4, 1e-3, 3e-3, 1e-2, 3e-2}.\n  Record the largest commutator norm, the bound sum_c tr K of Theorem thm:relu, the two mean-square errors and\n  the number of activation changes.\n",
+ "bottleneck": [
+  {
+   "eta": 0.03,
+   "t": 0.0001,
+   "kmax": 3.0006001199424845e-06,
+   "bound": 2.100279012762138e-12,
+   "mse_base": 7.250585040003935e-07,
+   "mse_qep": 2.0005850400270135e-07,
+   "excess": -5.249999999976922e-07,
+   "flips": 0
+  },
+  {
+   "eta": 0.03,
+   "t": 0.0003,
+   "kmax": 9.005403240812568e-06,
+   "bound": 5.670753610595336e-11,
+   "mse_base": 6.525526824028821e-06,
+   "mse_qep": 1.8005268242185896e-06,
+   "excess": -4.724999999810231e-06,
+   "flips": 0
+  },
+  {
+   "eta": 0.03,
+   "t": 0.001,
+   "kmax": 3.006012019977407e-05,
+   "bound": 2.1002802780745147e-09,
+   "mse_base": 7.250589000359511e-05,
+   "mse_qep": 2.00058900269879e-05,
+   "excess": -5.2499999976607215e-05,
+   "flips": 0
+  },
+  {
+   "eta": 0.03,
+   "t": 0.003,
+   "kmax": 9.054325844392444e-05,
+   "bound": 5.6707843574772424e-08,
+   "mse_base": 0.0006525558902915873,
+   "mse_qep": 0.00018005589218608636,
+   "excess": -0.00047249999810550095,
+   "flips": 0
+  },
+  {
+   "eta": 0.03,
+   "t": 0.01,
+   "kmax": 0.00030612240594905603,
+   "bound": 2.1004068204557753e-06,
+   "mse_base": 0.007250985035999967,
+   "mse_qep": 0.0020009852699616713,
+   "excess": -0.005249999766038295,
+   "flips": 0
+  },
+  {
+   "eta": 0.03,
+   "t": 0.03,
+   "kmax": 0.0009574454919695052,
+   "bound": 5.673861899694888e-05,
+   "mse_base": 0.06528766791600009,
+   "mse_qep": 0.018037686920145977,
+   "excess": -0.04724998099585411,
+   "flips": 0
+  },
+  {
+   "eta": 0.1,
+   "t": 0.0001,
+   "kmax": 1.0002000398635223e-05,
+   "bound": 7.010333375333503e-12,
+   "mse_base": 7.256500040040551e-07,
+   "mse_qep": 2.0065000402985212e-07,
+   "excess": -5.249999999742029e-07,
+   "flips": 0
+  },
+  {
+   "eta": 0.1,
+   "t": 0.0003,
+   "kmax": 3.0018010766054863e-05,
+   "bound": 1.8927901019461153e-10,
+   "mse_base": 6.530850324323463e-06,
+   "mse_qep": 1.8058503264180154e-06,
+   "excess": -4.724999997905447e-06,
+   "flips": 0
+  },
+  {
+   "eta": 0.1,
+   "t": 0.001,
+   "kmax": 0.00010020039929256369,
+   "bound": 7.010337528519212e-09,
+   "mse_base": 7.256504003999451e-05,
+   "mse_qep": 2.006504029851742e-05,
+   "excess": -5.249999974147709e-05,
+   "flips": 0
+  },
+  {
+   "eta": 0.1,
+   "t": 0.003,
+   "kmax": 0.00030181082395341267,
+   "bound": 1.8928001943733206e-07,
+   "mse_base": 0.0006530882432399948,
+   "mse_qep": 0.0001805882641805022,
+   "excess": -0.0004724999790594926,
+   "flips": 0
+  },
+  {
+   "eta": 0.1,
+   "t": 0.01,
+   "kmax": 0.0010204065695448782,
+   "bound": 7.010752890997083e-06,
+   "mse_base": 0.0072569003999999925,
+   "mse_qep": 0.002006902986062151,
+   "excess": -0.005249997413937842,
+   "flips": 0
+  },
+  {
+   "eta": 0.1,
+   "t": 0.03,
+   "kmax": 0.0031914406017821157,
+   "bound": 0.00018938103027977404,
+   "mse_base": 0.06534093239999998,
+   "mse_qep": 0.01809114245382505,
+   "excess": -0.04724978994617493,
+   "flips": 0
+  }
+ ],
+ "noflip": [
+  {
+   "t": 0.0005,
+   "excess_over_t2": 0.07518717824061462,
+   "se": 0.0024793242350103226,
+   "flips": 0,
+   "mse_base": 2.501790081950282e-07,
+   "mse_qep": 2.6897580275518126e-07,
+   "lower_bound": 0.05306357407407407
+  },
+  {
+   "t": 0.001,
+   "excess_over_t2": 0.07166797708816583,
+   "se": 0.0024863293667227366,
+   "flips": 0,
+   "mse_base": 9.981038803089416e-07,
+   "mse_qep": 1.0697718573971543e-06,
+   "lower_bound": 0.032032074074074074
+  },
+  {
+   "t": 0.0016666666666666668,
+   "excess_over_t2": 0.07607060716131174,
+   "se": 0.002492606663127258,
+   "flips": 0,
+   "mse_base": 2.778208914702206e-06,
+   "mse_qep": 2.9895161568170764e-06,
+   "lower_bound": 0.003957407407407396
+  },
+  {
+   "t": 0.005,
+   "excess_over_t2": 0.0711113385461661,
+   "se": 0.00249044533323278,
+   "flips": 0,
+   "mse_base": 2.5019341402262288e-05,
+   "mse_qep": 2.6797124865916958e-05,
+   "lower_bound": -0.1369759259259259
+  },
+  {
+   "t": 0.01,
+   "excess_over_t2": 0.07383279686381562,
+   "se": 0.002488513983413964,
+   "flips": 0,
+   "mse_base": 9.983182470819354e-05,
+   "mse_qep": 0.00010721510439457157,
+   "lower_bound": -0.3501259259259259
+  },
+  {
+   "t": 0.02,
+   "excess_over_t2": 0.07613582221847248,
+   "se": 0.002495042283633593,
+   "flips": 0,
+   "mse_base": 0.0004015391941378158,
+   "mse_qep": 0.00043199352302520267,
+   "lower_bound": -0.7827259259259259
+  },
+  {
+   "t": 0.05,
+   "excess_over_t2": 0.071129385405309,
+   "se": 0.0024944699153338504,
+   "flips": 0,
+   "mse_base": 0.002502602028221998,
+   "mse_qep": 0.0026804254917353392,
+   "lower_bound": -2.130925925925926
+  },
+  {
+   "t": 0.1,
+   "excess_over_t2": 0.06908784730705786,
+   "se": 0.0025064457568057205,
+   "flips": 0,
+   "mse_base": 0.010023509749408325,
+   "mse_qep": 0.010714388222479073,
+   "lower_bound": -4.545925925925927
+  }
+ ]
+}

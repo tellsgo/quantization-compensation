@@ -1,0 +1,49 @@
+{
+  "status": "SOURCE_REPRODUCTION_CHECKS_PASSED",
+  "scientific_module_count": 96,
+  "explicit_theorem_declarations": 969,
+  "count_not_scientific_results": true,
+  "lean": "4.34.1",
+  "mathlib_revision": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "dependency_lock_heads_checked": 9,
+  "build": {
+    "scientific_sources_each_rebuilt_in_isolated_project": true,
+    "only_fixed_dependency_caches_reused": true,
+    "author_project_oleans_copied": false,
+    "bare_lake_build_exit": 0,
+    "complete_entry_check_exit": 0,
+    "relative_path_entry_called_outside_project": true
+  },
+  "axioms": {
+    "targets": 969,
+    "only_allowed": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "stdout_sha256": "2a651b3643d3595ad5c274a6138244afa7005f8a7bac78aaabc8931fc1df2dd4"
+  },
+  "controls": {
+    "positive_files": 2,
+    "positive_exits": [
+      0,
+      0
+    ],
+    "negative_files": 10,
+    "negative_exits": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "all_negative_diagnostics_substantive": true
+  },
+  "scope": "See CLAIMS.json and SCOPE.html. Reproduction does not upgrade algebraic or finite-support scope to a general probabilistic theorem.",
+  "independent_scope_review": "Accepted current 24 numbered claims and six supporting-extension categories within stated boundaries; scientific source tokens unchanged from accepted inputs."
+}
