@@ -1,0 +1,25 @@
+{
+  "seed": 202610082,
+  "bits": 4,
+  "group_size": 128,
+  "damping": 1.0,
+  "candidate_strengths": [
+    0.0,
+    0.5,
+    1.0
+  ],
+  "sequence_length": 512,
+  "calibration_tokens": 2048,
+  "selection_tokens": 4096,
+  "evaluation_tokens": 16384,
+  "policies": [
+    "rtn",
+    "qep_half",
+    "qep_no_down",
+    "local_select",
+    "lookahead_select",
+    "task_select",
+    "directional_select"
+  ],
+  "evaluation_extra": "data/gutenberg_1342_body.txt"
+}

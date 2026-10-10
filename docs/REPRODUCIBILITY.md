@@ -52,3 +52,11 @@ Repeat capture/diagnose for both models and both texts. Captured activations can
 `lean/` is byte-identical to the accepted v6.4 public source artifact, including its scoped claim map, lockfiles, provenance and historical build receipt dated 2026-10-04. Its README's historical readiness comments describe that package's original stage. The manuscript's later editorial closeout and repaired composite proof are not a new formalization. No new Lean compile was performed for this release. The CI quick check verifies hashes only; use the Lean build commands in the root README for kernel checking.
 
 The source package excludes Mathlib/Lean dependency caches, compiled project artifacts and private review conversations. Dependencies are fetched by the pinned build configuration and retain their own licenses.
+# 8B experiment extension
+
+The Qwen3-8B and Meta-Llama-3-8B experiments are distributed in
+[`experiments/llm8b/`](../experiments/llm8b/README.md). Run
+`python scripts/validate_llm8b.py` from the repository root to recalculate the
+stored results without GPU inference. The guide documents fresh GPU reruns,
+public corpus acquisition, checkpoint fingerprints and the scope of each
+campaign. See the [release checks](LLM8B_RELEASE_CHECKS.md) for packaging validation.

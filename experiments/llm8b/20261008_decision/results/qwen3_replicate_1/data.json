@@ -1,0 +1,78 @@
+{
+  "train_text_sha256": "fb23ad9643a34514eec5cb85ec2a6f49d1a33e6a3d5077dff5a403e1d18f5047",
+  "evaluation_text_sha256": "c5b5caea5bd655cb221545a484f2f0f59d35092a17a66840d7b9513d0b99687d",
+  "extra_text_sha256": "cb7c0d9af2041d31e655fafe79becb0877c3fc775690c7a558eb8707035e5138",
+  "offsets": {
+    "cal": [
+      [
+        773120,
+        773632
+      ],
+      [
+        1094656,
+        1095168
+      ],
+      [
+        1355264,
+        1355776
+      ],
+      [
+        1059840,
+        1060352
+      ]
+    ],
+    "select": [
+      [
+        1750016,
+        1750528
+      ],
+      [
+        1108480,
+        1108992
+      ],
+      [
+        937984,
+        938496
+      ],
+      [
+        433664,
+        434176
+      ],
+      [
+        1532416,
+        1532928
+      ],
+      [
+        172032,
+        172544
+      ],
+      [
+        1880064,
+        1880576
+      ],
+      [
+        108544,
+        109056
+      ]
+    ],
+    "eval": [
+      [
+        0,
+        16384
+      ]
+    ],
+    "eval_extra": [
+      [
+        0,
+        16384
+      ]
+    ]
+  },
+  "tokenizer": "models/Qwen3-8B",
+  "token_hashes": {
+    "cal": "6cad550e66cd8683196a0936cecdb31e8aca2599dd7e2e4eceae062d0052402f",
+    "select": "c7800ca6822308d2732e4334ac9bd75bb9a8b0adcb3b6f71bd1bf57d8639f46e",
+    "eval": "f5c63f135fb8d2b97ff22dd7701a15d24a6fea2e3d0dfb973e44b3d2cff73ba8",
+    "eval_extra": "5a26c9fb5afb634c94a8bfc6a9b4ea0aa3d8bac4442a09dca7e437269a438849"
+  }
+}

@@ -13,9 +13,12 @@ Python 3.10 or newer:
 ```sh
 python -m pip install numpy
 python scripts/validate_reproduction.py
+python scripts/validate_llm8b.py
 ```
 
 This regenerates both plot sources and the gain table byte for byte, recomputes all 28 paired-teacher gain uncertainties, checks the trained-model table against saved per-layer measurements, and **replays the three fixed witnesses with rational arithmetic**. It also checks the distributed Lean file hashes. It does not run new model inference, Monte Carlo studies, or a Lean compiler.
+
+The second command independently recomputes the Qwen3-8B and Meta-Llama-3-8B experiment numbers from the saved records, including the 84 policy/domain measurements, selection-size controls, suffix interventions and 48 two-bit slices. It needs only Python’s standard library. See the [8B reproduction guide](experiments/llm8b/README.md) for protocols and GPU reruns.
 
 Generated figure sources appear in `reproduced_figures/`. They use pgfplots and the paper's macros and labels; include them in the manuscript to render them.
 
@@ -26,6 +29,7 @@ Generated figure sources appear in `reproduced_figures/`. They use pgfplots and 
 | `numerics/` | Self-contained figure reproduction, original Python/NumPy simulation implementations, final saved results |
 | `numerics/saved_witnesses/` | Three frozen inputs, exact rational risk/interval certificates, deterministic replay |
 | `diagnostics/` | Saved per-layer measurements and portable layer-diagnostic runner; model/data assets must be acquired separately |
+| `experiments/llm8b/` | Frozen 8B runners, configurations, raw numeric records, data/checkpoint fingerprints and offline checks |
 | `lean/` | 110 Lean files, including 96 scientific modules; pinned dependencies, controls, scope map and historical build receipt |
 | `docs/REPRODUCIBILITY.md` | Commands, provenance and limits |
 

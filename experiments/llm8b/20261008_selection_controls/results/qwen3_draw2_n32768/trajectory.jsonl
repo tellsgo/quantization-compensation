@@ -1,0 +1,16 @@
+{"layer": 0, "policy": "rtn", "select": 2.6382372193038464, "diag": 2.661267638206482}
+{"layer": 0, "policy": "local_select", "select": 2.6376285403966904, "diag": 2.6604318022727966}
+{"layer": 0, "policy": "block_select", "select": 2.6376285403966904, "diag": 2.6604318022727966}
+{"layer": 0, "policy": "task_select", "select": 2.636925559490919, "diag": 2.6616832464933395}
+{"layer": 12, "policy": "rtn", "select": 2.6382372193038464, "diag": 2.661267638206482}
+{"layer": 12, "policy": "local_select", "select": 2.61634055711329, "diag": 2.647628039121628}
+{"layer": 12, "policy": "block_select", "select": 2.609366538003087, "diag": 2.6391379684209824}
+{"layer": 12, "policy": "task_select", "select": 2.611264793202281, "diag": 2.6464652121067047}
+{"layer": 24, "policy": "rtn", "select": 2.6382372193038464, "diag": 2.661267638206482}
+{"layer": 24, "policy": "local_select", "select": 2.602613627910614, "diag": 2.6402246206998825}
+{"layer": 24, "policy": "block_select", "select": 2.599452743306756, "diag": 2.6308717131614685}
+{"layer": 24, "policy": "task_select", "select": 2.5923181511461735, "diag": 2.6277505308389664}
+{"layer": 35, "policy": "rtn", "select": 2.6382372193038464, "diag": 2.661267638206482}
+{"layer": 35, "policy": "local_select", "select": 2.593485187739134, "diag": 2.6237624138593674}
+{"layer": 35, "policy": "block_select", "select": 2.6059750951826572, "diag": 2.6334294974803925}
+{"layer": 35, "policy": "task_select", "select": 2.575627699494362, "diag": 2.609814777970314}

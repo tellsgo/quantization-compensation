@@ -1,0 +1,24 @@
+{
+  "bits": 2,
+  "group_size": 128,
+  "damping": 1.0,
+  "fit_tokens": 2048,
+  "selection_tokens": 4096,
+  "diagnostic_tokens": 8192,
+  "sequence": 512,
+  "grid": [
+    0.1,
+    0.2,
+    0.3,
+    0.4,
+    0.5,
+    0.6,
+    0.7,
+    0.8,
+    0.9,
+    1.0
+  ],
+  "neighbor_step": 0.1,
+  "timing_repeats": 3,
+  "degenerate_relative": 1e-12
+}

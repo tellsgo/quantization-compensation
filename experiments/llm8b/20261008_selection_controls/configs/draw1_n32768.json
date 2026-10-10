@@ -1,0 +1,19 @@
+{
+  "seed": 202610081,
+  "draw": 1,
+  "selection_tokens": 32768,
+  "evaluation_start": 65536,
+  "evaluation_tokens": 16384,
+  "microbatch": 8,
+  "bits": 4,
+  "group_size": 128,
+  "damping": 1.0,
+  "candidate_strengths": [
+    0.0,
+    0.5,
+    1.0
+  ],
+  "calibration_tokens": 2048,
+  "diagnostic_tokens": 8192,
+  "sequence_length": 512
+}

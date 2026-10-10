@@ -1,0 +1,10 @@
+{
+  "select": {
+    "reconstructed_nll": 2.578508287668228,
+    "difference": 2.9802322387695312e-08
+  },
+  "diag": {
+    "reconstructed_nll": 2.630575641989708,
+    "difference": 5.960464477539063e-08
+  }
+}

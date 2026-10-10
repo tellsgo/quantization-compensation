@@ -1,0 +1,46 @@
+{
+  "config": {
+    "bits": 2,
+    "group_size": 128,
+    "damping": 1.0,
+    "fit_tokens": 2048,
+    "selection_tokens": 4096,
+    "diagnostic_tokens": 8192,
+    "sequence": 512,
+    "grid": [
+      0.1,
+      0.2,
+      0.3,
+      0.4,
+      0.5,
+      0.6,
+      0.7,
+      0.8,
+      0.9,
+      1.0
+    ],
+    "neighbor_step": 0.1,
+    "timing_repeats": 3,
+    "degenerate_relative": 1e-12
+  },
+  "args": {
+    "base": "experiments/llm8b/20261008_selection_controls/results/qwen3_draw2_n4096",
+    "output": "results/qwen3_draw2",
+    "config": "configs/pilot.json"
+  },
+  "parent_manifest_sha256": "4663dd0e9dbcc394f4ca21e9c3aa3d50a92356bd69960e044f5bdaa1b984a843",
+  "source_sha256": {
+    "pilot.py": "566a7fb788fa83b292d03a77f031c20beec94b86378ae3ca4479d43801d94d50",
+    "proposal.py": "8a63b12649c376bc21388a28f860d8e0e51203dde6d4522fa2fc7cfc1b3be536",
+    "core.py": "7c17df9b2d815b48ab88955ce230b35a0081b8f545df86b6af42705810b952f3",
+    "scale_selection.py": "accb0c25357c7a6673d20fc3aa0448d1da2ae73d60396e8115fbf7b5a844b20c"
+  },
+  "protocol_sha256": "d422bbe76b45dabd0b71d70416af2fb17db14582de32e3832baed85ff10f11f0",
+  "torch": "2.12.0.dev20260323+cu128",
+  "transformers": "5.3.0",
+  "gpu": "NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition",
+  "seed": 202610082,
+  "start_unix": 1791557534.1471725,
+  "original_protocol_sha256": "849a266d565b27faede2540fddf293b1f7428e0b03c46ddef639f1ba4b81468f",
+  "original_parent_manifest_sha256": "1a32d0a183b0c0c4d1f1351d3681b6b9b462f039e06ceaf781a4045ac2af8fa9"
+}

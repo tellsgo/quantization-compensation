@@ -1,0 +1,26 @@
+{
+  "fp_wikitext": {
+    "nll": 1.9994923695921898,
+    "ppl": 7.385306141246619,
+    "recorded_nll": 1.9994923695921898,
+    "absolute_difference": 0.0
+  },
+  "fp_gutenberg": {
+    "nll": 1.4335127212107182,
+    "ppl": 4.193403608345584,
+    "recorded_nll": 1.4335127212107182,
+    "absolute_difference": 0.0
+  },
+  "rtn_wikitext": {
+    "nll": 2.111911941319704,
+    "ppl": 8.264026523370122,
+    "recorded_nll": 2.111911941319704,
+    "absolute_difference": 0.0
+  },
+  "rtn_gutenberg": {
+    "nll": 1.755502162501216,
+    "ppl": 5.786352701860448,
+    "recorded_nll": 1.755502162501216,
+    "absolute_difference": 0.0
+  }
+}

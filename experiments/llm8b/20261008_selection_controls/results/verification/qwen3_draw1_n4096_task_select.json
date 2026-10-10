@@ -1,0 +1,27 @@
+{
+  "run": "qwen3_draw1_n4096",
+  "policy": "task_select",
+  "checks": {
+    "select": {
+      "nll": 2.5785082578659058,
+      "recorded_nll": 2.5785082578659058,
+      "max_sequence_difference": 0.0
+    },
+    "diag": {
+      "nll": 2.630575582385063,
+      "recorded_nll": 2.630575582385063,
+      "max_sequence_difference": 0.0
+    },
+    "eval": {
+      "nll": 2.1756841614842415,
+      "recorded_nll": 2.1756841614842415,
+      "max_sequence_difference": 0.0
+    },
+    "eval_extra": {
+      "nll": 2.6850223541259766,
+      "recorded_nll": 2.6850223541259766,
+      "max_sequence_difference": 0.0
+    }
+  },
+  "script_sha256": "a780a8df5f1a181fc3ef2da3a6ee6898504a8b025a1b649459edfefe6116f318"
+}

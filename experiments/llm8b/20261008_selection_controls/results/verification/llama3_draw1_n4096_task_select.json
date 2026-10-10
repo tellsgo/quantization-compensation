@@ -1,0 +1,27 @@
+{
+  "run": "llama3_draw1_n4096",
+  "policy": "task_select",
+  "checks": {
+    "select": {
+      "nll": 2.1930869966745377,
+      "recorded_nll": 2.1930869966745377,
+      "max_sequence_difference": 0.0
+    },
+    "diag": {
+      "nll": 2.228532023727894,
+      "recorded_nll": 2.228532023727894,
+      "max_sequence_difference": 0.0
+    },
+    "eval": {
+      "nll": 1.807168461382389,
+      "recorded_nll": 1.807168461382389,
+      "max_sequence_difference": 0.0
+    },
+    "eval_extra": {
+      "nll": 1.4415270872414112,
+      "recorded_nll": 1.4415270872414112,
+      "max_sequence_difference": 0.0
+    }
+  },
+  "script_sha256": "a780a8df5f1a181fc3ef2da3a6ee6898504a8b025a1b649459edfefe6116f318"
+}

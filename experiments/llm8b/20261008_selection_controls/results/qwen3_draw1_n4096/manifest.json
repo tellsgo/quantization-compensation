@@ -1,0 +1,39 @@
+{
+  "config": {
+    "seed": 202610081,
+    "draw": 1,
+    "selection_tokens": 4096,
+    "evaluation_start": 65536,
+    "evaluation_tokens": 16384,
+    "microbatch": 8,
+    "bits": 4,
+    "group_size": 128,
+    "damping": 1.0,
+    "candidate_strengths": [
+      0.0,
+      0.5,
+      1.0
+    ],
+    "calibration_tokens": 2048,
+    "diagnostic_tokens": 8192,
+    "sequence_length": 512
+  },
+  "args": {
+    "model": "models/Qwen3-8B",
+    "train": "data/wikitext2_train.txt",
+    "evaluation": "data/wikitext2_test.txt",
+    "extra": "data/gutenberg_1342_body.txt",
+    "base_run": "experiments/llm8b/20261008_decision/results/qwen3_replicate_1",
+    "config": "experiments/llm8b/20261008_selection_controls/configs/draw1_n4096.json",
+    "output": "experiments/llm8b/20261008_selection_controls/results/qwen3_draw1_n4096"
+  },
+  "source_sha256": {
+    "scale_selection.py": "accb0c25357c7a6673d20fc3aa0448d1da2ae73d60396e8115fbf7b5a844b20c",
+    "core.py": "7c17df9b2d815b48ab88955ce230b35a0081b8f545df86b6af42705810b952f3"
+  },
+  "torch": "2.12.0.dev20260323+cu128",
+  "transformers": "5.3.0",
+  "gpu": "NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition",
+  "cuda_visible_devices": "0",
+  "start_unix": 1791452630.077362
+}

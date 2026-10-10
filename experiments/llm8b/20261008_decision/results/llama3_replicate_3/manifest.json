@@ -1,0 +1,35 @@
+{
+  "config": {
+    "seed": 202610083,
+    "bits": 4,
+    "group_size": 128,
+    "damping": 1.0,
+    "candidate_strengths": [
+      0.0,
+      0.5,
+      1.0
+    ],
+    "sequence_length": 512,
+    "calibration_tokens": 2048,
+    "selection_tokens": 4096,
+    "evaluation_tokens": 16384,
+    "policies": [
+      "rtn",
+      "qep_half",
+      "qep_no_down",
+      "local_select",
+      "lookahead_select",
+      "task_select",
+      "directional_select"
+    ],
+    "evaluation_extra": "data/gutenberg_1342_body.txt"
+  },
+  "model": "models/Meta-Llama-3-8B",
+  "source_sha256": "ca48728065b7975e9599d8d0a6f6605dc9772c2a667bda85244158974ad1d654",
+  "torch": "2.12.0.dev20260323+cu128",
+  "transformers": "5.3.0",
+  "cuda_visible_devices": "1",
+  "gpu": "NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition",
+  "start_unix": 1791450173.3072672,
+  "execution": "BF16 dequantized weights from integer codebooks; not packed inference"
+}

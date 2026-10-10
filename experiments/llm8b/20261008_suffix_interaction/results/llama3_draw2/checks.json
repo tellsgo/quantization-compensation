@@ -1,0 +1,7 @@
+{
+  "historical_candidate_max_error": 0.0,
+  "historical_candidate_comparisons": 96,
+  "terminal_max_difference": 0.0,
+  "terminal_comparisons": 24,
+  "final_trajectory_parity": "pass"
+}

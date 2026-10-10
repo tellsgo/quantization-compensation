@@ -8,3 +8,7 @@ RECEIPT_CHECK_RESULT.json
 *.aux
 *.log
 *.out
+
+reproduced_llm8b/
+experiments/llm8b/data/
+experiments/llm8b/runs/

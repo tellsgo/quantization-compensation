@@ -1,0 +1,25 @@
+{
+  "wikitext_test_source": "https://huggingface.co/datasets/Salesforce/wikitext/resolve/b08601e04326c79dfdd32d625aee71d232d685c3/wikitext-2-raw-v1/test-00000-of-00001.parquet",
+  "wikitext_test_parquet_sha256": "5f1bea067869d04849c0f975a2b29c4ff47d867f484f5010ea5e861eab246d91",
+  "gutenberg_source": "https://www.gutenberg.org/ebooks/1342.txt.utf-8",
+  "gutenberg_raw_sha256": "3f6bb9d6f78e0293b56acd4714dd68cb7d6d1d293402031ce9d5a216bcaf9d75",
+  "transform": "WikiText: nonempty rows joined by two newlines; Gutenberg: retain text between START/END markers, strip outer whitespace only",
+  "files": {
+    "wikitext2_validation.txt": {
+      "bytes": 1149168,
+      "sha256": "f3714de012180492efbcf4f0380322389a27f735ddb63e8c016a6a6285f50408"
+    },
+    "wikitext2_test.txt": {
+      "bytes": 1293436,
+      "sha256": "c5b5caea5bd655cb221545a484f2f0f59d35092a17a66840d7b9513d0b99687d"
+    },
+    "gutenberg_1342_body.txt": {
+      "bytes": 737913,
+      "sha256": "cb7c0d9af2041d31e655fafe79becb0877c3fc775690c7a558eb8707035e5138"
+    },
+    "wikitext2_train.txt": {
+      "bytes": 10962377,
+      "sha256": "fb23ad9643a34514eec5cb85ec2a6f49d1a33e6a3d5077dff5a403e1d18f5047"
+    }
+  }
+}

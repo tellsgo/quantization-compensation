@@ -1,0 +1,35 @@
+{
+  "args": {
+    "base": "experiments/llm8b/20261008_selection_controls/results/qwen3_draw2_n4096",
+    "output": "results/qwen3_draw2",
+    "config": "configs/fixed.json"
+  },
+  "config": {
+    "models": [
+      "qwen3",
+      "llama3"
+    ],
+    "draws": [
+      1,
+      2
+    ],
+    "selection_tokens": 4096,
+    "microbatch": 8,
+    "score_tolerance": 1e-06,
+    "robust_margin": 0.0001,
+    "frequency_screen": 0.25
+  },
+  "source_sha256": {
+    "probe.py": "07cb62112bcc6d7755a9d3c4bbae49cb0c72fba109a08d2c2678349cc4e79a23",
+    "core.py": "7c17df9b2d815b48ab88955ce230b35a0081b8f545df86b6af42705810b952f3",
+    "scale_selection.py": "accb0c25357c7a6673d20fc3aa0448d1da2ae73d60396e8115fbf7b5a844b20c"
+  },
+  "parent_manifest_sha256": "4663dd0e9dbcc394f4ca21e9c3aa3d50a92356bd69960e044f5bdaa1b984a843",
+  "parent_decisions_sha256": "d201ece4e9adc216ebb954193aa16b243139ab45809e10a6acec0bfe6308e7d3",
+  "torch": "2.12.0.dev20260323+cu128",
+  "transformers": "5.3.0",
+  "start_unix": 1791456352.3060389,
+  "gpu": "NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition",
+  "visible_devices": "0",
+  "original_parent_manifest_sha256": "1a32d0a183b0c0c4d1f1351d3681b6b9b462f039e06ceaf781a4045ac2af8fa9"
+}

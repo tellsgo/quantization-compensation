@@ -1,0 +1,78 @@
+{
+  "train_text_sha256": "fb23ad9643a34514eec5cb85ec2a6f49d1a33e6a3d5077dff5a403e1d18f5047",
+  "evaluation_text_sha256": "c5b5caea5bd655cb221545a484f2f0f59d35092a17a66840d7b9513d0b99687d",
+  "extra_text_sha256": "cb7c0d9af2041d31e655fafe79becb0877c3fc775690c7a558eb8707035e5138",
+  "offsets": {
+    "cal": [
+      [
+        1740288,
+        1740800
+      ],
+      [
+        1775616,
+        1776128
+      ],
+      [
+        73216,
+        73728
+      ],
+      [
+        92160,
+        92672
+      ]
+    ],
+    "select": [
+      [
+        488960,
+        489472
+      ],
+      [
+        2064384,
+        2064896
+      ],
+      [
+        2173440,
+        2173952
+      ],
+      [
+        984576,
+        985088
+      ],
+      [
+        837120,
+        837632
+      ],
+      [
+        2560,
+        3072
+      ],
+      [
+        1480192,
+        1480704
+      ],
+      [
+        413696,
+        414208
+      ]
+    ],
+    "eval": [
+      [
+        0,
+        16384
+      ]
+    ],
+    "eval_extra": [
+      [
+        0,
+        16384
+      ]
+    ]
+  },
+  "tokenizer": "models/Meta-Llama-3-8B",
+  "token_hashes": {
+    "cal": "25f05c27edd84eaef00d1dbd1519ef09ef28c59fbeb2dcd423df0cfef8fcfde9",
+    "select": "efd3fef2adc82545bfb1db81a915bac1aa04084b05f381144744267aa06f3b3d",
+    "eval": "af04be1c42f005f97f1e02e66c6e5cabf1c1c769a0bc7f43d374eac482e10b23",
+    "eval_extra": "82a6bd73da062bf9a0654981101cf02fe00b7f96d312f3f869a73c631a1597af"
+  }
+}
