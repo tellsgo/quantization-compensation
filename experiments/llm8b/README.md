@@ -47,6 +47,25 @@ both original and distributed hashes. Parent-manifest and protocol hashes retain
 their original values in separate fields when sanitization changes their bytes.
 The archive's path placeholders are provenance, not a ready-to-run installation.
 
+## Names in the paper
+
+Section 9.3 and Table 4 of the paper use short names for the selection rules.
+The code and records use the names on the right.
+
+| Paper | Code and records | Score used to choose a strength in {0, 0.5, 1} |
+|---|---|---|
+| RTN | `rtn` | no correction |
+| α = ½ | `qep_half` | fixed external strength 0.5 |
+| (text only) | `qep_no_down` | 0.5, down projection uncorrected |
+| local | `local_select` | output error of the current linear group |
+| block | `lookahead_select` | error after the **next** block, kept at RTN |
+| network | `task_select` | NLL of the full network, later blocks kept at RTN |
+| gradient | `directional_select` | first-order estimate of that NLL from its gradient |
+
+`block_select`, used only in `20261008_selection_controls/`, scores the output
+error of the **current** block. It is not the paper's Table 4 "block" rule;
+the paper calls it "selection by the output error of the current block".
+
 ## Protocol and interpretation
 
 The quantizer uses asymmetric per-row groups of 128, bounded integer codes and
