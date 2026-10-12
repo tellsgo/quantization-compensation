@@ -1,0 +1,21 @@
+{
+  "frozen_date": "2026-10-11 Asia/Singapore",
+  "status": "frozen before new 8B inference",
+  "task_sheet_sha256": "ffaf0bd9edbabe2a8cac4132334c9617a173e50e3d5e6dc9346a21e5c563aa0e",
+  "files": {
+    "configs/frozen.json": "d052aecbab0e4af9dda078ee499a85afae9677b1642d8759e51cecbd3ce26ce8",
+    "configs/history.json": "29a97d89d9aa7ecfe86aa1145ec9513db322f0c73a04e758b32c726056662849",
+    "docs/specs/PROTOCOL.md": "3285accbc7111cc1ae1f977d18d0ad68a49d47c29517d5009c498be6b90f7327",
+    "inputs/llama3/plan.json": "746bbf5eb42ea269fd00ca3810fde6b954658262f858ea8711427546bcb4d2c4",
+    "inputs/qwen3/plan.json": "06a7fa5ac39ecd7ad4032c59635e37d099a639d9913f86569344d0bdd24c06fc",
+    "scripts/analyze.py": "1f4f14f8cfdb6ef9d4cd51f582aa8dec01a19cd03500e2f9af70aa59139b0afa",
+    "scripts/prepare.py": "143cc8c5a978de47d61e658017b0be18094e178bf5249297593b3c7b73fd491e",
+    "scripts/supervise.py": "7c20a40c2ee4b74fa4a50ec3191f5fb94455e38837d6735dbd66af484e715cc7",
+    "src/core.py": "7c17df9b2d815b48ab88955ce230b35a0081b8f545df86b6af42705810b952f3",
+    "src/design.py": "7d5deb89b9fa5c34dd6ef6d68d7fa51f4fffe192d41a440fae729106f85dfca8",
+    "src/run.py": "353aea29d8e17c02eeec8e25c3dbf202ce9b6b5ba4063d1c06ba03845dc950ac",
+    "src/scale_selection.py": "accb0c25357c7a6673d20fc3aa0448d1da2ae73d60396e8115fbf7b5a844b20c",
+    "tests/test_design.py": "267b26a95b8a522046b020dff62751210160f3b7a5561083645624c0aec4f36f",
+    "tests/test_native.py": "926345e99d6805651c613a3f086981f0c23250a3426c55ec9b757fd3d7419af2"
+  }
+}

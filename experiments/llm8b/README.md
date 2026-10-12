@@ -19,6 +19,7 @@ It verifies the distributed archive, recomputes NLL/PPL from per-sequence losses
 rebuilds the 24 cells of the manuscript's 8B table and checks all reported win
 counts. It also checks greedy choices, nested selection ranges, historical
 native-forward receipts, suffix reversals and the two-bit coefficient results.
+It then runs the separate reuse/fresh follow-up validator described below.
 Reports and CSVs are written to `reproduced_llm8b/`.
 
 This is a recalculation from stored observations. It does not regenerate model
@@ -34,9 +35,10 @@ diagnostics, exact witnesses and Lean source hashes.
 | `20261008_selection_controls/` | 4-bit, nested selection sizes 4K/16K/32K, four policies | Twelve runs; four scored splits per policy; 1,632 task-based and 1,632 block-based choices |
 | `20261008_suffix_interaction/` | Replay a fixed candidate under RTN and completed future blocks | Four runs; 48 nonterminal states and 16 terminal controls |
 | `20261009_adaptive_strength/` | 2-bit, coefficient proposal and search-budget comparison | Four runs; 48 early/middle/late layer-group slices |
+| `20261012_reuse_fresh/` | Later fixed-fit test of reusing versus refreshing selection windows | 20 paths; 2,176 adaptive decisions with per-candidate/window NLL and MSE |
 | `provenance/` | Source/result inventories, corpus hashes and checkpoint file hashes | No model weights or text corpus |
 
-Each run includes its exact experiment-source snapshot, configuration in the
+Each of the original four campaigns includes its exact experiment-source snapshot, configuration in the
 manifest, data fingerprints, completion receipt and raw numeric records. All
 experiment Python files and numeric observation records are byte-identical to
 the originals. Repeated source snapshots preserve the source/result binding.
@@ -46,6 +48,14 @@ previews and private handoff prose are omitted. `provenance/FILES.json` records
 both original and distributed hashes. Parent-manifest and protocol hashes retain
 their original values in separate fields when sanitization changes their bytes.
 The archive's path placeholders are provenance, not a ready-to-run installation.
+
+The later reuse/fresh experiment has a separate [guide](20261012_reuse_fresh/README.md),
+original/public freeze manifests and file inventory. To check only this follow-up, run
+`python scripts/validate_reuse_fresh.py` from the repository root to recompute it.
+Its numerical code and observations are unchanged; the input preparation interface
+requires an explicit model root. Fresh selection windows failed the predeclared
+optimism-reduction and source-risk predictions in both models. These results do
+not modify the original manuscript table or establish a universal failure mechanism.
 
 ## Names in the paper
 

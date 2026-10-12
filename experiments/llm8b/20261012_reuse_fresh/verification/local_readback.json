@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "frozen_files_verified": 14,
+  "local_recompute_byte_identical_to_remote": true,
+  "three_domain_final_windows": 1920,
+  "adaptive_decisions": 2176,
+  "same_prefix_identity_checks": 48,
+  "baseline_native_domain_checks": 12,
+  "baseline_native_max_error": 0,
+  "protocol_sha256": "3285accbc7111cc1ae1f977d18d0ad68a49d47c29517d5009c498be6b90f7327",
+  "frozen_manifest_sha256": "f5af7e1c7d1389577561f650b9091caf7428cc1db765c64d7d08cee2ceab8fab"
+}

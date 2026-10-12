@@ -1,4 +1,4 @@
-"""Recalculate manuscript experiment numbers from distributed per-run records.
+"""Validate manuscript campaigns and the separate reuse/fresh follow-up.
 
 No inference, new experiment, or import of the production analysis scripts.
 """
@@ -265,7 +265,11 @@ for campaign, script in [('20261008_decision','summarize.py'),
         for p in scratch.iterdir():
             if p.name not in original_names and p.is_file(): shutil.copy2(p, target / p.name)
 for test in sorted(EXPERIMENTS.glob('*/tests/test_*.py')):
-    if test.parent.parent.name == '20261008_decision': continue
+    if test.parent.parent.name in ['20261008_decision', '20261012_reuse_fresh']: continue
     subprocess.run([sys.executable, str(test)], check=True)
 print('PASS: archive hashes, nested ranges, 3264 selection decisions, native receipts, full reports and analysis tests.')
 print('Outputs: reproduced_llm8b/ (no GPU inference or new model-performance claim).')
+
+# Keep the follow-up's provenance and conclusions separate while including its
+# offline checks in the repository's existing 8B validation entry point.
+subprocess.run([sys.executable, str(ROOT / 'scripts/validate_reuse_fresh.py')], check=True)

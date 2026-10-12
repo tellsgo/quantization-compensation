@@ -1,0 +1,8 @@
+{
+  "first_predeclared_path": "task_select_reuse_draw1",
+  "measured_seconds": 167.69101067399606,
+  "remaining_paths_this_model": 9,
+  "conservative_remaining_seconds": 2565.67246331214,
+  "method": "1.7x first path for remaining paths, allowing fresh prefixes and final per-window evaluation; timing only, no outcomes read",
+  "protocol_sha256": "3285accbc7111cc1ae1f977d18d0ad68a49d47c29517d5009c498be6b90f7327"
+}

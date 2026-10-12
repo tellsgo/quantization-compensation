@@ -1,0 +1,91 @@
+{
+  "adaptive_decisions": 2176,
+  "candidate_window_vectors": 19584,
+  "same_prefix_identity_checks": 48,
+  "baseline_native_checks": [
+    {
+      "model": "qwen3",
+      "policy": "qep_half",
+      "domain": "source",
+      "manual_vs_native_max_error": 0.0,
+      "reconstructed_native_max_error": 0.0
+    },
+    {
+      "model": "qwen3",
+      "policy": "qep_half",
+      "domain": "wiki",
+      "manual_vs_native_max_error": 0.0,
+      "reconstructed_native_max_error": 0.0
+    },
+    {
+      "model": "qwen3",
+      "policy": "qep_half",
+      "domain": "novel",
+      "manual_vs_native_max_error": 0.0,
+      "reconstructed_native_max_error": 0.0
+    },
+    {
+      "model": "qwen3",
+      "policy": "rtn",
+      "domain": "source",
+      "manual_vs_native_max_error": 0.0,
+      "reconstructed_native_max_error": 0.0
+    },
+    {
+      "model": "qwen3",
+      "policy": "rtn",
+      "domain": "wiki",
+      "manual_vs_native_max_error": 0.0,
+      "reconstructed_native_max_error": 0.0
+    },
+    {
+      "model": "qwen3",
+      "policy": "rtn",
+      "domain": "novel",
+      "manual_vs_native_max_error": 0.0,
+      "reconstructed_native_max_error": 0.0
+    },
+    {
+      "model": "llama3",
+      "policy": "qep_half",
+      "domain": "source",
+      "manual_vs_native_max_error": 0.0,
+      "reconstructed_native_max_error": 0.0
+    },
+    {
+      "model": "llama3",
+      "policy": "qep_half",
+      "domain": "wiki",
+      "manual_vs_native_max_error": 0.0,
+      "reconstructed_native_max_error": 0.0
+    },
+    {
+      "model": "llama3",
+      "policy": "qep_half",
+      "domain": "novel",
+      "manual_vs_native_max_error": 0.0,
+      "reconstructed_native_max_error": 0.0
+    },
+    {
+      "model": "llama3",
+      "policy": "rtn",
+      "domain": "source",
+      "manual_vs_native_max_error": 0.0,
+      "reconstructed_native_max_error": 0.0
+    },
+    {
+      "model": "llama3",
+      "policy": "rtn",
+      "domain": "wiki",
+      "manual_vs_native_max_error": 0.0,
+      "reconstructed_native_max_error": 0.0
+    },
+    {
+      "model": "llama3",
+      "policy": "rtn",
+      "domain": "novel",
+      "manual_vs_native_max_error": 0.0,
+      "reconstructed_native_max_error": 0.0
+    }
+  ]
+}

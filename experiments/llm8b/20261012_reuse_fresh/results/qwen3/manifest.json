@@ -1,0 +1,49 @@
+{
+  "frozen_sha256": "f5af7e1c7d1389577561f650b9091caf7428cc1db765c64d7d08cee2ceab8fab",
+  "plan_sha256": "3e79281b99b7bea50d47b6232cf86b86d9f14ceb14cf12d44496fca391c24673",
+  "config": {
+    "selection_seeds": [
+      2026101201,
+      2026101202
+    ],
+    "audit_seed": 2026101199,
+    "sequence_length": 512,
+    "fit_tokens": 2048,
+    "selection_windows": 8,
+    "source_audit_windows": 32,
+    "step_audit_windows": 8,
+    "evaluation_start": 32768,
+    "evaluation_windows": 32,
+    "bits": 4,
+    "group_size": 128,
+    "damping": 1.0,
+    "alphas": [
+      0.0,
+      0.5,
+      1.0
+    ],
+    "microbatch": 8,
+    "threshold": 0.035,
+    "p1_network_range": [
+      0.02,
+      0.04
+    ],
+    "p1_local_abs_max": 0.01,
+    "p2_network_max_ratio": 0.5,
+    "p2_local_max_change": 0.01,
+    "all_three_audit_candidates": true,
+    "fresh_final_selection_per_window": true
+  },
+  "torch": "2.12.0.dev20260323+cu128",
+  "transformers": "5.3.0",
+  "gpu": "NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition",
+  "visible_devices": "1",
+  "model_setup_seconds": 19.832169011002406,
+  "source_sha256": {
+    "run.py": "353aea29d8e17c02eeec8e25c3dbf202ce9b6b5ba4063d1c06ba03845dc950ac",
+    "design.py": "7d5deb89b9fa5c34dd6ef6d68d7fa51f4fffe192d41a440fae729106f85dfca8",
+    "core.py": "7c17df9b2d815b48ab88955ce230b35a0081b8f545df86b6af42705810b952f3",
+    "scale_selection.py": "accb0c25357c7a6673d20fc3aa0448d1da2ae73d60396e8115fbf7b5a844b20c"
+  },
+  "original_plan_sha256": "06a7fa5ac39ecd7ad4032c59635e37d099a639d9913f86569344d0bdd24c06fc"
+}

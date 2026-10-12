@@ -1,0 +1,18 @@
+{
+  "same_prefix_checks": [],
+  "first_step_candidate_sha256": null,
+  "native_reconstruction": {
+    "source": {
+      "manual_vs_native_max_error": 0.0,
+      "reconstructed_native_max_error": 0.0
+    },
+    "wiki": {
+      "manual_vs_native_max_error": 0.0,
+      "reconstructed_native_max_error": 0.0
+    },
+    "novel": {
+      "manual_vs_native_max_error": 0.0,
+      "reconstructed_native_max_error": 0.0
+    }
+  }
+}

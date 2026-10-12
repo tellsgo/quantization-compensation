@@ -1,0 +1,33 @@
+{
+  "selection_seeds": [
+    2026101201,
+    2026101202
+  ],
+  "audit_seed": 2026101199,
+  "sequence_length": 512,
+  "fit_tokens": 2048,
+  "selection_windows": 8,
+  "source_audit_windows": 32,
+  "step_audit_windows": 8,
+  "evaluation_start": 32768,
+  "evaluation_windows": 32,
+  "bits": 4,
+  "group_size": 128,
+  "damping": 1.0,
+  "alphas": [
+    0.0,
+    0.5,
+    1.0
+  ],
+  "microbatch": 8,
+  "threshold": 0.035,
+  "p1_network_range": [
+    0.02,
+    0.04
+  ],
+  "p1_local_abs_max": 0.01,
+  "p2_network_max_ratio": 0.5,
+  "p2_local_max_change": 0.01,
+  "all_three_audit_candidates": true,
+  "fresh_final_selection_per_window": true
+}

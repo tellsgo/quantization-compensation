@@ -1,0 +1,34 @@
+{
+  "same_prefix_checks": [
+    {
+      "step": 0,
+      "same_fit_same_prefix_candidates_equal": true
+    },
+    {
+      "step": 72,
+      "same_fit_same_prefix_candidates_equal": true
+    },
+    {
+      "step": 143,
+      "same_fit_same_prefix_candidates_equal": true
+    }
+  ],
+  "first_step_candidate_sha256": [
+    {
+      "self_attn.q_proj": "65281de326909da39de004324ff2e5f1c190864ed86fcf29df1eb4baf18fb9e4",
+      "self_attn.k_proj": "8431ee2a443b165492a784dd6072efe56e8bca23818764e078ae0f67c564ced7",
+      "self_attn.v_proj": "e64a89ece368c260ed3b34193df8d35c00a1c540ca2ac42d4828d56dbe3ce1fa"
+    },
+    {
+      "self_attn.q_proj": "65281de326909da39de004324ff2e5f1c190864ed86fcf29df1eb4baf18fb9e4",
+      "self_attn.k_proj": "8431ee2a443b165492a784dd6072efe56e8bca23818764e078ae0f67c564ced7",
+      "self_attn.v_proj": "e64a89ece368c260ed3b34193df8d35c00a1c540ca2ac42d4828d56dbe3ce1fa"
+    },
+    {
+      "self_attn.q_proj": "65281de326909da39de004324ff2e5f1c190864ed86fcf29df1eb4baf18fb9e4",
+      "self_attn.k_proj": "8431ee2a443b165492a784dd6072efe56e8bca23818764e078ae0f67c564ced7",
+      "self_attn.v_proj": "e64a89ece368c260ed3b34193df8d35c00a1c540ca2ac42d4828d56dbe3ce1fa"
+    }
+  ],
+  "audit_telescope_final_max_error": 0.0
+}

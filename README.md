@@ -20,6 +20,8 @@ This regenerates both plot sources and the gain table byte for byte, recomputes 
 
 The second command independently recomputes the Qwen3-8B and Meta-Llama-3-8B experiment numbers from the saved records, including the 84 policy/domain measurements, selection-size controls, suffix interventions and 48 two-bit slices. It needs only Python’s standard library. See the [8B reproduction guide](experiments/llm8b/README.md) for protocols and GPU reruns.
 
+The 8B validation also checks the later [reuse/fresh selection experiment](experiments/llm8b/20261012_reuse_fresh/README.md): 20 paths and 2,176 adaptive decisions, with all candidate/window observations. Fresh windows did not halve network optimism or improve mean source-audit NLL in either model. This follow-up is separate from the original manuscript experiments. To recompute only this follow-up, run `python scripts/validate_reuse_fresh.py`; it uses only the standard library.
+
 Generated figure sources appear in `reproduced_figures/`. They use pgfplots and the paper's macros and labels; include them in the manuscript to render them.
 
 ## Contents and scope

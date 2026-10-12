@@ -1,0 +1,21 @@
+{
+  "status": "Public release snapshot, created after the experiment; not a new preregistration",
+  "release_date": "2026-10-12",
+  "original_freeze_sha256": "f5af7e1c7d1389577561f650b9091caf7428cc1db765c64d7d08cee2ceab8fab",
+  "files": {
+    "configs/frozen.json": "d052aecbab0e4af9dda078ee499a85afae9677b1642d8759e51cecbd3ce26ce8",
+    "configs/history.json": "29a97d89d9aa7ecfe86aa1145ec9513db322f0c73a04e758b32c726056662849",
+    "docs/specs/PROTOCOL.md": "1f34f9286dab1c55fc7bf69bc1f47f73437d88b65ac288fbee226aa00c423315",
+    "inputs/llama3/plan.json": "2c34962b62a33ce2b922f8c7db16e3405f8ef806e0ace510dc6d848fc5841bad",
+    "inputs/qwen3/plan.json": "3e79281b99b7bea50d47b6232cf86b86d9f14ceb14cf12d44496fca391c24673",
+    "scripts/analyze.py": "1f4f14f8cfdb6ef9d4cd51f582aa8dec01a19cd03500e2f9af70aa59139b0afa",
+    "scripts/prepare.py": "19e2a3a670f8b5778da14d53cd37724067d6ec42de76c58bb6c7515f19ed762b",
+    "scripts/supervise.py": "7c20a40c2ee4b74fa4a50ec3191f5fb94455e38837d6735dbd66af484e715cc7",
+    "src/core.py": "7c17df9b2d815b48ab88955ce230b35a0081b8f545df86b6af42705810b952f3",
+    "src/design.py": "7d5deb89b9fa5c34dd6ef6d68d7fa51f4fffe192d41a440fae729106f85dfca8",
+    "src/run.py": "353aea29d8e17c02eeec8e25c3dbf202ce9b6b5ba4063d1c06ba03845dc950ac",
+    "src/scale_selection.py": "accb0c25357c7a6673d20fc3aa0448d1da2ae73d60396e8115fbf7b5a844b20c",
+    "tests/test_design.py": "267b26a95b8a522046b020dff62751210160f3b7a5561083645624c0aec4f36f",
+    "tests/test_native.py": "926345e99d6805651c613a3f086981f0c23250a3426c55ec9b757fd3d7419af2"
+  }
+}
